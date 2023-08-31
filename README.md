@@ -8,4 +8,4 @@ This repo contains content created by the following creators and channels:
 
 Please note that this repo will only ever include content released for free. No content from a published book or Patreon document will be included. Basically, if you have to spend any amount of money to get it, it will not be included.
 
-Index URL: 
+Index URL: https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube.index
