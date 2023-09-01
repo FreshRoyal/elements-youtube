@@ -11,4 +11,4 @@ Please note that this repo only includes content released for free. Content from
 
 Index URL: https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube.index
 
-Feel free to suggest anything that I missed, whether it's from the already included channels or not.
+Feel free to create a new issue for anything that I missed, whether it's from the already included channels or not.
