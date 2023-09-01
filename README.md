@@ -1,5 +1,5 @@
 # Info
-Content created by different YouTube creators implemented for the Aurora Character Builder for D&amp;D 5e
+Content created by different YouTube creators implemented for the Aurora Character Builder for D&amp;D 5e.
 
 This repo contains content created by the following creators and channels:
 
