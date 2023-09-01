@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spellforged from DnD Shorts YouTube channel</name>
+		<update version="0.0.1">
+			<file name="race-spellforged.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dnd-shorts/race-spellforged.xml" />
+		</update>
+	</info>
+	<element name="Spellforged" type="Race" source="DnD Shorts" id="ID_DND_SHORTS_RACE_SPELLFORGED">
+		<description>
+			<h4>Origin and Behavior</h4>
+			<p>Either through the chaotic, unpredictable and explosive interactions of coiling, latent magic, or through the meticulous designs of powerful spellcasters, Spellforged are the very essence of The Weave forged into consciousness. They are beings of pure magical energy, but feel emotion, pain and pleasure in much the same way as any other sentient.</p>
+			<p class="indent">The life of a Spellforged is often as chaotic as the explosive interactions that brought about their creation. Extremely rare, and lacking any parents, culture, heritage or purpose, they often wander the world, seeking fulfillment in any way they can find it. For any individual this may mean helping others, gathering more power, indulging wholeheartedly in the finer things life has to offer, or seeking a higher meaning beyond the material world. Their unstable ties to the Weave tend Spellforged toward Chaotic alignments.</p>
+			<h4>Statistics</h4>
+			<p class="indent" style="margin-top:15px"><strong><em>Ability Score Increase:</em></strong> Your Charisma or Wisdom scores increase by 2, and Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Magical Form:</em></strong> Your primary form is that of any medium sized humanoid, and you glow and pulse with clear magical energy that reflects your chosen elemental power. You might radiate heat as a fire Spellforged, or crackle with a static energy as a Lightning one.</p>
+			<p class="indent">You also gain the ability to manipulate your shape to take on that of any one medium sized beast of your choice twice per long rest as an action. This new form has no impact on your ability scores, movement speed or proficiencies; it is merely the shape that the magic which binds you together has taken.</p>
+			<p class="indent"><strong><em>Born of Energy:</em></strong> The magic that bound you together grants you access to its elemental powers. Choose acid, cold, fire, lightning, poison, or thunder. You gain a resistance to that damage type, and your unarmed strikes deal  1d4 + your Strength modifier of the chosen damage type.</p>
+			<p class="indent"><strong><em>Speed:</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Magical Resilience:</em></strong> You are a being born from chaotic magic given form, represented by the following benefits:</p>
+			<ul>
+				<li>You have advantage on Arcana checks.</li>
+				<li>You have immunity to disease and the poisoned condition.</li>
+				<li>You don’t need to eat, drink, or breathe.</li>
+				<li>You are immune to spells and effects that would dispel the magic that binds you together.</li>
+			</ul>
+			<p class="indent"><strong><em>Magical Armor:</em></strong> Due to the volatile nature of your form, you are ill suited to wearing armor. Your powerful magical essence provides ample protection, however; it gives you a base AC of 16 (your Dexterity modifier doesn’t affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield’s bonus as normal.</p>
+			<p class="indent"><strong><em>Elemental Burst:</em></strong> When you drop to 0 hit points, you may choose to emit a chaotic blast of elemental energy. All creatures within 10 feet of you take damage of your elemental type equal to 3d8 + your level. Roll a d20. On a natural 1, reduce your maximum Hit Point total by the damage rolled, and roll your death saves with disadvantage until stabilised. If your maximum hit point total is reduced to 0 in this way, you die. Only a Wish spell can resurrect you if you die in this manner. If your maximum hit point total is reduced, the effect of a Greater Restoration spell cast on you while at full health restores 1 hit point to your maximum. You can only use the Elemental Burst ability once per long rest.</p>
+			<p class="indent"><strong><em>Into the Weave:</em></strong> As a bonus action, you can magically teleport yourself or one willing creature within 5ft of you up to 30 feet to an unoccupied space you can see. Once you use this trait, you can’t do so again until you finish a short or long rest.</p>
+			<p class="indent"><strong><em>Languages:</em></strong> You can speak, read and write Common and Primordial.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://youtu.be/bm6BVGJyz54</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Spellforged)" supports="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_2|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Spellforged)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Spellforged)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base"/>
+			
+			<grant type="Racial Trait" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_MAGICAL_FORM"/>
+			<grant type="Racial Trait" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_BORN_OF_ENERGY"/>
+			<grant type="Racial Trait" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_MAGICAL_RESILIENCE"/>
+			<grant type="Racial Trait" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_MAGICAL_ARMOR"/>
+			<grant type="Racial Trait" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_ELEMENTAL_BURST"/>
+			<grant type="Racial Trait" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_INTO_THE_WEAVE"/>
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+	
+	<element name="Magical Form" type="Racial Trait" source="DnD Shorts" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_MAGICAL_FORM">
+		<description>
+			<p>Your primary form is that of any medium sized humanoid, and you glow and pulse with clear magical energy that reflects your chosen elemental power. You might radiate heat as a fire Spellforged, or crackle with a static energy as a Lightning one.</p>
+			<p class="indent">You also gain the ability to manipulate your shape to take on that of any one medium sized beast of your choice twice per long rest as an action. This new form has no impact on your ability scores, movement speed or proficiencies; it is merely the shape that the magic which binds you together has taken.</p>
+		</description>
+		<sheet action="Action" usage="2/Long Rest">
+			<description>You also gain the ability to manipulate your shape to take on that of any one medium sized beast of your choice. This new form has no impact on your ability scores, movement speed or proficiencies; it is merely the shape that the magic which binds you together has taken.</description>
+		</sheet>
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/bm6BVGJyz54</set>
+		</setters>
+	</element>
+	
+	<element name="Born of Energy" type="Racial Trait" source="DnD Shorts" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_BORN_OF_ENERGY">
+		<description>
+			<p>The magic that bound you together grants you access to its elemental powers. Choose acid, cold, fire, lightning, poison, or thunder. You gain a resistance to that damage type, and your unarmed strikes deal  1d4 + your Strength modifier of the chosen damage type.</p>
+		</description>
+		<sheet display="false">
+			<description>Your unarmed strikes deal  1d4 + {{strength:modifier}}.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Damage Type, Born of Energy" supports="Spellforged Energy" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/bm6BVGJyz54</set>
+		</setters>
+	</element>
+	<element name="Acid" type="Racial Trait" source="DnD Shorts" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_BORN_OF_ENERGY_ACID">
+		<supports>Spellforged Energy</supports>
+		<description>
+			<p>You are born of acid energy.</p>
+		</description>
+		<sheet alt="Born of Energy">
+			<description>You have acid resistance. Your unarmed strikes deal  1d4 + {{strength:modifier}} acid.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			<stat name="elemental burst:damage type" value="acid" inline="true" />
+		</rules>
+	</element>
+	<element name="Cold" type="Racial Trait" source="DnD Shorts" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_BORN_OF_ENERGY_COLD">
+		<supports>Spellforged Energy</supports>
+		<description>
+			<p>You are born of cold energy.</p>
+		</description>
+		<sheet alt="Born of Energy">
+			<description>You have cold resistance. Your unarmed strikes deal  1d4 + {{strength:modifier}} cold.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<stat name="elemental burst:damage type" value="cold" inline="true" />
+		</rules>
+	</element>
+	<element name="Fire" type="Racial Trait" source="DnD Shorts" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_BORN_OF_ENERGY_FIRE">
+		<supports>Spellforged Energy</supports>
+		<description>
+			<p>You are born of fire energy.</p>
+		</description>
+		<sheet alt="Born of Energy">
+			<description>You have fire resistance. Your unarmed strikes deal  1d4 + {{strength:modifier}} fire.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<stat name="elemental burst:damage type" value="fire" inline="true" />
+		</rules>
+	</element>
+	<element name="Lightning" type="Racial Trait" source="DnD Shorts" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_BORN_OF_ENERGY_LIGHTNING">
+		<supports>Spellforged Energy</supports>
+		<description>
+			<p>You are born of lightning energy.</p>
+		</description>
+		<sheet alt="Born of Energy">
+			<description>You have lightning resistance. Your unarmed strikes deal  1d4 + {{strength:modifier}} lightning.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<stat name="elemental burst:damage type" value="lightning" inline="true" />
+		</rules>
+	</element>
+	<element name="Poison" type="Racial Trait" source="DnD Shorts" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_BORN_OF_ENERGY_POISON">
+		<supports>Spellforged Energy</supports>
+		<description>
+			<p>You are born of poison energy.</p>
+		</description>
+		<sheet alt="Born of Energy">
+			<description>You have poison resistance. Your unarmed strikes deal  1d4 + {{strength:modifier}} poison.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<stat name="elemental burst:damage type" value="poison" inline="true" />
+		</rules>
+	</element>
+	<element name="Thunder" type="Racial Trait" source="DnD Shorts" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_BORN_OF_ENERGY_THUNDER">
+		<supports>Spellforged Energy</supports>
+		<description>
+			<p>You are born of thunder energy.</p>
+		</description>
+		<sheet alt="Born of Energy">
+			<description>You have thunder resistance. Your unarmed strikes deal  1d4 + {{strength:modifier}} thunder.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+			<stat name="elemental burst:damage type" value="thunder" inline="true" />
+		</rules>
+	</element>
+	
+	<element name="Magical Resilience" type="Racial Trait" source="DnD Shorts" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_MAGICAL_RESILIENCE">
+		<description>
+			<p>You are a being born from chaotic magic given form, represented by the following benefits:</p>
+			<ul>
+				<li>You have advantage on Arcana checks.</li>
+				<li>You have immunity to disease and the poisoned condition.</li>
+				<li>You don’t need to eat, drink, or breathe.</li>
+				<li>You are immune to spells and effects that would dispel the magic that binds you together.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have advantage on Arcana checks. You have immunity to disease and the poisoned condition. You don’t need to eat, drink, or breathe. You are immune to spells and effects that would dispel the magic that binds you together.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/bm6BVGJyz54</set>
+		</setters>
+	</element>
+
+	<element name="Magical Armor" type="Racial Trait" source="DnD Shorts" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_MAGICAL_ARMOR">
+		<description>
+			<p>Due to the volatile nature of your form, you are ill suited to wearing armor. Your powerful magical essence provides ample protection, however; it gives you a base AC of 16 (your Dexterity modifier doesn’t affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield’s bonus as normal.</p>
+		</description>
+		<sheet>
+			<description>Your base AC is 16. Your dexterity modifier does not affect this number. You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield’s bonus as normal.</description>
+		</sheet>
+		<rules>
+			<stat name="spellforged:magical armor" value="16" bonus="base" />
+			<stat name="ac:calculation" value="spellforged:magical armor" bonus="calculation" alt="Magical Armor (Spellforged)" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/bm6BVGJyz54</set>
+		</setters>
+	</element>
+	
+	<element name="Elemental Burst" type="Racial Trait" source="DnD Shorts" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_ELEMENTAL_BURST">
+		<description>
+			<p>When you drop to 0 hit points, you may choose to emit a chaotic blast of elemental energy. All creatures within 10 feet of you take damage of your elemental type equal to 3d8 + your level. Roll a d20. On a natural 1, reduce your maximum Hit Point total by the damage rolled, and roll your death saves with disadvantage until stabilised. If your maximum hit point total is reduced to 0 in this way, you die. Only a Wish spell can resurrect you if you die in this manner. If your maximum hit point total is reduced, the effect of a Greater Restoration spell cast on you while at full health restores 1 hit point to your maximum. You can only use the Elemental Burst ability once per long rest. </p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you drop to 0 hp, you may choose to emit a chaotic blast of elemental energy. All creatures within 10 ft of you take 3d8 + {{level}} {{elemental burst:damage type}} damage. Roll a d20. On a natural 1, reduce your maximum hp total by the damage rolled, and roll your death saves with disadvantage until stabilised. If your maximum hp total is reduced to 0 in this way, you die. Only a Wish spell can resurrect you if you die in this manner. If your maximum hp total is reduced, the effect of a Greater Restoration spell cast on you while at full health restores 1 hp to your maximum.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/bm6BVGJyz54</set>
+		</setters>
+	</element>
+	
+	<element name="Into the Weave" type="Racial Trait" source="DnD Shorts" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_INTO_THE_WEAVE">
+		<description>
+			<p>As a bonus action, you can magically teleport yourself or one willing creature within 5ft of you up to 30 feet to an unoccupied space you can see. Once you use this trait, you can’t do so again until you finish a short or long rest. </p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You can magically teleport yourself or one willing creature within 5ft of you up to 30 feet to an unoccupied space you can see.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/bm6BVGJyz54</set>
+		</setters>
+	</element>
+</elements>

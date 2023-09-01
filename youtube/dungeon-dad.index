@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Dungeon Dad YouTube Content</name>
+		<update version="1.0.0">
+			<file name="dungeon-dad.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/source.xml" />
+		<file name="race-shardmind.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/race-shardmind.xml" />
+		<file name="subrace-shadowgenasi.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/subrace-shadowgenasi.xml" />
+		<file name="genie-khayal.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/genie-khayal.xml" />
+		<file name="race-lupin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/race-lupin.xml" />
+		<file name="subrace-icegenasi.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/subrace-icegenasi.xml" />
+		<file name="genie-qorrashi.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/genie-qorrashi.xml" />
+	</files>
+</index>

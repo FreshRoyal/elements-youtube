@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>	
+	<info>
+		<name>Ice Genasi from Monster of the Week</name>
+		<update version="0.0.2">
+			<file name="subrace-icegenasi.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/subrace-icegenasi.xml" />
+		</update>
+	</info>
+	<element name="Ice Genasi" type="Sub Race" source="Monster of the Week" id="ID_MOTW_SUBRACE_GENASI_ICE">
+		<supports>Genasi</supports>
+		<description>
+			<p>As an ice genasi, you are descended from the enigmatic Qorrashi. Like your ancestors, you are likely noble and thoughtful in the ways of diplomacy. Though if someone proves themselves to be an enemy to you, honour dictates that this enemy is given no quarter. You are truly at home when engaged in good conversation with close friends, or when having a spirited debate with someone who disagrees with you.</p>
+			<p class="indent">Your body is frigid to the touch. Veins and blood vessels beneath your skin might appear  prominent through the surface as icy lines of pale white. Most of your kind have golden yellow or pale white eyes and skin tones that range from stark white to cool blues. Surrounding you at all times is a vague breeze of frigid air. Not enough to cause real harm or discomfort to anyone around you, but it is certainly noticeable and even appreciated by some in hotter climates.</p>
+			<p>
+				<span class="feature">Ability Score Increase. </span>Your Constitution score increases by 1.<br />
+				<span class="feature">Way With Words. </span>You gain proficiency in the Persuasion skill.<br />
+				<span class="feature">Cold Resistance. </span>You have resistance to cold damage.<br />
+				<span class="feature">Sheer Cold. </span>You can cast the Binding Ice spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.<br />
+			</p>
+		</description>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/w0sa3Ffc0Xs</set>
+		</setters>
+		<sheet display="false"/>
+		<rules>
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ice Genasi)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_GENASI_ICE_WAY_WITH_WORDS" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_GENASI_ICE_AMPHIBIOUS" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_GENASI_ICE_COLD_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_GENASI_ICE_SHEER_COLD" />
+		</rules>
+	</element>
+	
+	<element name="Way With Words" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_GENASI_ICE_WAY_WITH_WORDS">
+		<description>
+			<p>You have proficiency in the Persuasion skill.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency in the Persuasion skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/w0sa3Ffc0Xs</set>
+		</setters>
+	</element>
+
+	<element name="Amphibious" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_GENASI_ICE_AMPHIBIOUS">
+		<description>
+			<p>You can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description>You can breathe air and water.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/w0sa3Ffc0Xs</set>
+		</setters>
+	</element>
+
+	<element name="Cold Resistance" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_GENASI_ICE_COLD_RESISTANCE">
+		<description>
+			<p>You have resistance to cold damage.</p>
+		</description>
+		<sheet display="false">
+			<description>You have resistance to cold damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/w0sa3Ffc0Xs</set>
+		</setters>
+	</element>
+	
+	<element name="Sheer Cold" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_GENASI_ICE_SHEER_COLD">
+		<description>
+			<p>You can cast the Binding Ice spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast the Binding Ice spell once with this trait, requiring no material components. (Spellcasting: Constitution)</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_FTOD_SPELL_RIMES_BINDING_ICE" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/w0sa3Ffc0Xs</set>
+		</setters>
+	</element>
+</elements>

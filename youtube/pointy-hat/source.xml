@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Pointy Hat YouTube Source</name>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/source.xml" />
+		</update>
+	</info>
+	<element name="Pointy Hat" type="Source" source="Core" id="ID_HOMEBREW_SOURCE_POINTY_HAT">
+		<description>
+			<p>Player character options from the Pointy Hat YouTube channel.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">PHYT</set>
+			<set name="image">https://yt3.googleusercontent.com/Uv2vfoAVNEjg2t9ZsOMW5bcLEKk3PEdEOFmQSGVPhg_s6lvS4rnut4omrxPcUXbjZCMOrQ4WlQ=s176-c-k-c0x00ffffff-no-rj</set>
+			<set name="url">https://www.youtube.com/@pointyhatstudios</set>
+			<set name="author" abbreviation="ADPH" url="https://twitter.com/antodemico">Antonio Demico</set>
+			<set name="release">20220221</set>
+			<set name="playtest">true</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>

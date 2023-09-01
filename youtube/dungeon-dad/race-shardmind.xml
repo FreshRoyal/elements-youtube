@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Shardmind from Monster of the Week</name>
+		<update version="0.0.4">
+			<file name="race-shardmind.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/race-shardmind.xml" />
+		</update>
+	</info>
+	<element name="Shardmind" type="Race" source="Monster of the Week" id="ID_MOTW_RACE_SHARDMIND">
+		<description>
+			<h4>Physical Description</h4>
+			<p>Shardminds are crystalline creatures consisting of hundreds of small shards of translucent green, white, red, or amber crystal assembled into humanoid form and animated by a force of pure psionic energy. Shardminds choose their forms to mimic the shapes of humanoids; some take on forms that seem more masculine, while others appear more feminine. A shardmind's animating force glows dimly from within each of its component shards, emanating most brightly from where the eyes of a natural humanoid would be. This inner light sheds dim light in a shardmind's space, but a shard mind individual can squelch the light with an instant's concentration-in order to hide in the dark, for example.</p>
+			<p class="indent">The crystalline fragments making up a shardmind's body are in constant, silent motion, almost like the circulation of blood. When a shardmind is stunned or unconscious, it might lose control of the tight mental reins that keep its body in humanoid form, a few shards slipping free into orbits around its body until the shardmind regains control.</p>
+			<h4>History</h4>
+			<p>Shardminds are sentient fragments of the Living Gate, which once stood at the pinnacle of the intricate lattice of the Astral Sea. Beyond the gate lay the alien Far Realm, and the gate's destruction during the Dawn War resulted in the rise of the mind flayer empire. Though Ioun's power holds the portal closed, shardminds seek to rebuild the gate and forever cut off the Far Realm's ability to influence the world.</p>
+			<h4>Society</h4>
+			<p>They don't have gender and don't reproduce, but the shardminds alive today aren't the same ones that sprang to life during the Dawn War. Shardminds say that the Living Gate shattered into countless fragments, each one of those fragments a fractured piece of the whole. Each shardmind is an awakened portion of the gate’s consciousness, and each time an awakened shardmind is killed, another one somewhere in the universe stirs to consciousness.</p>
+			<p class="indent">Shardminds are fragments of pure thought given life and substance. They are logical, emotionally distant, and naive to the ways of society in the world. Some approach life with innocent curiosity, eager to embrace the wealth of experiences the world has to offer, while others remain reserved and aloof, bearing a higher purpose in mind at all times. Though they often seem dispassionate, when a strong emotion seizes them, they experience it powerfully.</p>
+			<h4>Shardmind Names</h4>
+			<p class="indent" style="margin-top:15px">Amazu, Arshati, Balaya, Dihu, Hunraya, Kushu, Nashishi, ​Nashtu, Ruani, Runnashtu, Sanati, Ubaku</p>
+			<h4>Shardmind Traits</h4>
+			<p class="indent" style="margin-top:15px"><strong><em>Ability Score Increase:</em></strong> Your Intellegence increases by 2, and your Wisdom or Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Age:</em></strong> Shardminds are constructed as fully mature creatures and do not age.</p>
+			<p class="indent"><strong><em>Alignment:</em></strong> The shardmind tends to be drawn to structure and logic, as such they are typically lawful. On the spectrum of good and evil each shardmind must decide for themselves what that means to them.</p>
+			<p class="indent"><strong><em>Size:</em></strong> Shardmind are typically between 5’9” and 6’3” with sturdy appendages and sleek bodies. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed:</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Living Crystal:</em></strong> You are a living crystalline construct. You don't need to eat, drink, breathe, or sleep and you are immune to all non-magical diseases.  You do still require at least 6 hours of  rest each day, however, during which time you are fully conscious and able to do non-strenuous activities such as reading, keeping watch, sewing a hole in your clothing, or anything else that doesn’t require great effort.</p>
+			<p class="indent"><strong><em>Magical Origin:</em></strong> As a being of arcane creation, you are proficient in the Knowledge (Arcana) skill.</p>
+			<p class="indent"><strong><em>Shardswarm:</em></strong> You can use the Shardswarm ability. As a bonus action, parts of your crystalline body splinter into tiny fragments and swarm all creatures of your choice that are within 5 feet of you. Each creature must succeed on a Dexterity saving throw with a DC equal to 10, plus your proficiency bonus, plus your Constitution modifier. Any attack roll against an affected creature has advantage if the attacker can see it. This effect lasts until the end of your next turn. When the effect ends, you may teleport up to 10 feet from your current position. You must finish a long rest before using this ability again.</p>
+			<p class="indent"><strong><em>Telepathy:</em></strong> You can communicate telepathically with any creature as long as they are within 30 feet of you, on the same plane, and you share a language.</p>
+			<p class="indent"><strong><em>Innate Psionic Power:</em></strong> You have resistance to Psychic damage. Additionally, you know the Mage Hand cantrip. When you cast mage hand using this feature, the spell is invisible and does not require verbal or somatic components.</p>
+			<p class="indent"><strong><em>Languages:</em></strong> You can speak, read, and write Common as well as the Terran dialect of Primordial.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="custom">Amazu, Arshati, Balaya, Dihu, Hunraya, Kushu, Nashishi, ​Nashtu, Ruani, Runnashtu, Sanati, Ubaku</set>
+			<set name="names-format">{{custom}}</set>
+			<set name="height">5'9"</set>
+			<set name="sourceUrl">https://youtu.be/fyC_09jUb88</set>
+		</setters>
+		<rules>
+			<stat name="intellegence" value="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1 (Shardmind)" supports="ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Shardmind)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Shardmind)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_LIVING_CRYSTAL"/>
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_MAGICAL_ORIGIN"/>
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_SHARDSWARM"/>
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_TELEPATHY"/>
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_PSIONIC_POWER"/>
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_MM_LANGUAGE_TERRAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language||MOTW Shardmind Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+	<append id="ID_MM_LANGUAGE_TERRAN">
+		<supports>MOTW Shardmind Language</supports>
+	</append>
+	
+	<element name="Living Crystal" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_LIVING_CRYSTAL">
+		<description>
+			<p>You are a living crystalline construct. You don't need to eat, drink, breathe, or sleep and you are immune to all non-magical diseases.  You do still require at least 6 hours of rest each day, however, during which time you are fully conscious and able to do non-strenuous activities such as reading, keeping watch, sewing a hole in your clothing, or anything else that doesn’t require great effort.</p>
+		</description>
+		<sheet>
+			<description>You don't need to eat, drink, breathe, or sleep and you are immune to all non-magical diseases.  You do still require at least 6 hours of rest each day, however.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/fyC_09jUb88</set>
+		</setters>
+	</element>
+	
+	<element name="Magical Origin" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_MAGICAL_ORIGIN">
+		<description>
+			<p>As a being of arcane creation, you are proficient in the Knowledge (Arcana) skill.</p>
+		</description>
+		<sheet display="false">
+			<description>As a being of arcane creation, you are proficient in the Knowledge (Arcana) skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/fyC_09jUb88</set>
+		</setters>
+	</element>
+	
+	<element name="Shardswarm" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_SHARDSWARM">
+		<description>
+			<p>You can use the Shardswarm ability. As a bonus action, parts of your crystalline body splinter into tiny fragments and swarm all creatures of your choice that are within 5 feet of you. Each creature must succeed on a Dexterity saving throw with a DC equal to 10, plus your proficiency bonus, plus your Constitution modifier. Any attack roll against an affected creature has advantage if the attacker can see it. This effect lasts until the end of your next turn. When the effect ends, you may teleport up to 10 feet from your current position. You must finish a long rest before using this ability again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>Parts of your crystalline body splinter into tiny fragments and swarm all creatures of your choice that are within 5 feet of you. Each creature must succeed on a Dexterity saving throw with a DC equal to {{save}}. Any attack roll against an affected creature has advantage if the attacker can see it. This effect lasts until the end of your next turn. When the effect ends, you may teleport up to 10 feet from your current position. (1/LR)</description>
+		</sheet>
+		<rules>
+			<stat name="save" value="10" />
+			<stat name="save" value="proficiency" />
+			<stat name="save" value="constitution:modifier" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/fyC_09jUb88</set>
+		</setters>
+	</element>
+	
+	<element name="Telepathy" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_TELEPATHY">
+		<description>
+			<p>You can communicate telepathically with any creature as long as they are within 30 feet of you, on the same plane, and you share a language.</p>
+		</description>
+		<sheet>
+			<description>You can communicate telepathically with any creature as long as they are within 30 feet of you, on the same plane, and you share a language.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/fyC_09jUb88</set>
+		</setters>
+	</element>
+	
+	<element name="Innate Psionic Power" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_PSIONIC_POWER">
+		<description>
+			<p>You have resistance to Psychic damage. Additionally, you know the Mage Hand cantrip. When you cast mage hand using this feature, the spell is invisible and does not require verbal or somatic components.</p>
+		</description>
+		<sheet>
+			<description>You know the Mage Hand cantrip. When you cast mage hand using this feature, the spell is invisible and does not require verbal or somatic components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/fyC_09jUb88</set>
+		</setters>
+	</element>
+</elements>

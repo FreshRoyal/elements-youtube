@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Lupin from Monster of the Week</name>
+		<update version="0.0.2">
+			<file name="race-lupin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/race-lupin.xml" />
+		</update>
+	</info>
+	<element name="Lupin" type="Race" source="Monster of the Week" id="ID_MOTW_RACE_LUPIN">
+		<description>
+			<p>Not much is known to outsiders of the mysterious lupin people. Built like humans with the head of a dog, many creatures mistake lupins for gnolls or werewolves from a distance. A short coat of fur covers a lupin from head to toe, while longer silkier hair grows from the top of their heads. A lupins’ body fur tends to be monochromatic, ranging from light grey through all the shades of brown, to black, with occasional variations.</p>
+			<h4>Lupin Features</h4>
+			<p class="indent" style="margin-top:15px"><strong><em>Ability Score Increase.</em></strong> When determining your character’s ability scores, increase one score by 2 and increase a different score by 1, or increase three different scores by 1.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Beast and a Humanoid.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Lupins mature at about the same rate as humans, except that they reach adulthood in their early teens. They typically live to an age between 80 and 100 years.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Lupins are roughly the same size as humans, but tend toward a sturdy build. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Their strong belief in community, loyalty, and trust mark lupins as highly lawful creatures. Generosity and pity for those less fortunate also define many of the lupin cultural values, however, they are known to hold grudges and and often refuse to aid those who have wronged them in the past. Most lupins tend to be lawful good or lawful neutral, though there are always exceptions.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong><em>Lupine Senses.</em></strong> Whenever you make an ability check that relies on hearing or smell, you are considered proficient with the skill. You have advantage on any ability check you make to track a creature or object.</p>
+			<p class="indent"><strong><em>Bite.</em></strong> Your jaws are a natural weapon that you can use to make melee attacks. On a hit your bite deals piercing damage equal to 1d6 + your Strength modifier.</p>
+			<p class="indent"><strong><em>Fierce Loyalty.</em></strong> When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to make the attack target you instead.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common, Lupin, and one other language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://youtu.be/vbsoN8SJLaw</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Lupin)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_LUPIN_CREATURE_TYPE" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_MOTW_LANGUAGE_LUPIN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language||Lupin Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Lupin)" supports="Standard||Exotic" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_LUPIN_LUPINE_SENSES" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_LUPIN_BITE" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_LUPIN_FIERCE_LOYALTY" />
+		</rules>
+	</element>
+
+	<element name="Creature Type" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_LUPIN_CREATURE_TYPE">
+		<compendium display="false" />
+		<description>
+			<p>You are a Beast and a Humanoid. </p>
+		</description>
+		<sheet>
+			<description>You are a Beast and a Humanoid.</description>
+		</sheet>
+	</element>
+
+	<element name="Lupine Senses" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_LUPIN_LUPINE_SENSES">
+		<description>
+			<p>Whenever you make an ability check that relies on hearing or smell, you are considered proficient with the skill. You have advantage on any ability check you make to track a creature or object. </p>
+		</description>
+		<sheet>
+			<description>Whenever you make an ability check that relies on hearing or smell, you are considered proficient with the skill. You have advantage on any ability check you make to track a creature or object.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/vbsoN8SJLaw</set>
+		</setters>
+	</element>
+
+	<element name="Bite" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_LUPIN_BITE">
+		<description>
+			<p>Your jaws are a natural weapon that you can use to make melee attacks. On a hit your bite deals piercing damage equal to 1d6 + your Strength modifier.</p>
+		</description>
+		<sheet>
+			<description>You can use your jaws to make unarmed strikes. When you hit with them, the strike deals 1d6 + {{strength:modifier}}.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/vbsoN8SJLaw</set>
+		</setters>
+	</element>
+
+	<element name="Fierce Loyalty" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_LUPIN_FIERCE_LOYALTY">
+		<description>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to make the attack target you instead. </p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to make the attack target you instead.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/vbsoN8SJLaw</set>
+		</setters>
+	</element>
+
+	<element name="Lupin" type="Language" source="Monster of the Week" id="ID_MOTW_LANGUAGE_LUPIN">
+		<supports>Exotic, Lupin Language</supports>
+		<description>
+			<p>Typically spoken by Lupin.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Lupin</set>
+			<set name="sourceUrl">https://youtu.be/vbsoN8SJLaw</set>
+		</setters>
+	</element>
+</elements>

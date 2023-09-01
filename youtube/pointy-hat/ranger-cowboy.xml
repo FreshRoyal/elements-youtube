@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Cowboy Ranger Subclass from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="ranger-cowboy.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/ranger-cowboy.xml" />
+		</update>
+	</info>
+	<element name="Cowboy" type="Archetype" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_RANGER_COWBOY">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<div class="sidebar">
+				<p class="flavor">“When we think of a protector of the natural world against those that mistreat it or wish to harm it, when we think of gaining magic through the connection with nature itself, when we think of unlocking the secrets that allow one to not only survive but thrive far from civilization, we rarely think of the cowboy, but those that belong to this often ignored conclave are rangers just as prodigious as any other."</p>
+				<p class="flavor">“Cowboy rangers did not follow the traditional creation of conclaves, but rather, ranger magic found them. Cowboys protected their ranches and their cattle, respected the land and learned its secrets so they could survive on it, they bonded with their animal companions, and that was enough for the first traces of ranger magic to manifest in these newborn rangers. Years of refinement, perfecting, and teaching, have made of this emerging ranger way a true conclave, complete with masters, disciples, and traditions and lessons to follow."</p>
+				<p class="flavor">“Those that foolishly believe cowboys to lack the mysticism of other rangers fail to look at them with eyes unclouded by preconceived notions of what a ranger can be. Cowboys hear the whispers of the plains and speak back, they feel the primal emotions that govern the actions of the cattle they tend to, and they know of the deep unknowable magic that watches expectantly, waiting just at the edge of the light of the campfire.”</p>
+			</div>
+
+			<p>The Cowboy subclass is meant to bridge the surprisingly small gap between the ranger class and the iconic figure of the cowboy. It does not shy away from introducing ranger magic to the cowboy, but rather themes traditional ranger magic around iconic visuals associated with cowboys. The subclass tries to pay homage and draw inspiration from iconic cowboy imagery, while playing within the framework of the ranger class.</p>
+			<p class="indent">The cowboy subclass gives a twist to other ranger subclasses by allowing it a semblance of an animal companion, although the relation between the cowboy and the beast is more of a friend with its own free will that has crossed paths with the cowboy and has decided to help them for a time, rather than a lifelong servant. This, along with countless uses clever players are bound to find, makes the cowboy perfect for feats that revolve around mounted combat, something that is both particularly appealing to players but hard to implement in actual games. The cowboy’s ability to befriend any beast it encounters and mount it (provided the beast’s biology permits this) makes it so the GM can plant specific opportunities for the cowboy to show off their animal handling skills, even deep inside a dungeon.</p>
+			<p class="indent">The cowboy is also particularly centered around firearm combat, using the rules present in the DMG (but being particularly easy to adapt to being used with rules from other sourcebooks). This allows a player that chooses the cowboy to weave magic with shooting, and gives them the opportunity to perform the iconic cinematic feats that have made cowboys famous.</p>
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_COWBOY_MAGIC" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_COWBOY_MARKSMANSHIP" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_BEAST_WHISPERER" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_HOT_HAND" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_MAGICAL_BULLS_EYE" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_ARCANE_QUICK_DRAW" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_COWBOY_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_COWBOY_MARKSMANSHIP" level="3" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_BEAST_WHISPERER" level="3" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_HOT_HAND" level="7" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_MAGICAL_BULLS_EYE" level="11" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_ARCANE_QUICK_DRAW" level="15" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/Ltt9MIj5UDw</set>
+		</setters>
+	</element>
+	
+	<element name="Cowboy Magic" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_COWBOY_MAGIC">
+		<description>
+			<p><em>3rd-level Cowboy feature</em></p>
+			<p>Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Cowboy Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.</p>
+			<h5 class="caption">Cowboy Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td>Animal Friendship</td></tr>
+				<tr><td>5th</td><td>Find Steed</td></tr>
+				<tr><td>9th</td><td>Haste</td></tr>
+				<tr><td>13th</td><td>Dominate Beast</td></tr>
+				<tr><td>17th</td><td>Hold Monster</td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMAL_FRIENDSHIP" level="3" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_STEED" level="5" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" level="13" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="17" spellcasting="Ranger" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/Ltt9MIj5UDw</set>
+		</setters>
+	</element>
+	
+	<element name="Cowboy Marksmanship" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_COWBOY_MARKSMANSHIP">
+		<description>
+			<p><em>3rd-level Cowboy feature</em></p>
+			<p>When you choose this archetype at 3rd level, you gain proficiency with firearms. Additionally, you also gain proficiency with tinker’s tools, allowing you to craft ammo for any firearm for half the price it costs to buy it. Crafting a set of 10 rounds of ammo takes 1 hour.</p>
+		</description>
+		<sheet>
+			<description>You can use tinker's tools to craft ammo for any firearm for half the price it costs to buy. Crafting a set of 10 rounds of ammo takes 1 hour.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/Ltt9MIj5UDw</set>
+		</setters>
+	</element>
+	
+	<element name="Beast Whisperer" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_BEAST_WHISPERER">
+		<description>
+			<p><em>3rd-level Cowboy feature</em></p>
+			<p>Also at 3rd level, your expertise and know-how of dealing with animals allows you to create a supernatural bond with any beast. As an action, you can attempt to befriend a beast that can see and hear you and is within 30 feet of you. You must make a Wisdom (Animal Handling) check. The DC for this check equals the 10 + CR of the beast, rounding up. If the check is successful, the beast is friendly to you, trusts you, and will heed some of your commands within reason. The beast won’t attack your enemies and it won’t engage in any action that will lead to its certain death. The beast will, among other things, bring you an object out of your reach, carry a message to someone it could reasonably find, indicate the way of a location it knows, scout ahead, or, if its biology permits it, carry you and be used as a mount. If you choose to do so, it gains +10 feet to its speed when you mount it. Willingly harming the beast will make it stop seeing you as a friend, at which point it might turn hostile depending on the nature of the beast in question, at the GM’s discretion. The beast will not leave the general location where it lives for more than 100 feet, as in, befriending an elk that lives in a particular forest means the elk won’t follow you anymore once you are 100 feet away from the forest it lives in.</p>
+		</description>
+		<sheet>
+			<description>As an action, you can attempt to befriend a beast that can see and hear you and is within 30 feet of you. You must make a Wisdom (Animal Handling) check. The DC for this check equals the 10 + CR of the beast, rounding up. If the check is successful, the beast is friendly to you, trusts you, and will heed some of your commands within reason. The beast won’t attack your enemies and it won’t engage in any action that will lead to its certain death. The beast will, among other things, bring you an object out of your reach, carry a message to someone it could reasonably find, indicate the way of a location it knows, scout ahead, or, if its biology permits it, carry you and be used as a mount. If you choose to do so, it gains +10 feet to its speed when you mount it. Willingly harming the beast will make it stop seeing you as a friend, at which point it might turn hostile depending on the nature of the beast in question, at the GM’s discretion. The beast will not leave the general location where it lives for more than 100 feet.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/Ltt9MIj5UDw</set>
+		</setters>
+	</element>
+
+	<element name="Hot Hand" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_HOT_HAND">
+		<description>
+			<p><em>7th-level Cowboy feature</em></p>
+			<p>At 7th level, your expertise over firearms grows, making you an even more prodigious marksman. The range of all firearms is increased by 10 feet for you and you ignore the loading quality of firearms with which you are proficient.</p>
+		</description>
+		<sheet>
+			<description>The range of all firearms is increased by 10 feet for you and you ignore the loading quality of firearms with which you are proficient.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/Ltt9MIj5UDw</set>
+		</setters>
+	</element>
+
+	<element name="Magical Bull's Eye" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_MAGICAL_BULLS_EYE">
+		<description>
+			<p><em>11th-level Cowboy feature</em></p>
+			<p>At 11th level, you gain the ability to infuse your bullets with your own magic, allowing you to perform a shot so precise it supernaturally tracks its target. When taking the attack action with a firearm, you can spend one of your spell slots to empower this attack. When you do so, this attack gains a bonus to its attack roll equal to the level of the spell slot used and a bonus to its damage equal to half the level of the spell slot used, rounding up. The attack also ignores any bonuses from half-cover, and is not made at disadvantage when firing at long range or against an enemy within 5 feet of you.</p>
+		</description>
+		<sheet>
+			<description>When taking the attack action with a firearm, you can spend one of your spell slots to empower this attack. When you do so, this attack gains a bonus to its attack roll equal to the level of the spell slot used and a bonus to its damage equal to half the level of the spell slot used, rounding up. The attack also ignores any bonuses from half-cover, and is not made at disadvantage when firing at long range or against an enemy within 5 feet of you.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/Ltt9MIj5UDw</set>
+		</setters>
+	</element>
+
+	<element name="Arcane Quick Draw" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_COWBOY_ARCANE_QUICK_DRAW">
+		<description>
+			<p><em>15th-level Cowboy feature</em></p>
+			<p>At 15th level, spellcasting and shooting have become so natural to you that you are able to weave one and the other seamlessly. When you make a ranged weapon attack using a firearm against one creature, you can cast one ranger spell you know as part of the same action. You can use this feature a number of times equal to your wisdom modifier. You regain all uses of this ability after finishing a long rest.</p>
+		</description>
+		<sheet usage="{{wisdom:modifier}}/Long Rest">
+			<description>When you make a ranged weapon attack using a firearm against one creature, you can cast one ranger spell you know as part of the same action.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/Ltt9MIj5UDw</set>
+		</setters>
+	</element>
+</elements>

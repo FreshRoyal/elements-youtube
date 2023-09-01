@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>DnD Shorts YouTube Source</name>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dnd-shorts/source.xml" />
+		</update>
+	</info>
+	<element name="DnD Shorts" type="Source" source="Core" id="ID_HOMEBREW_SOURCE_DND_SHORTS">
+		<description>
+			<p>Player character options from the DnD Shorts YouTube channel.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">DNDSYT</set>
+			<set name="image">https://yt3.googleusercontent.com/sGs63JcDthlH-F0X-70WWZgY9enuYm3tuqhaPTocIK1p5BzPaeORd2VDlJUE7vSi2xd9I3mtyg=s176-c-k-c0x00ffffff-no-rj</set>
+			<set name="url">https://www.youtube.com/@DnDShorts/featured</set>
+			<set name="author" abbreviation="DNDS" url="https://twitter.com/DnD_Shorts">DnD Shorts</set>
+			<set name="release">20210516</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>

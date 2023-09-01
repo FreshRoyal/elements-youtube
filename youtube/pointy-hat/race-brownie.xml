@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Brownie from Pointy Hat's YouTube</name>
+		<update version="0.0.2">
+			<file name="race-brownie.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-brownie.xml" />
+		</update>
+	</info>
+	<element name="Brownie" type="Race" source="Pointy Hat" id="ID_POINTY_HAT_RACE_BROWNIE">
+		<description>
+			<p>Eons ago, when the races of men were still new, goblins lived among the other fey in the plane of Faerie. They served in the Unseelie Court, among many others. The goblins lived in shadow, and the Unseelie Queen granted them many boons, allowing them to move unseen and strike down foes much bigger than them, and they returned this favor by serving the queen well.</p>
+			<p class="indent">This way of life changed when the conqueror god came into the plane of Faerie and killed the gods of the goblins, tearing them from their homeland to be pawns in his war. But the queen of the unseelie did not sit by and let this happen. She used her powers to conceal some of her goblin subjects, shielding as many as she could from the gaze of the conqueror god.</p>
+			<p class="indent">And so, these goblins remained in Faerie, while their brethren were torn and transported away into an alien plane. The fey artifice that saved them, along with their prolonged stay in the plane of Faerie, changed them from the goblins that now inhabit the material plane. With their gods taken from them, most of them became even more loyal to the queen who had saved them. Many now serve as the keepers of her throne and her house, guarding her from anyone who might want to harm her and using their talents for hiding and duplicity as spies.</p>
+			<p class="indent">Nowadays, these fey goblins are called brownies, and just like the elves who stayed in the plane of Faerie, they are related but different to their counterparts on the material plane. Those who remain loyal to the queen are still at her side, and are seen as the servants of her house, but there are many who have struck out on their own, living up to the love of freedom that is characteristic of the fair folk. All brownies have the same gifts from the queen, regardless of whether they serve her or not. This gift is an embodiment of the ever-changing nature of Faerie: just like fae elves change seasons depending on their mood, the brownies change abilities depending on whether they stand in shadow or in light. Some brownies even report their feelings changing depending on the light or the absence of it, becoming bolder while in bright light and more duplicitous when in shadow.</p>
+			<p class="indent">Brownies are known to feel grateful to a higher degree than any other race, a cultural aspect that comes directly from being saved from the conqueror god by the queen of the unseelie. Saving a brownie from a premature death is said to grant you that brownie’s services until they feel their debt is repaid. When in good spirits, they are eager to please and will do their best to help those they like -- but slighting a brownie is a great way to make an enemy for life, as they’ll put just as much effort into making your life a living hell, if they feel you were disrespectful or ungrateful towards them. Keeping a brownie happy, however, is easier said than done, as the customs of the plane of Faerie, and of brownies in particular, are extremely alien to anyone who doesn’t know their culture intimately. A brownie could make her way to the material plane and run into an orchard, and she might feel extremely grateful toward the farmer who owns said orchard. She may then decide to help that farmer from the shadows, doing chores for him and helping him around the house. But if that farmer does something to offend the brownie, even completely unintentionally, the brownie will then pay for his perceived rudeness by destroying everything he cares about.</p>
+			<p class="indent">It’s through this need to be grateful and useful to someone who has done them a great service that many brownies find themselves traveling the world and going on adventures. Whether they run into an adventuring party that saves them from certain doom, or they want to help someone they feel grateful towards by going on said adventure, many brownies start their journeys out of a feeling of gratitude.</p>
+			<h4>Brownie Features:</h4>
+			<p>
+			<span class="feature">Creature Type.</span>  You are a Humanoid. You are also considered a goblinoid for any prerequisite or effect that requires you to be a goblinoid.<br/>
+			<span class="feature">Ability Score Increase.</span> Your Dexterity increases by 2 and your Wisdom increases by 1.<br/>
+			<span class="feature">Age.</span> Due to their stronger connection to the plane of Faerie, brownies have longer lifespans than goblins. They mature around 16 years of age and live to be around 200. <br/>
+			<span class="feature">Size.</span> You are Small.<br/>
+			<span class="feature">Speed.</span> Your walking speed is 30 feet.<br/>
+			<span class="feature">Fey Ancestory.</span> You have advantage on saving throws you make to avoid or end the charmed condition on yourself.<br/>
+			<span class="feature">Nimble Movement.</span> Your tail and legs give you different movement options not available to other goblinoids. You have a climbing speed equal to your walking speed and are not affected by non-magical difficult terrain.<br/>
+			</p>
+			
+			<h4>Light and Darkness:</h4>
+			<p>The gift of the Queen of the Unseelie and the ever-changing nature of the plane of Faerie make your form and abilities shift like many of the fey. Your change depends on whether you stand in bright light or darkness.</p>
+			<p><b>While in Bright Light:</b></p>
+			<ul>
+				<li><b>Fury of Air.</b> Light and Air guide your weapon, helping you strike true. When you damage a creature, you may reroll one damage die. You must take the second roll.</li>
+				<li><b>Eyes Unclouded.</b> You have advantage on all checks to see through illusions or recognize them as such.</li>
+			</ul>
+			<p><b>While in Darkness:</b></p>
+			<ul>
+				<li><b>Fury of Darkness.</b> Dark and Shadow cloak your form, helping you disappear after a strike. When you make a melee, ranged, or spell attack against a creature, you can immediately afterwards take the Disengage or Hide action as part of the Attack action.</li>
+				<li><b>Eyes Shadowed.</b> You can see normally in darkness, both magical and nonmagical, to a distance of 60 feet, and you do not have disadvantage on Wisdom (Perception) checks that rely on sight while in dim light.</li>
+			</ul>
+			<p>While in dim light, choose either Fury of Air or Fury of Shadow, and either Eyes Unclouded or Eyes Shadowed.</p>
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/cf9a-kUj8tI</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Brownie)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Brownie)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID_GOBLINOID" />
+
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Brownie)" supports="Standard||Exotic" />
+			
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_BROWNIE_FEY_ANCESTRY" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_BROWNIE_NIMBLE_MOVEMENT" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_BROWNIE_LIGHT_AND_DARKNESS" />
+		</rules>
+	</element>
+	
+	<element name="Fey Ancestry" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_BROWNIE_FEY_ANCESTRY">
+		<description>
+			<p>You have advantage on saving throws you make to avoid or end the charmed condition on yourself.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws you make to avoid or end the charmed condition on yourself.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/cf9a-kUj8tI</set>
+		</setters>
+	</element>
+	
+	<element name="Nimble Movement" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_BROWNIE_NIMBLE_MOVEMENT">
+		<description>
+			<p>Your tail and legs give you different movement options not available to other goblinoids. You have a climbing speed equal to your walking speed and are not affected by non-magical difficult terrain.</p>
+		</description>
+		<sheet>
+			<description>You have a climbing speed equal to your walking speed and are not affected by non-magical difficult terrain.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:climb" value="innate speed" bonus="base"/>
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/cf9a-kUj8tI</set>
+		</setters>
+	</element>
+	
+	<element name="Light and Darkness" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_BROWNIE_LIGHT_AND_DARKNESS">
+		<description>
+			<p>The gift of the Queen of the Unseelie and the ever-changing nature of the plane of Faerie make your form and abilities shift like many of the fey. Your change depends on whether you stand in bright light or darkness.</p>
+			<p><b>While in Bright Light:</b></p>
+			<ul>
+				<li><b>Fury of Air.</b> Light and Air guide your weapon, helping you strike true. When you damage a creature, you may reroll one damage die. You must take the second roll.</li>
+				<li><b>Eyes Unclouded.</b> You have advantage on all checks to see through illusions or recognize them as such.</li>
+			</ul>
+			<p><b>While in Darkness:</b></p>
+			<ul>
+				<li><b>Fury of Darkness.</b> Dark and Shadow cloak your form, helping you disappear after a strike. When you make a melee, ranged, or spell attack against a creature, you can immediately afterwards take the Disengage or Hide action as part of the Attack action.</li>
+				<li><b>Eyes Shadowed.</b> You can see normally in darkness, both magical and nonmagical, to a distance of 60 feet, and you do not have disadvantage on Wisdom (Perception) checks that rely on sight while in dim light.</li>
+			</ul>
+			<p>While in dim light, choose either Fury of Air or Fury of Shadow, and either Eyes Unclouded or Eyes Shadowed.</p>
+		</description>
+		<sheet>
+			<description>You gain abilities depending on the level of light you're standing in.&#13;
+			While in a bright light, you gain following benefits:&#13;
+			• Fury of Air. When you damage a creature you can reroll one damage die, you must take the second roll. &#13;
+			• Eyes Unclouded. You have advantage on all checks to see through illusions or recognize them as such. &#13;
+			While in darkness, you gain following benefits:&#13;
+			• Fury of Darkness. Immediately after making an attack against a creature, you can take Disengage or Hide action as part of the same action. &#13;
+			• Eyes Shadowed. You can see normally in both magical and nonmagical darkness to a distance of 60 feet, and you ignore disadvantage on Wisdom (Perception) checks that rely on sight when inspecting something in a dim light. &#13;
+			While in dim light, choose either Fury of Air or Fury of Shadow, and either Eyes Unclouded or Eyes Shadowed.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/cf9a-kUj8tI</set>
+		</setters>
+	</element>
+	
+</elements>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Fan Weapon from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="weapon-fan.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/weapon-fan.xml" />
+		</update>
+	</info>
+	
+	<!--Base Weapon-->
+
+	<element name="Bladed Fan" type="Weapon" source="Pointy Hat" id="ID_POINTY_HAT_WEAPON_BLADED_FAN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_POINTY_HAT_WEAPON_PROPERTY_BLADED_FAN_RETURNING</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20/60</set>
+			<set name="damage" type="slashing">1d4</set>
+			<set name="proficiency">ID_POINTY_HAT_WEAPON_PROFICIENCY_BLADED_FAN</set>
+			<set name="sourceUrl">https://docs.google.com/document/d/1Jc9qeKsi4lXz_k-ZAYgaHGRjVvUoQoPm9KjfAa6n72Q/edit</set>
+		</setters>
+	</element>
+
+	<element name="Returning" type="Weapon Property" source="Pointy Hat" id="ID_POINTY_HAT_WEAPON_PROPERTY_BLADED_FAN_RETURNING">
+		<description>
+			<p>Fans have an additional property that no other weapon has: Returning. With the Returning property, the fan returns to the attacker’s hand after an attack, provided their target is at least 10 feet away from the attacker.</p>
+		</description>
+		<setters>
+			<set name="sourceUrl">https://docs.google.com/document/d/1Jc9qeKsi4lXz_k-ZAYgaHGRjVvUoQoPm9KjfAa6n72Q/edit</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Bladed Fan)" type="Proficiency" source="Pointy Hat" id="ID_POINTY_HAT_WEAPON_PROFICIENCY_BLADED_FAN">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_ONEHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_POINTY_HAT_WEAPON_PROPERTY_BLADED_FAN_RETURNING</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_POINTY_HAT_WEAPON_PROFICIENCY_BLADED_FAN" />
+		</rules>
+	</append>
+
+	<element name="Kensei Weapon (Bladed Fan)" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_KENSEI_WEAPON_BLADED_FAN">
+		<supports>Kensei Weapon, Melee</supports>
+		<description>
+			<p>You gain proficiency with the Bladed Fan if you don’t already have it, and it is a monk weapon for you.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_POINTY_HAT_WEAPON_PROFICIENCY_BLADED_FAN" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://docs.google.com/document/d/1Jc9qeKsi4lXz_k-ZAYgaHGRjVvUoQoPm9KjfAa6n72Q/edit</set>
+		</setters>
+	</element>
+
+	<!--Magic Fans-->
+
+	<element name="Thousand-Feathered Fan" type="Magic Item" source="Pointy Hat" id="ID_POINTY_HAT_MAGIC_ITEM_THOUSAND_FEATHERED_FAN">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. While you have the fan drawn, you can use an action to activate one of the following properties:</p>
+			<ul>
+				<li><b>Quenching Gust.</b> A strong breeze flows from the fan’s feathers. All fire in a 60-foot cone is instantly extinguished.</li>
+				<li><b>Blessed Gust.</b> A gentle breeze swirls from the fan’s feathers. A creature of your choice within 5 feet of you regains a number of hit points equal to 1d8 + your Dexterity modifier. Once this property is used, it can’t be used again until the next dawn.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">fan</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="enhancement">1</set>
+			<set name="type" addition="bladed fan">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Bladed Fan</set>
+			<set name="sourceUrl">https://docs.google.com/document/d/1Jc9qeKsi4lXz_k-ZAYgaHGRjVvUoQoPm9KjfAa6n72Q/edit</set>
+		</setters>
+	</element>
+
+	<element name="The Gramarye" type="Magic Item" source="Pointy Hat" id="ID_POINTY_HAT_MAGIC_ITEM_GRAMARYE">
+		<description>
+			<p>You gain a +3 bonus to attack and damage rolls made with this magic weapon. While you have the fan drawn, you activate the following properties:</p>
+			<ul>
+				<li>You have advantage on all Charisma (Performance) checks.</li>
+				<li><b>Glamour's Kiss.</b> You can spend 10 minutes performing a dance to cast a charm over any creature that has watched the performance in its entirety. The creatures must succeed on a Charisma saving throw (DC 15) or be charmed for 10 minutes. Any creatures with a Wisdom score of 10 or lower fail the saving throw automatically.</li>
+				<li><b>Glamour's End.</b> When you hit a creature with an attack using this weapon, you can lull them into a deadly charm. The target must make a Wisdom (Insight) check, contested against your Charisma (Performance) check. On a failure, the target is charmed by you for 1 minute. Any damage you inflict on the target instantly ends the charm. You can use this property a number of times equal to your charisma modifier. Once all the uses of this property are spent, it can’t be used again until the next dusk.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">fan</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="enhancement">3</set>
+			<set name="type" addition="bladed fan">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">Bladed Fan</set>
+			<set name="sourceUrl">https://docs.google.com/document/d/1Jc9qeKsi4lXz_k-ZAYgaHGRjVvUoQoPm9KjfAa6n72Q/edit</set>
+		</setters>
+	</element>
+	
+</elements>

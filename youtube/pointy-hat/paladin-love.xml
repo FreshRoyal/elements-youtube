@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of Love from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="paladin-love.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/paladin-love.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of Love" type="Archetype" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_PALADIN_OATH_OF_LOVE">
+		<supports>Sacred Oath</supports>
+		<description>
+			<div class="sidebar">
+				<p class="flavor">“Paladins of love both exemplify and go against what one thinks of when they envision a paladin.</p>
+				<p class="flavor">They are known to be extremely committed to their cause, but what fuels their commitment is not a sense of morality, or a divine sense of justice, but rather their very own feelings. Paladins of Love reject the idea that to be a holy warrior, one must be unfeeling in the commitment of living their life according to an oath. Their oath itself relies on the love that inspires them to swear by the tenets they follow. To them, loving eyes are the only eyes not clouded by superfluous ideals and morals.</p>
+				<p class="flavor">Paladins of Love choose a beloved -- or rather, their feelings choose for them. A paladin’s beloved, what they love most in this world and all the others, is the source of their power. Most paladins’ beloved are people. Parents who gain magical abilities by swearing an oath to love and protect their child, or lovers who battle together and use their love for each other as the force that guides their blows. Other paladins of love, however, find their beloved in a deity, or a place, or a group of people, or a concept. Paladins of love are not interested in questions of morality, and are not required to find a beloved that is “good”; they are only required to love them unconditionally.</p>
+				<p class="flavor">As long as the paladin feels an extremely powerful love towards their beloved, they can swear the Oath of Love and become what is commonly referred to as a Knight of Hearts.”</p>
+			</div>
+
+			<p>The Oath of Love is a subclass meant for those who wish to play a paladin not necessarily tied to any notions of alignment. The very concept of the subclass goes against the traditional idea of the paladin as the unfeeling, holier-than-thou warrior for good, giving it a very “human” and emotionally raw motivation. The subclass also aims to spark roleplay ideas by offering the concept of the beloved, the source of the paladin’s love, which the player can use to inform who their character is -- how and why did they fall in love with their beloved? -- and which the GM can also use to create situations that call back, reinforce, or put the paladin’s beloved in danger, to name a few.</p>
+			<p class="indent">Gameplay-wise, the subclass has been designed for a role the paladin has not had a chance to fully embody yet: buffing. The Oath of Love is designed as a buffing tank, meant to stay in the field and absorb hits while empowering their allies to dominate their enemies, keeping up with them through both smites and their own bonuses that depend on positioning. All of their spells but the first are either buffing or tanking spells that are not in the paladin’s spell list, giving you added versatility to your spellcasting, and both of their Channel Divinity options allow you to help your allies, but this subclass’ signature ability is the mechanical aspect of choosing your beloved in the battlefield. A willing creature that you choose as your beloved gains a number of very powerful bonuses, provided they stay within your aura, and in turn you also gain bonuses by fighting alongside them. This further exemplifies the theme of love and the role of the paladin of love as a warrior that cherishes and protects those they love.</p>
+			
+			<h5 class="caption">Tenets of Love</h5>
+			<p>The tenets of the Oath of Love holds the feelings of the paladin as what is most important. Their commitment to protect and cherish what they love, along with their vows, pushes paladins of love to feel strongly and proudly.</p>
+			<p class="indent"><strong><em>Love Unabashedly.</em></strong> I desecrate what I love by being ashamed of my feelings. I will wear my heart on my sleeve and love proudly.</p>
+			<p class="indent"><strong><em>Love my Beloved.</em></strong> Those whom I love and those who love what I love are my beloved, and I will be their sword and their shield.</p>
+			<p class="indent"><strong><em>Love is Sacred.</em></strong> If anyone or anything loves strongly, I will respect their affection and their feelings and help their love flourish, no matter how different from my own feelings theirs are.</p>
+			<p class="indent"><strong><em>Love Makes us Better.</em></strong> No matter the circumstances, I won’t let my love waiver, for it makes not only me stronger, but also all my beloved.</p>
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_OATH_SPELLS" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_CHANNEL_DIVINITY" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_AURA_OF_LOVE" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_EMPOWERED_BY_LOVE" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_KNIGHT_OF_HEARTS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_AURA_OF_LOVE" level="7" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_EMPOWERED_BY_LOVE" level="15" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_KNIGHT_OF_HEARTS" level="20" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/FqP2-afugl8</set>
+		</setters>
+	</element>
+
+	<element name="Oath Spells" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_OATH_SPELLS">
+		<description>
+			<p><em>3rd-level Oath of Love feature</em></p>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<table>
+				<thead>
+					<tr><td>Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Bless</em></td></tr>
+				<tr><td>5th</td><td><em>Enhance Ability</em></td></tr>
+				<tr><td>9th</td><td><em>Haste</em></td></tr>
+				<tr><td>13th</td><td><em>Resilient Sphere</em></td></tr>
+				<tr><td>17th</td><td><em>Wall of Force</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BLESS" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" spellcasting="Paladin" level="17" prepared="true" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/FqP2-afugl8</set>
+		</setters>
+	</element>
+
+	<element name="Channel Divinity" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_CHANNEL_DIVINITY">
+		<description>
+			<p><em>3rd-level Oath of Love feature</em></p>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+			<p class="indent"><strong><em>Loving Embrace.</em></strong> You can use your Channel Divinity to uncloud the feelings of a loved one, returning their mind and body to their control. As an action, you touch a creature. The creature is immediately free of the following conditions: charmed, frightened, incapacitated, paralyzed, petrified, and stunned. The creature is also free of any other effects that negate their free will, such as possession.</p>
+			<p class="indent"><strong><em>Galvanizing Affection.</em></strong> You can use your Channel Divinity to channel the strength of your love into an inspiring, rousing cry that empowers your loved ones. As an action, you present your holy symbol and choose a number of willing creatures (that can include you) equal to your charisma modifier. For 1 minute, these creatures add half of your charisma modifier, rounded up, to their damage rolls.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_CD_LOVING_EMBRACE" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_CD_GALVANIZING_AFFECTION" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/FqP2-afugl8</set>
+		</setters>
+	</element>
+
+	<element name="Channel Divinity: Loving Embrace" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_CD_LOVING_EMBRACE">
+		<compendium display="false" />
+		<description>
+			<p>You can use your Channel Divinity to uncloud the feelings of a loved one, returning their mind and body to their control. As an action, you touch a creature. The creature is immediately free of the following conditions: charmed, frightened, incapacitated, paralyzed, petrified, and stunned. The creature is also free of any other effects that negate their free will, such as possession.</p>
+		</description>
+		<sheet alt="Loving Embrace" action="Action" usage="Channel Divinity">
+			<description>You touch a creature. The creature is immediately free of the following conditions: charmed, frightened, incapacitated, paralyzed, petrified, and stunned. The creature is also free of any other effects that negate their free will, such as possession.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/FqP2-afugl8</set>
+		</setters>
+	</element>
+
+	<element name="Channel Divinity: Galvanizing Affection" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_CD_GALVANIZING_AFFECTION">
+		<compendium display="false" />
+		<description>
+			<p>You can use your Channel Divinity to channel the strength of your love into an inspiring, rousing cry that empowers your loved ones. As an action, you present your holy symbol and choose a number of willing creatures (that can include you) equal to your charisma modifier. For 1 minute, these creatures add half of your charisma modifier, rounded up, to their damage rolls.</p>
+		</description>
+		<sheet alt="Galvanizing Affection" action="Action" usage="Channel Divinity">
+			<description>You present your holy symbol and choose a number of willing creatures (that can include you) equal to {{charisma:modifier}}. For 1 minute, these creatures add half of {{charisma:modifier}}, rounded up, to their damage rolls.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/FqP2-afugl8</set>
+		</setters>
+	</element>
+
+	<element name="Aura of Love" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_AURA_OF_LOVE">
+		<description>
+			<p><em>7th-level Oath of Love feature</em></p>
+			<p>Starting at 7th level, you can empower your allies, and especially your beloved, with your love. When a friendly and willing creature within 10 feet of you makes an attack roll, you can use your reaction to add your charisma modifier to their attack roll.</p>
+			<p class="indent">Additionally, you can use your bonus action to select a friendly and willing creature within your aura. This creature is now your beloved, and enjoys a number of bonuses while in your aura:</p>
+			<ul>
+    			<li>They add your charisma modifier to one of their attack rolls per round.</li>
+				<li>Their AC increases by 1.</li>
+				<li>They are instantly stabilized if they drop to 0 hit points.</li>
+			</ul>
+			<p class="indent">The creature counts as your beloved for 1 minute or until they leave the radius of your aura. At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>When a friendly and willing creature within 10 feet of you makes an attack roll, you can use your reaction to add {{charisma:modifier}} to their attack roll. &#13;
+			Additionally, you can use your bonus action to select a friendly and willing creature within your aura. This creature is now your beloved, and enjoys a number of bonuses while in your aura: &#13;
+			• They add {{charisma:modifier}} to one of their attack rolls per round. &#13;
+			• Their AC increases by 1. &#13;
+			• They are instantly stabilized if they drop to 0 hit points. &#13;
+			The creature counts as your beloved for 1 minute or until they leave the radius of your aura.</description>
+			<description level="18">When a friendly and willing creature within 30 feet of you makes an attack roll, you can use your reaction to add {{charisma:modifier}} to their attack roll. &#13;
+			Additionally, you can use your bonus action to select a friendly and willing creature within your aura. This creature is now your beloved, and enjoys a number of bonuses while in your aura: &#13;
+			• They add {{charisma:modifier}} to one of their attack rolls per round. &#13;
+			• Their AC increases by 1. &#13;
+			• They are instantly stabilized if they drop to 0 hit points. &#13;
+			The creature counts as your beloved for 1 minute or until they leave the radius of your aura.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/FqP2-afugl8</set>
+		</setters>
+	</element>
+
+	<element name="Empowered by Love" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_EMPOWERED_BY_LOVE">
+		<description>
+			<p><em>15th-level Oath of Love feature</em></p>
+			<p>Starting at 15th level, you become stronger when fighting side by side with those you love. When the friendly and willing creature you have selected within your aura as your beloved is within 10 feet of you, you enjoy the following bonuses:</p>
+			<ul>
+    			<li>You add a +1 to all your attacks and damage rolls.</li>
+				<li>Your AC increases by 1.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When the friendly and willing creature you have selected within your aura as your beloved is within 10 feet of you, you enjoy the following bonuses: &#13;
+			• You add a +1 to all your attacks and damage rolls. &#13;
+			• Your AC increases by 1.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/FqP2-afugl8</set>
+		</setters>
+	</element>
+	
+	<element name="Knight of Hearts" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_KNIGHT_OF_HEARTS">
+		<description>
+			<p><em>20th-level Oath of Love feature</em></p>
+			<p>At 20th level, you become the living embodiment of the love you feel so strongly, which gives you and those you love the following benefits:</p>
+			<ul>
+    			<li>You can choose a number of friendly and willing creatures equal to your charisma modifier as your beloved. They all enjoy the same bonuses while in your aura.</li>
+				<li>You add a +2 instead of a +1 to all your attack rolls, damage rolls, and AC as long as there is a conscious beloved within your aura.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You become the living embodiment of the love you feel so strongly, which gives you and those you love the following benefits: &#13;
+			• You can choose a number of friendly and willing creatures equal to {{charisma:modifier}} as your beloved. They all enjoy the same bonuses while in your aura. &#13;
+			• You add a +2 instead of a +1 to all your attack rolls, damage rolls, and AC as long as there is a conscious beloved within your aura.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/FqP2-afugl8</set>
+		</setters>
+	</element>	
+  
+</elements>

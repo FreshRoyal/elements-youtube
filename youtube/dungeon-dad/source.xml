@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Monster of the Week Source</name>
+		<update version="0.0.2">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/source.xml" />
+		</update>
+	</info>
+	<element name="Monster of the Week" type="Source" source="Core" id="ID_HOMEBREW_SOURCE_MONSTER_WEEK">
+		<description>
+			<p>Player character options from Dungeon Dad's Monster of the Week series.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">MOTW</set>
+			<set name="image">https://yt3.googleusercontent.com/ytc/AL5GRJVqoa-bx4xDeTIxMNsuChCix3xTaFxS8JS7bSdq1A=s88-c-k-c0x00ffffff-no-rj</set>
+			<set name="url">https://www.youtube.com/playlist?list=PLUkIlbAiD5FkON300dv2ilk675iF0by50</set>
+			<set name="author" abbreviation="DUDA" url="https://www.youtube.com/c/DungeonDad">Dungeon Dad</set>
+			<set name="release">20170111</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Felis from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="race-felis.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-felis.xml" />
+		</update>
+	</info>
+	<element name="Felis" type="Race" source="Pointy Hat" id="ID_POINTY_HAT_RACE_FELIS">
+		<description>
+			<p>The felis are people who have been selected to receive the ultimate blessing from the god who rules over the lives of cats.</p>
+			<p class="indent">Nobody knows how exactly this selection happens. It is said that felis are born to those who have greatly impacted the lives of cats for the better, that being felis is a blessing from the god of cats himself to thank them for their help. There are also cases where a person who cared for a feline and defended it from harm has a brush with death; the person miraculously survives it, but they do so having changed into one of the felis, their new form a reminder of how the god spared their very life as thanks. There are even tales of people who were awful to cats, and are turned into felis as a punishment, forced to be what they despise most. Nowadays, however, most felis are just born from the union of two felis parents.</p>
+			<p class="indent">In the same way that their furrier cousins receive a feline trait from the cat deity, the felis receive feline aspects to their appearance. Most often, it manifests as feline ears like those of a house cat or a lynx, a feline tail, a cat’s nose, sharp claw-like nails, whiskers, or a combination of those. Felis believe that the more cat traits one has, the more they are favored by their god.</p>
+			<p class="indent">There’s a distinct culture in felis communities: they are intensely self-reliant. It’s seen as a great shame for a felis to depend on anyone but themselves, and felis children leave the nest extremely early in order to make their own luck in the world. It’s not out of the ordinary to see a felis teen already tending to their own shop or embarking on an adventure. This cultural push to be independent can make those who do not understand felis to see them as individualistic, even selfish, but those who form a bond with a felis quickly understand that they enjoy companionship just as much as anyone else -- they just have their own way of showing it. Their need to be self-reliant does not mean that felis don’t help each other, though; quite the opposite. Many cities have wide felis networks that they use to help themselves and other felis flourish.</p>
+			<p class="indent">Felis share with their more cat-like cousins their love of stories, but they use them in a different way. Felis culture is shared orally, passing down their history through songs, rhymes, and parables. This cultural appreciation of song, and the way that music is treated as a way to teach history, often makes felis choose the path of the bard, becoming traveling minstrels who share felis tales and songs. They are often hired to play and sing in the drawing rooms of nobles, where their songs are seen as exotic and strange. It’s said that felis presence in noble houses has given birth to a wide network of felis bard spies who share coded messages between members through their own version of thieves’ cant in the form of song. Some of these bard spies, it’s said, even double as assassins if this secret organization requires it of them.</p>
+			<p class="indent">The cultural push towards self-reliance, their love for stories, and their innate curiosity often push the felis towards a life of adventuring. Many of them believe that in doing so, they are following in the footsteps of their traveling god, and hope to cross paths with him one day.</p>
+			<h4>Felis Features:</h4>
+			<p>
+			<span class="feature">Ability Score Increase:</span> Your Charisma score increases by 2, and your Dexterity score increases by 1.<br/>
+			<span class="feature">Age:</span> Felis have lifespans equivalent to humans. <br/>
+			<span class="feature">Size:</span> Felis are of a size similar to humans, not counting the ears. Your size is Medium.<br/>
+			<span class="feature">Speed:</span> Your base walking speed is 30 feet.<br/>
+			<span class="feature">Darkvision:</span> You have a cat’s keen eyes, especially in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.<br/>
+			<span class="feature">Feline Agility:</span> Your reflexes and agility allow you to move with a burst of speed. When you move on your tum in combat, you can double your speed until the end of the tum. Once you use this trait, you can’t use it again until you move 0 feet on one of your turns.<br/>
+			<span class="feature">Feline Evasiveness:</span> Your quick thinking and dexterous movements allow you to avoid enemy attacks. When you move, you can use a bonus action to not provoke attacks of opportunity for the rest of the turn. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.<br/>
+			<span class="feature">Cat’s Tongue:</span> You have proficiency in the Performance and Persuasion skills.<br/>
+			<span class="feature">Languages:</span> You can speak, read, and write Common and one other language of your choice.<br/>
+			</p>
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/a4UzhLL830Q</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Felis)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Felis)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Felis)" supports="Standard||Exotic" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_FELIS_FELINE_AGILITY" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_FELIS_FELINE_EVASIVENESS" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_FELIS_CATS_TONGUE" />
+		</rules>
+	</element>
+	<element name="Feline Agility" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_FELIS_FELINE_AGILITY">
+		<description>
+			<p>Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can’t use it again until you move 0 feet on one of your turns.</p>
+		</description>
+		<sheet>
+			<description>When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can’t use it again until you move 0 feet on one of your turns.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/a4UzhLL830Q</set>
+		</setters>
+	</element>
+	<element name="Feline Evasiveness" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_FELIS_FELINE_EVASIVENESS">
+		<description>
+			<p>Your quick thinking and dexterous movements allow you to avoid enemy attacks. When you move, you can use a bonus action to not provoke attacks of opportunity for the rest of the turn. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you move, you can use a bonus action to not provoke attacks of opportunity for the rest of the turn.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/a4UzhLL830Q</set>
+		</setters>
+	</element>
+	<element name="Cat’s Talent" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_FELIS_CATS_TONGUE">
+		<description>
+			<p>You have proficiency in the Performance and Persuasion skills.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency in the Performance and Persuasion skills.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency, Cat’s Tongue" supports="Skill" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/a4UzhLL830Q</set>
+		</setters>
+	</element>  
+</elements>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Jinx from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="race-jinx.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-jinx.xml" />
+		</update>
+	</info>
+	<element name="Jinx" type="Race" source="Pointy Hat" id="ID_POINTY_HAT_RACE_JINX">
+		<description>
+			<p>Nobody knows what jinxes did to deserve their fate. Some say that they descend from a halfling who broke all laws of hospitality and was forever cursed by Yondalla's children. Some believe that they were created to make up for the lucky halflings, so that the cosmic scale of fate remains in balance. Whatever the case may be, the reality is that jinxes naturally attract misfortune wherever they go.</p>
+			<p class="indent">It matters little what a jinx does to try to offset their fate; they are constantly followed by a streak of bad luck. A jinx attending any function will ensure that it will rain that day; a wagon will mysteriously break down if a jinx is traveling on it; hosting a jinx in your home will lead to rats finding their way into your pantry and a leak to form in your roof.</p>
+			<p class="indent">These mishaps influence the way that jinxes go through life. There is no jinx society, as any concentration of jinxes in the same place tends to have terrible consequences for anyone around them. There are no jinx family units, as it’s generally frowned upon even among jinxes to form a relationship with another jinx, and children leave their parents behind in their teens, when their bad luck starts to manifest. They are naturally nomadic, not just to not curse the same place with their misfortune for long, but also because they are simply not welcomed by others, and for regrettably good reason. The jinx’s distinctive looks make it easy for them to be spotted and shunned. They stand around 3 feet tall, like other halflings, but that’s where the similarities end. Their skin and hair come only in shades of gray, black, or stark white, as if color had been sapped from them along with their luck. The dark rings around their eyes seem to be indelible, no matter how much sleep they get, and the tips of their fingers are always slightly darker than the rest of their skin, as if their bad luck had tainted them.</p>
+			<p class="indent">Faced with this unfortunate existence, jinxes go through life in many different ways. Since they are nomadic by necessity, many take on adventuring, as it’s one of the few professions that can benefit from bad luck -- after all, the jinx’s misfortune can just as easily affect those the jinx is fighting. Some jinxes decide to rebel against their cruel fate, and try to find a way to free themselves and their brethren from their curse in their travels, keeping a happy and positive attitude even in the face of constant misfortune.</p>
+			<p class="indent">Some others, however, embrace their bad luck and see it as a gift. There are whispers of guilds of jinxes that disguise their members and send them to the houses of their targets. They gain employment as servants, or befriend them and are invited as guests, and then they just need to stay there long enough for their natural gift to do its work. The string of bad luck will soon follow and fall upon the house they have infiltrated. It is said that countless business magnates, athletes, actors, and singers have had their careers ruined by a jealous rival hiring the services of a jinx guild.</p>
+			
+			<h4>A Note on Playing the Jinx:</h4>
+			<p>Because the jinx’s trademark feature can affect other party members, it’s very important that you talk not only with your GM but also with the other players before you choose to play a character of this race.</p>
+			<p class="indent">I firmly believe that characters with setbacks and negative features can facilitate incredible moments while in play, but this only works when everyone accepts and is willing to play with those setbacks.</p>
+			<p class="indent">There is an alternate rule that will limit the effects of the jinx’s feature. As the system is written, bad luck affects anyone around the jinx somewhat evenly: sometimes the jinx, sometimes their party members, and sometimes NPCs. Instead, you can choose to only allow yourself and NPCs to be affected by the bad luck, not your party members. This means that more unlucky events will be directed at you, but it is a compromise you may be interested in taking if your party members don't want to use the rules of the jinx's features.</p>
+
+			<h4>Jinx Features:</h4>
+			<p>
+			<span class="feature">Creature Type:</span>  You are a Humanoid.<br/>
+			<span class="feature">Size:</span> Your size is Small.<br/>
+			<span class="feature">Speed:</span> Your walking speed is 25 feet.<br/>
+			<span class="feature">Nimble:</span> You can move through the space of any creature that is of a size larger than yours.<br/>
+			<span class="feature">Unalluring:</span> You have advantage on saving throws against being charmed.<br/>
+			<span class="feature">Unremarkable:</span> Your grayscale appearance and your small size allow you to blend in with the shadows. You have advantage on all Dexterity (Stealth) checks while in darkness or dim light. Additionally, you can take the Hide action as a bonus action.<br/>
+			</p>
+			
+			<h4>Trademark Feature: Jinx:</h4>
+			<p>You are naturally unlucky, which affects you and anyone around you, friend or foe. At the end of each long rest, the GM rolls a d100 on the table below to find out the effects of your bad luck. If the GM feels like the effect rolled is unlikely to happen within that day, they roll again. The GM then selects who or what is the target of your bad luck, and when the effect takes place. The effects of your bad luck can affect any creature (including you) or any object within 100 feet of you. The GM should evenly distribute the effects of your bad luck between you, your party, and NPCs (including enemies) within that 100 feet radius. Once the effect has taken place, you gain the ability to impose disadvantage on any dice roll, even those related to abilities or effects you are not aware of, provided the creature affected by the disadvantage is within 100 feet of you. Once you’ve imposed this disadvantage, the GM rolls on the table again, and so on. At the end of a long rest, any effects that have not yet taken place, including your ability to impose disadvantage, are discarded and the GM rolls on the table again.</p>
+			<table>
+				<tr><td>01-02</td><td>A creature trips because of uneven ground, becoming prone.</td></tr>
+				<tr><td>03-04</td><td>A creature cuts themselves on accident, taking 1 point of slashing damage.</td></tr>
+				<tr><td>05-06</td><td>A building, like a house, a shop, or an inn, suffers some minor structural damage that will take 20 gold pieces and 2d8 hours to repair.</td></tr>
+				<tr><td>07-08</td><td>A creature accidentally leaves behind a non-magical object in their possession.</td></tr>
+				<tr><td>09-10</td><td>A creature develops an illness, suffering the effects of the poisoned condition for 1d4 days.</td></tr>
+				<tr><td>11-12</td><td>10% of the gold pieces a creature is carrying are lost, accidentally left behind, or stolen.</td></tr>
+				<tr><td>13-14</td><td>A creature accidentally drops their weapon.</td></tr>
+				<tr><td>15-16</td><td>A spell or cantrip malfunctions when cast. Roll on the wild magic table for the result.</td></tr>
+				<tr><td>17-18</td><td>A building, like a house, a shop, or an inn, suffers some major structural damage that will take 100 gold pieces in materials and 2d6 days to repair.</td></tr>
+				<tr><td>19-20</td><td>A creature’s performance goes terribly wrong.</td></tr>
+				<tr><td>21-22</td><td>A creature hiding or trying to not attract attention to themselves fails to do so, making a loud noise or otherwise revealing their location.</td></tr>
+				<tr><td>23-24</td><td>A food item or dish spoils and becomes inedible.</td></tr>
+				<tr><td>25-26</td><td>A creature develops a mild allergic reaction, suffering the effects of the poisoned condition for 1d4 hours.</td></tr>
+				<tr><td>27-28</td><td>The weather shifts drastically, creating a heatwave for 2d4 hours.</td></tr>
+				<tr><td>29-30</td><td>A creature bumps their head on an obstacle, taking 1 point of bludgeoning damage.</td></tr>
+				<tr><td>31-32</td><td>An unexpected occurrence throws off a creature attempting to use their skills to perform an action. They take -5 to a skill check.</td></tr>
+				<tr><td>33-34</td><td>The weather shifts drastically, creating a snowstorm for 2d4 hours.</td></tr>
+				<tr><td>35-36</td><td>An expensive non-magical item breaks.</td></tr>
+				<tr><td>37-38</td><td>A mirror or other reflective surface breaks.</td></tr>
+				<tr><td>39-40</td><td>The weather shifts drastically, creating a hailstorm for 2d4 hours.</td></tr>
+				<tr><td>41-42</td><td>The weave of magic shifts in an unusual and unnatural way. All damaging spells cast for 1d4 hours around the jinx cause 1d6 points less damage.</td></tr>
+				<tr><td>43-44</td><td>A creature loses a game of chance.</td></tr>
+				<tr><td>45-46</td><td>The weather shifts drastically, creating an icy strong wind for 2d4 hours.</td></tr>
+				<tr><td>47-48</td><td>A black cat crosses a creature’s path from left to right.</td></tr>
+				<tr><td>49-50</td><td>A lightning storm forms unexpectedly. A creature is then struck by lightning, taking 4d10 points of lightning damage.</td></tr>
+				<tr><td>51-52</td><td>A mode of transportation, like a cart, a horse, or a ship, breaks down, reducing its speed to 0 for 1d12 hours until it can be repaired or healed.</td></tr>
+				<tr><td>53-54</td><td>A flash of light hits a creature in their eyes, blinding them for one round.</td></tr>
+				<tr><td>55-56</td><td>A non-magical object falls to the ground, breaking on impact.</td></tr>
+				<tr><td>57-58</td><td>A creature twists their ankle or otherwise becomes injured, and their speed is reduced by half (rounding down) for 1d4 hours.</td></tr>
+				<tr><td>59-60</td><td>The weather shifts drastically, creating torrential rain for 2d4 hours.</td></tr>
+				<tr><td>61-62</td><td>A plague of locusts passes through, obscuring the space they occupy for 1d6 hours and destroying all crops in their path.</td></tr>
+				<tr><td>63-64</td><td>A splinter lodges itself in a creature's body, dealing 1 point of slashing damage.</td></tr>
+				<tr><td>65-66</td><td>A creature’s piece of equipment, like a shield, a weapon, or a piece of armor, suffers damage that will take 50 gold pieces and 1d4 days to repair.</td></tr>
+				<tr><td>67-68</td><td>A creature forgets the name of a casual acquaintance as they go to interact with them.</td></tr>
+				<tr><td>69-70</td><td>A belt, shoelaces, or another fastening comes undone.</td></tr>
+				<tr><td>71-72</td><td>A heavy object, such as a shelf, a suit of armor, or a wardrobe, falls on a creature, dealing 1d8 points of bludgeoning damage, knocking the creature prone, and restraining them.</td></tr>
+				<tr><td>73-74</td><td>A creature lightly burns themselves by accident, taking 1 point of fire damage.</td></tr>
+				<tr><td>75-76</td><td>A creature makes a bad impression on another creature, taking a -5 to all Charisma (Persuasion and Deception) checks against that creature until their opinion is changed.</td></tr>
+				<tr><td>77-78</td><td>A wild animal finds its way into an enclosed space; for example, a bat flying into a room through the window.</td></tr>
+				<tr><td>79-80</td><td>A creature’s plans don’t go as planned because of an unforeseen circumstance.</td></tr>
+				<tr><td>81-82</td><td>An article of clothing snags on something, causing a small tear on it.</td></tr>
+				<tr><td>83-84</td><td>Vermin ruin an object; for example, moths eat holes in a garment or ants eat the food in a pantry.</td></tr>
+				<tr><td>85-86</td><td>A creature’s food stock, such as a grocer’s produce or an adventurer’s rations, goes bad and becomes inedible.</td></tr>
+				<tr><td>87-88</td><td>A plant dies because of over- or underwatering.</td></tr>
+				<tr><td>89-90</td><td>A creature loses a key or an object that unlocks something else.</td></tr>
+				<tr><td>91-92</td><td>The weave of magic shifts in an unusual and unnatural way. All damaging spells cast for 1d4 hours around the jinx change damage type.</td></tr>
+				<tr><td>93-94</td><td>A creature becomes the target of a thief, losing an object in their possession that a thief could feasibly steal.</td></tr>
+				<tr><td>95-96</td><td>A window is struck by something and shatters.</td></tr>
+				<tr><td>97-98</td><td>A source of light extinguishes itself.</td></tr>
+				<tr><td>99-00</td><td>A creature suffers a sudden heart attack. If they are not healed for their total HP in 1 minute after the start of the heart attack, the creature dies.</td></tr>
+			</table>	
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/QoWZwJsh_s8</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Jinx)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="25" bonus="base"/>
+
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Jinx)" supports="Standard||Exotic" />
+			
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_JINX_NIMBLE" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_JINX_UNALLURING" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_JINX_UNREMARKABLE" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_JINX_JINX" />
+		</rules>
+	</element>
+	
+	<element name="Nimble" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_JINX_NIMBLE">
+		<description>
+			<p>You can move through the space of any creature that is of a size larger than yours.</p>
+		</description>
+		<sheet>
+			<description>You can move through the space of any creature that is of a size larger than yours.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/QoWZwJsh_s8</set>
+		</setters>
+	</element>
+	
+	<element name="Unalluring" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_JINX_UNALLURING">
+		<description>
+			<p>You have advantage on saving throws against being charmed.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being charmed.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/QoWZwJsh_s8</set>
+		</setters>
+	</element>
+	
+	<element name="Unremarkable" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_JINX_UNREMARKABLE">
+		<description>
+			<p>Your grayscale appearance and your small size allow you to blend in with the shadows. You have advantage on all Dexterity (Stealth) checks while in darkness or dim light. Additionally, you can take the Hide action as a bonus action.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on all Dexterity (Stealth) checks while in darkness or dim light. Additionally, you can take the Hide action as a bonus action.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/QoWZwJsh_s8</set>
+		</setters>
+	</element>
+
+	<element name="Jinx" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_JINX_JINX">
+		<description>
+			<p>You are naturally unlucky, which affects you and anyone around you, friend or foe. At the end of each long rest, the GM rolls a d100 on the table below to find out the effects of your bad luck. If the GM feels like the effect rolled is unlikely to happen within that day, they roll again. The GM then selects who or what is the target of your bad luck, and when the effect takes place. The effects of your bad luck can affect any creature (including you) or any object within 100 feet of you. The GM should evenly distribute the effects of your bad luck between you, your party, and NPCs (including enemies) within that 100 feet radius. Once the effect has taken place, you gain the ability to impose disadvantage on any dice roll, even those related to abilities or effects you are not aware of, provided the creature affected by the disadvantage is within 100 feet of you. Once you’ve imposed this disadvantage, the GM rolls on the table again, and so on. At the end of a long rest, any effects that have not yet taken place, including your ability to impose disadvantage, are discarded and the GM rolls on the table again.</p>
+			<table>
+				<tr><td>01-02</td><td>A creature trips because of uneven ground, becoming prone.</td></tr>
+				<tr><td>03-04</td><td>A creature cuts themselves on accident, taking 1 point of slashing damage.</td></tr>
+				<tr><td>05-06</td><td>A building, like a house, a shop, or an inn, suffers some minor structural damage that will take 20 gold pieces and 2d8 hours to repair.</td></tr>
+				<tr><td>07-08</td><td>A creature accidentally leaves behind a non-magical object in their possession.</td></tr>
+				<tr><td>09-10</td><td>A creature develops an illness, suffering the effects of the poisoned condition for 1d4 days.</td></tr>
+				<tr><td>11-12</td><td>10% of the gold pieces a creature is carrying are lost, accidentally left behind, or stolen.</td></tr>
+				<tr><td>13-14</td><td>A creature accidentally drops their weapon.</td></tr>
+				<tr><td>15-16</td><td>A spell or cantrip malfunctions when cast. Roll on the wild magic table for the result.</td></tr>
+				<tr><td>17-18</td><td>A building, like a house, a shop, or an inn, suffers some major structural damage that will take 100 gold pieces in materials and 2d6 days to repair.</td></tr>
+				<tr><td>19-20</td><td>A creature’s performance goes terribly wrong.</td></tr>
+				<tr><td>21-22</td><td>A creature hiding or trying to not attract attention to themselves fails to do so, making a loud noise or otherwise revealing their location.</td></tr>
+				<tr><td>23-24</td><td>A food item or dish spoils and becomes inedible.</td></tr>
+				<tr><td>25-26</td><td>A creature develops a mild allergic reaction, suffering the effects of the poisoned condition for 1d4 hours.</td></tr>
+				<tr><td>27-28</td><td>The weather shifts drastically, creating a heatwave for 2d4 hours.</td></tr>
+				<tr><td>29-30</td><td>A creature bumps their head on an obstacle, taking 1 point of bludgeoning damage.</td></tr>
+				<tr><td>31-32</td><td>An unexpected occurrence throws off a creature attempting to use their skills to perform an action. They take -5 to a skill check.</td></tr>
+				<tr><td>33-34</td><td>The weather shifts drastically, creating a snowstorm for 2d4 hours.</td></tr>
+				<tr><td>35-36</td><td>An expensive non-magical item breaks.</td></tr>
+				<tr><td>37-38</td><td>A mirror or other reflective surface breaks.</td></tr>
+				<tr><td>39-40</td><td>The weather shifts drastically, creating a hailstorm for 2d4 hours.</td></tr>
+				<tr><td>41-42</td><td>The weave of magic shifts in an unusual and unnatural way. All damaging spells cast for 1d4 hours around the jinx cause 1d6 points less damage.</td></tr>
+				<tr><td>43-44</td><td>A creature loses a game of chance.</td></tr>
+				<tr><td>45-46</td><td>The weather shifts drastically, creating an icy strong wind for 2d4 hours.</td></tr>
+				<tr><td>47-48</td><td>A black cat crosses a creature’s path from left to right.</td></tr>
+				<tr><td>49-50</td><td>A lightning storm forms unexpectedly. A creature is then struck by lightning, taking 4d10 points of lightning damage.</td></tr>
+				<tr><td>51-52</td><td>A mode of transportation, like a cart, a horse, or a ship, breaks down, reducing its speed to 0 for 1d12 hours until it can be repaired or healed.</td></tr>
+				<tr><td>53-54</td><td>A flash of light hits a creature in their eyes, blinding them for one round.</td></tr>
+				<tr><td>55-56</td><td>A non-magical object falls to the ground, breaking on impact.</td></tr>
+				<tr><td>57-58</td><td>A creature twists their ankle or otherwise becomes injured, and their speed is reduced by half (rounding down) for 1d4 hours.</td></tr>
+				<tr><td>59-60</td><td>The weather shifts drastically, creating torrential rain for 2d4 hours.</td></tr>
+				<tr><td>61-62</td><td>A plague of locusts passes through, obscuring the space they occupy for 1d6 hours and destroying all crops in their path.</td></tr>
+				<tr><td>63-64</td><td>A splinter lodges itself in a creature's body, dealing 1 point of slashing damage.</td></tr>
+				<tr><td>65-66</td><td>A creature’s piece of equipment, like a shield, a weapon, or a piece of armor, suffers damage that will take 50 gold pieces and 1d4 days to repair.</td></tr>
+				<tr><td>67-68</td><td>A creature forgets the name of a casual acquaintance as they go to interact with them.</td></tr>
+				<tr><td>69-70</td><td>A belt, shoelaces, or another fastening comes undone.</td></tr>
+				<tr><td>71-72</td><td>A heavy object, such as a shelf, a suit of armor, or a wardrobe, falls on a creature, dealing 1d8 points of bludgeoning damage, knocking the creature prone, and restraining them.</td></tr>
+				<tr><td>73-74</td><td>A creature lightly burns themselves by accident, taking 1 point of fire damage.</td></tr>
+				<tr><td>75-76</td><td>A creature makes a bad impression on another creature, taking a -5 to all Charisma (Persuasion and Deception) checks against that creature until their opinion is changed.</td></tr>
+				<tr><td>77-78</td><td>A wild animal finds its way into an enclosed space; for example, a bat flying into a room through the window.</td></tr>
+				<tr><td>79-80</td><td>A creature’s plans don’t go as planned because of an unforeseen circumstance.</td></tr>
+				<tr><td>81-82</td><td>An article of clothing snags on something, causing a small tear on it.</td></tr>
+				<tr><td>83-84</td><td>Vermin ruin an object; for example, moths eat holes in a garment or ants eat the food in a pantry.</td></tr>
+				<tr><td>85-86</td><td>A creature’s food stock, such as a grocer’s produce or an adventurer’s rations, goes bad and becomes inedible.</td></tr>
+				<tr><td>87-88</td><td>A plant dies because of over- or underwatering.</td></tr>
+				<tr><td>89-90</td><td>A creature loses a key or an object that unlocks something else.</td></tr>
+				<tr><td>91-92</td><td>The weave of magic shifts in an unusual and unnatural way. All damaging spells cast for 1d4 hours around the jinx change damage type.</td></tr>
+				<tr><td>93-94</td><td>A creature becomes the target of a thief, losing an object in their possession that a thief could feasibly steal.</td></tr>
+				<tr><td>95-96</td><td>A window is struck by something and shatters.</td></tr>
+				<tr><td>97-98</td><td>A source of light extinguishes itself.</td></tr>
+				<tr><td>99-00</td><td>A creature suffers a sudden heart attack. If they are not healed for their total HP in 1 minute after the start of the heart attack, the creature dies.</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>At the end of each long rest, the GM rolls a d100 on the Jinx table to find out the effects of your bad luck. [See Compendium or document for a more detailed description]</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/QoWZwJsh_s8</set>
+		</setters>
+	</element>
+	
+</elements>

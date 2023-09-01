@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dragontouched from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="race-dragontouched.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-dragontouched.xml" />
+		</update>
+	</info>
+	<element name="Dragontouched" type="Race" source="Pointy Hat" id="ID_POINTY_HAT_RACE_DRAGONTOUCHED">
+		<description>
+			<p>When the dragonborn finally broke free from the yoke that dragons had held them under for centuries, dragons found themselves unable to deny their own failure. They had to confront the fact that those they had subjugated for so long had bested them and managed to fight their way out of their grasp.</p>
+			<p class="indent">Faced with their defeat, dragons could have accepted their loss and decided to rely on themselves instead of subjugating others to be their servants. The dragons that bound dragonborn were proud and narcissistic, though, and believed they were simply too good to live without servants to tend to their every whim. Instead of looking for a way to advance as a society without relying on servitude, dragons conspired to make it so that the next people that they would force to serve them would never leave. In their extreme narcissism, dragons decided that the reason that the dragonborn were able to escape their torture was simply because dragonborn were too similar to dragons. They had made a servant that was so close to the master, they were simply too powerful, so dragons decided to make sure they didn’t make that same mistake on their second try.</p>
+			<p class="indent">Dragons took people from other races, humans, elves, dwarves, and others, to be their servants, but they saw them as far too weak to serve the powerful dragons. Instead of making them fully draconic like the dragonborn were, they decided to give them bits and pieces of their magic so that they could carry out the tasks they needed them to, and so the dragontouched were born. The dragontouched were infused with draconic magic that changed their physical and magical characteristics. The draconic touch manifested in different ways depending on what the dragon intended to do with that person. Some dragontouched had one arm grow to the size and shape of a dragon’s, giving them draconic strength in combat. Some had the skin on their torso or forearms turn to scales, gaining the defensive capabilities of dragon hide. Some had their legs resemble those of a dragon along with a draconic tail, becoming much more nimble and quick. And some saw their heads sprout horns and their pupils turn slitted, gaining some draconic magic.</p>
+			<p class="indent">Just like the dragonborn, the dragontouched were put in shackles by the dragons; just like the dragonborn, the dragontouched fought tooth and nail to break free from their servitude. And just like the dragonborn, after long years of fighting, they managed to free themselves from the dragon’s influence.</p>
+			<p class="indent">Nowadays, centuries past their imprisonment, dragontouched live among other races. Their draconic touch does not fade with time, and the powers that it grants remain strong, but rather than being forced to use these powers to serve, they use them as they see fit to pursue their own goals. Freedom is incredibly highly valued by the dragontouched, and they are fierce defendants of their right and the rights of everyone else to do as they wish. Contrary to most dragonborn, dragontouched culture is not particularly collectivist, and see individuality and the needs and rights of the individual as paramount. As such, dragontouched can be found in nearly every way of life, although that doesn’t mean there are no commonalities. Many dragontouched become dragon hunters, as in dragontouched culture killing a dragon proves once again that the dragons were wrong in considering the dragontouched lesser than them. Many display the spoils of battles against dragons on their person, becoming master craftsmen when it comes to working with dragon bone and other draconic materials. Their cultural appreciation for individual freedom and the defense of a person’s rights means that there are quite a few dragontouched who go to serve in government, or turn to politics to enact the change they feel is needed to uphold the values they believe in. However, there are quite a few dragontouched who have joined the clans of dragonborn, who have welcomed them with open arms. These dragontouched call themselves dragonborn, and see no difference between the two.</p>
+			<p class="indent">There are, however, many dragontouched who choose to follow the path of the adventurer, craving the freedom of the open road, taking on more dangerous jobs for fame and for fortune, and helping those that need help along the way.</p>
+			<h4>Dragontouched Features:</h4>
+			<p>
+			<span class="feature">Creature Type:</span>  You are a Humanoid.<br/>
+			<span class="feature">Ability Score Increase:</span> Your Constitution increases by 1.<br/>
+			<span class="feature">Age:</span> Dragontouched have longer lifespans, maturing at around 18 years of age like humans but living to be around 150.<br/>
+			<span class="feature">Size:</span> Your size is Medium or Small.<br/>
+			<span class="feature">Speed:</span> Your walking speed is 30 feet.<br/>
+			<span class="feature">Darkvision:</span> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+			</p>
+			
+			<h4>Draconic Touch:</h4>
+			<p>The draconic touch of your ancestors still flows through you. When making a Dragontouched, select one of the following draconic touches.</p>
+			<p><b>Draconic Arm:</b> One of your arms is much larger than the other, covered in scales and ending in sharp claws like those of a dragon. If you choose this draconic touch, you gain the following features:</p>
+			<ul>
+				<li>Your Strength increases by 2.</li>
+				<li>You have proficiency in Athletics.</li>
+				<li>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</li>
+				<li>You can use your draconic arm to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier slashing damage.</li>
+			</ul>
+			<p><b>Draconic Visage:</b> A portion of your face is covered in scales, with one or both of your eyes sporting slitted pupils like those of a dragon. One draconic horn grows from your skull. If you choose this draconic touch, you gain the following features:</p>
+			<ul>
+				<li>Your Intelligence or Charisma increases by 2.</li>
+				<li>You have proficiency in one of the following skills of your choice: Arcana, Deception, History, or Persuasion.</li>
+				<li>Starting at 3rd level, you can cast the spell flaming sphere spell with this trait. Starting at 5th level, you can also cast the spell scorching ray with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. 
+				Intelligence, Wisdom, or Charisma is your spell-casting ability for these spells when you cast them with this trait (choose when you select this race).</li>
+			</ul>
+			<p><b>Draconic Scales:</b> A portion of your body is covered in extremely thick draconic scales and scutes. If you choose this draconic touch, you gain the following features:</p>
+			<ul>
+				<li>Your Constitution increases by 2.</li>
+				<li>Your AC increases by 1, regardless of the armor you are currently wearing.</li>
+				<li>You have resistance to slashing damage.</li>
+			</ul>
+			<p><b>Draconic Gait:</b> Your legs are elongated, resembling those of a dragon. A tail grows from the base of your spine. If you choose this draconic touch, you gain the following features:</p>
+			<ul>
+				<li>Your Dexterity increases by 2.</li>
+				<li>You have proficiency in one of the following skills of your choice: Acrobatics, Sleight of Hand, or Stealth.</li>
+				<li>Your walking speed is 40 instead of 30.</li>
+				<li>You gain a swimming speed equal to your walking speed.</li>
+			</ul>
+			
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VnrEhEEJcKE</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Dragontouched)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base"/>
+			<select type="Racial Trait" name="Size (Dragontouched)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Dragontouched)" supports="Standard||Exotic" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_DRAGONTOUCHED_DRACONIC_TOUCH" />
+		</rules>
+	</element>
+	
+	<element name="Draconic Touch" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_DRAGONTOUCHED_DRACONIC_TOUCH">
+		<description>
+			<p>The draconic touch of your ancestors still flows through you. When making a Dragontouched, select one of the following draconic touches.</p>
+			<p><b>Draconic Arm:</b> One of your arms is much larger than the other, covered in scales and ending in sharp claws like those of a dragon. If you choose this draconic touch, you gain the following features:</p>
+			<ul>
+				<li>Your Strength increases by 2.</li>
+				<li>You have proficiency in Athletics.</li>
+				<li>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</li>
+				<li>You can use your draconic arm to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier slashing damage.</li>
+			</ul>
+			<p><b>Draconic Visage:</b> A portion of your face is covered in scales, with one or both of your eyes sporting slitted pupils like those of a dragon. One draconic horn grows from your skull. If you choose this draconic touch, you gain the following features:</p>
+			<ul>
+				<li>Your Intelligence or Charisma increases by 2.</li>
+				<li>You have proficiency in one of the following skills of your choice: Arcana, Deception, History, or Persuasion.</li>
+				<li>Starting at 3rd level, you can cast the spell flaming sphere spell with this trait. Starting at 5th level, you can also cast the spell scorching ray with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. 
+				Intelligence, Wisdom, or Charisma is your spell-casting ability for these spells when you cast them with this trait (choose when you select this race).</li>
+			</ul>
+			<p><b>Draconic Scales:</b> A portion of your body is covered in extremely thick draconic scales and scutes. If you choose this draconic touch, you gain the following features:</p>
+			<ul>
+				<li>Your Constitution increases by 2.</li>
+				<li>Your AC increases by 1, regardless of the armor you are currently wearing.</li>
+				<li>You have resistance to slashing damage.</li>
+			</ul>
+			<p><b>Draconic Gait:</b> Your legs are elongated, resembling those of a dragon. A tail grows from the base of your spine. If you choose this draconic touch, you gain the following features:</p>
+			<ul>
+				<li>Your Dexterity increases by 2.</li>
+				<li>You have proficiency in one of the following skills of your choice: Acrobatics, Sleight of Hand, or Stealth.</li>
+				<li>Your walking speed is 40 instead of 30.</li>
+				<li>You gain a swimming speed equal to your walking speed.</li>
+			</ul>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Racial Trait" name="Draconic Touch" supports="PH Draconic Touch" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VnrEhEEJcKE</set>
+		</setters>
+	</element>
+
+	<element name="Draconic Arm" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_DRAGONTOUCHED_DRACONIC_TOUCH_DRACONIC_ARM">
+		<supports>PH Draconic Touch</supports>
+		<description>
+			<p>One of your arms is much larger than the other, covered in scales and ending in sharp claws like those of a dragon. If you choose this draconic touch, you gain the following features:</p>
+			<ul>
+				<li>Your Strength increases by 2.</li>
+				<li>You have proficiency in Athletics.</li>
+				<li>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</li>
+				<li>You can use your draconic arm to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier slashing damage.</li>
+			</ul>
+		</description>
+		<sheet alt="Draconic Touch, Draconic Arm">
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push or drag.&#13;
+			You can use your draconic arm for unarmed strikes. When you hit with them, the strike deals 1d6 + {{strength:modifier}} slashing damage.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Draconic Arm)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VnrEhEEJcKE</set>
+		</setters>
+	</element>
+
+	<element name="Draconic Visage" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_DRAGONTOUCHED_DRACONIC_TOUCH_DRACONIC_VISAGE">
+		<supports>PH Draconic Touch</supports>
+		<description>
+			<p>A portion of your face is covered in scales, with one or both of your eyes sporting slitted pupils like those of a dragon. One draconic horn grows from your skull. If you choose this draconic touch, you gain the following features:</p>
+			<ul>
+				<li>Your Intelligence or Charisma increases by 2.</li>
+				<li>You have proficiency in one of the following skills of your choice: Arcana, Deception, History, or Persuasion.</li>
+				<li>Starting at 3rd level, you can cast the spell flaming sphere spell with this trait. Starting at 5th level, you can also cast the spell scorching ray with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. 
+				Intelligence, Wisdom, or Charisma is your spell-casting ability for these spells when you cast them with this trait (choose when you select this race).</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Draconic Visage)" supports="ID_POINTY_HAT_RACIAL_TRAIT_DRAGONTOUCHED_DRACONIC_TOUCH_DRACONIC_VISAGE_INTELLIGENCE_ASI|ID_POINTY_HAT_RACIAL_TRAIT_DRAGONTOUCHED_DRACONIC_TOUCH_DRACONIC_VISAGE_CHARISMA_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Draconic Visage)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Proficiency" name="Skill Proficiency, Draconic Visage" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_PERSUASION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" level="5" />
+			<select type="Racial Trait" name="Spellcasting Ability (Draconic Visage)" supports="ID_POINTY_HAT_RACIAL_TRAIT_DRAGONTOUCHED_DRACONIC_TOUCH_DRACONIC_VISAGE_INTELLIGENCE|ID_POINTY_HAT_RACIAL_TRAIT_DRAGONTOUCHED_DRACONIC_TOUCH_DRACONIC_VISAGE_WISDOM|ID_POINTY_HAT_RACIAL_TRAIT_DRAGONTOUCHED_DRACONIC_TOUCH_DRACONIC_VISAGE_CHARISMA" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VnrEhEEJcKE</set>
+		</setters>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_DRAGONTOUCHED_DRACONIC_TOUCH_DRACONIC_VISAGE_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Intelligence.</p>
+		</description>
+		<sheet alt="Draconic Touch, Draconic Visage">
+			<description></description>
+			<description level="3">You can cast the flaming sphere spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Intelligence.</description>
+			<description level="5">You can cast the flaming sphere and scorching ray spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Intelligence.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VnrEhEEJcKE</set>
+		</setters>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_DRAGONTOUCHED_DRACONIC_TOUCH_DRACONIC_VISAGE_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Wisdom.</p>
+		</description>
+		<sheet alt="Draconic Touch, Draconic Visage">
+			<description></description>
+			<description level="3">You can cast the flaming sphere spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Wisdom.</description>
+			<description level="5">You can cast the flaming sphere and scorching ray spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Wisdom.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VnrEhEEJcKE</set>
+		</setters>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_DRAGONTOUCHED_DRACONIC_TOUCH_DRACONIC_VISAGE_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Charisma.</p>
+		</description>
+		<sheet alt="Draconic Touch, Draconic Visage">
+			<description></description>
+			<description level="3">You can cast the flaming sphere spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Charisma.</description>
+			<description level="5">You can cast the flaming sphere and scorching ray spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is CHarisma.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VnrEhEEJcKE</set>
+		</setters>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_DRAGONTOUCHED_DRACONIC_TOUCH_DRACONIC_VISAGE_INTELLIGENCE_ASI">
+		<compendium display="false" />
+		<description>
+			<p>Your Intelligence score increases by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="2" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VnrEhEEJcKE</set>
+		</setters>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_DRAGONTOUCHED_DRACONIC_TOUCH_DRACONIC_VISAGE_CHARISMA_ASI">
+		<compendium display="false" />
+		<description>
+			<p>Your Charisma score increases by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="2" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VnrEhEEJcKE</set>
+		</setters>
+	</element>
+
+	<element name="Draconic Scales" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_DRAGONTOUCHED_DRACONIC_TOUCH_DRACONIC_SCALES">
+		<supports>PH Draconic Touch</supports>
+		<description>
+			<p>A portion of your body is covered in extremely thick draconic scales and scutes. If you choose this draconic touch, you gain the following features:</p>
+			<ul>
+				<li>Your Constitution increases by 2.</li>
+				<li>Your AC increases by 1, regardless of the armor you are currently wearing.</li>
+				<li>You have resistance to slashing damage.</li>
+			</ul>
+		</description>
+		<sheet alt="Draconic Touch, Draconic Scales">
+			<description>Your AC increases by 1, regardless of the armor you are currently wearing.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Draconic Scales)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="ac:misc" value="1" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VnrEhEEJcKE</set>
+		</setters>
+	</element>
+
+	<element name="Draconic Gait" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_DRAGONTOUCHED_DRACONIC_TOUCH_DRACONIC_GAIT">
+		<supports>PH Draconic Touch</supports>
+		<description>
+			<p>Your legs are elongated, resembling those of a dragon. A tail grows from the base of your spine. If you choose this draconic touch, you gain the following features:</p>
+			<ul>
+				<li>Your Dexterity increases by 2.</li>
+				<li>You have proficiency in one of the following skills of your choice: Acrobatics, Sleight of Hand, or Stealth.</li>
+				<li>Your walking speed is 40 instead of 30.</li>
+				<li>You gain a swimming speed equal to your walking speed.</li>
+			</ul>
+		</description>
+		<sheet alt="Draconic Touch, Draconic Gait">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Draconic Gait)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Proficiency" name="Skill Proficiency, Draconic Gait" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<stat name="innate speed" value="40" bonus="base" />
+			<stat name="innate speed:swim" value="innate speed" bonus="base" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VnrEhEEJcKE</set>
+		</setters>
+	</element>
+	
+</elements>

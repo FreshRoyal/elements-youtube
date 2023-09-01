@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Way of the Monk Subclass from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="monk-flesh.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/monk-flesh.xml" />
+		</update>
+	</info>
+	<element name="Way of the Flesh" type="Archetype" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_MONK_FLESH">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<div class="sidebar">
+				<h5>CONTENT WARNING:</h5>
+				<p>This subclass features themes of body horror that are intrinsic to its design. Please check in with yourself and the rest of the players and GMs to see if everyone is comfortable with this before bringing this subclass to the table.</p>
+			</div>
+			
+			<div class="sidebar">
+				<p class="flavor">“The way of the flesh is rarely considered a true monastic tradition by other monks."</p>
+				<p class="flavor">“This might be because it often doesn’t start as one, many “monks” that follow this way find themselves set on it by chance. Arcane experiments gone wrong, torture through magic, irrevocable change to the body through plane hopping, these are just a few of the reasons why start their journey through this way. There are, however, monasteries, families, and clans where the way of the flesh is taught as a tradition, but the unsightly and uncanny results of the practice are often looked down upon as barbaric and unnatural by other monks that follow what are considered more “noble” ways."</p>
+				<p class="flavor">“Monks of the Flesh find common ground with other monastic traditions in that they focus their life energy, their ki as some call it, to use their bodies as weapons, but the similarities end there. The way of the flesh takes this approach to its most literal extreme, calling its disciples to push through the pain and dislocate their limbs, manipulate their blood flow, and even wield their own bones as blades to dominate the battlefield. Mastery of the body does not end within the bounds of what the body can do in its natural state for those that follow the way of the flesh, but rather into twisting it to one’s needs.”</p>
+				<p class="flavor">“Monks of the flesh disregard control over their body, seeking instead complete and total body subjugation.”</p>
+			</div>
+
+			<p>The Way of the Flesh is a monk subclass that seeks to bring a wildly different flavor to monks, focusing instead on a very literal interpretation of one of the design pillars behind the monk’s class: using the body as a weapon. The way of the flesh monk can be played following the somewhat traditional idea of the monk, but it can also very easily be used for very unorthodox monk characters. A monk of the flesh could be a scientist that irreparably changed their body after using it as a subject for their experiments, or someone that has found that their body has been permanently transformed after being subjected to wild surges of magic. The possibilities unlocked by the way of the flesh are all brand new to the monk class.</p>
+			<p class="indent">Gameplay-wise, the subclass reinforces and complements the existing design of the monk rather than completely changing it, strengthens it, and adds its own very specific flavor to traditional monk abilities. Monks of the way of the flesh use their bones as their monk weapons, and they get a ranged option on top of the traditional melee ones. They get additional sources of healing to contribute to the monk’s sustainability, but theirs come through controlling their own blood. They become not just hard to grapple, but completely immune to them, and gain the amorphous trait reserved to monsters. Its capstone ability allows the monk to hold their own in combat by increasing the amount of damage it can deliver by adding additional opportunities for unarmed strikes, all while increasing their survivability by increasing their AC temporarily.</p>
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_FLESH_FLESH_AND_BONE" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_FLESH_BODY_VIRTUOSITY" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_FLESH_BLOOD_FLOW_MASTERY" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_FLESH_HOUSE_OF_BONE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_FLESH_FLESH_AND_BONE" level="3" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_FLESH_BODY_VIRTUOSITY" level="6" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_FLESH_BLOOD_FLOW_MASTERY" level="11" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_FLESH_HOUSE_OF_BONE" level="17" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/cjFVRN3VCj4</set>
+		</setters>
+	</element>
+	
+	<element name="Flesh and Bone" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_FLESH_FLESH_AND_BONE">
+		<description>
+			<p>When you choose this tradition at 3rd level, you have unnatural command over your body and can use it as a tool and a weapon. You can move through a space as narrow as 1 inch wide without squeezing. You are also able to quickly grow bone, extricate it from your body, and use it as a weapon against your foes. You gain the following ki features.</p>
+			<ul>
+				<li>As a bonus action, you can spend 1 ki point to produce a melee monk weapon. This can take the shape of any weapon that can count as a monk weapon for you.</li>
+				<li>As an action, you can spend 1 ki point to eject a small piece of bone, such as a phalange, to make a ranged attack. This ranged attack counts as an unarmed strike for you and has a range of 30/120.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can move through a space as narrow as 1 inch wide without squeezing.
+			You are also able to quickly grow bone, extricate it from your body, and use it as a weapon against your foes.
+			Ki features:
+			• As a bonus action, you can spend 1 ki point to produce a melee monk weapon. This can take the shape of any weapon that can count as a monk weapon for you.
+			• As an action, you can spend 1 ki point to eject a small piece of bone, such as a phalange, to make a ranged attack. This ranged attack counts as an unarmed strike for you and has a range of 30/120.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/cjFVRN3VCj4</set>
+		</setters>
+	</element>
+	
+	<element name="Body Virtuosity" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_FLESH_BODY_VIRTUOSITY">
+		<description>
+			<p>Starting at 6th level, you have control not only over your body, but also its movements, allowing you to twist it in seemingly impossible ways to give you an edge on the battlefield. When you make a melee attack on your turn, your reach is 5 feet greater than normal. Additionally, you cannot be grappled, and standing up from the prone condition does not cost you any extra movement.</p>
+		</description>
+		<sheet>
+			<description>When you make a melee attack on your turn, your reach is 5 feet greater than normal. Additionally, you cannot be grappled, and standing up from the prone condition does not cost you any extra movement.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/cjFVRN3VCj4</set>
+		</setters>
+	</element>
+	
+	<element name="Blood Flow Mastery" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_FLESH_BLOOD_FLOW_MASTERY">
+		<description>
+			<p>Starting at 11th level, your control over your body extends to being able to increase blood flow to any wound, allowing you to heal yourself unnaturally fast. When you receive any healing, you can spend one ki point as a free action to receive the maximum amount of healing instead of rolling a die.</p>
+			<p class="indent">For example, when you consume a Potion of Healing, you can spend one ki point to receive a total of 10 hit points, instead of rolling 2d4+2. This extends to any source of healing, including spells and hit dice.</p>
+		</description>
+		<sheet>
+			<description>When you receive any healing, you can spend 1 ki point as a free action to receive the maximum amount of healing instead of rolling a die.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/cjFVRN3VCj4</set>
+		</setters>
+	</element>
+
+	<element name="Blood Flow Mastery" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_FLESH_HOUSE_OF_BONE">
+		<description>
+			<p>At 17th level, you have attained mastery over your body, turning it into a deadly weapon against all who dare come near it. Whenever a creature enters the reach you have with your unarmed strikes or makes a melee attack against you, you can spend 1 ki point as a reaction to make an unarmed strike against them by producing bone spikes out of your body. When you do so, your AC increases by one until the end of your next turn.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Whenever a creature enters the reach you have with your unarmed strikes or makes a melee attack against you, you can spend 1 ki point to make an unarmed strike against them by producing bone spikes out of your body. When you do so, your AC increases by one until the end of your next turn.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/cjFVRN3VCj4</set>
+		</setters>
+	</element>
+</elements>

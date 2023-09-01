@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>	
+	<info>
+		<name>Shadow Genasi from Monster of the Week</name>
+		<update version="0.0.2">
+			<file name="subrace-shadowgenasi.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/subrace-shadowgenasi.xml" />
+		</update>
+	</info>
+	<element name="Shadow Genasi" type="Sub Race" source="Monster of the Week" id="ID_MOTW_SUBRACE_GENASI_SHADOW">
+		<supports>Genasi</supports>
+		<description>
+			<p>As a shadow genasi, you are descended from the oft-forgotten Khayal. You are likely cunning and swift, taking joy in your quick wit and ability to outthink most other creatures. You tend to feel most comfortable when not in the spotlight, allowing others to take all the attention is the best strategy for going unnoticed.</p>
+			<p class="indent">Almost all shadow genasi are cool to the touch. Most of your kind have entirely dark eyes, making it difficult for anyone to tell where you’re looking or how you’re feeling. Your shadow might have unusual characteristics as well. It may move on its own at times, or react when you feel strong emotions.</p>
+			<p>
+				<span class="feature">Ability Score Increase. </span>Your Charisma score increases by 1.<br />
+				<span class="feature">Deceptive. </span>You gain proficiency in the Deception skill.<br />
+				<span class="feature">Improved Darkvision. </span>You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light.<br />
+				<span class="feature">Wreath in Shadow. </span>You can cast the Blur spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.<br />
+			</p>
+		</description>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/tr2917ppALQ</set>
+		</setters>
+		<sheet display="false"/>
+		<rules>
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Shadow Genasi)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_GENASI_SHADOW_DECEPTIVE" />
+			<grant type="Racial Trait" id="ID_VISION_SUPERIORDARKVISION" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_GENASI_SHADOW_WREATH_IN_SHADOW" />
+		</rules>
+	</element>
+	
+	<element name="Deceptive" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_GENASI_SHADOW_DECEPTIVE">
+		<description>
+			<p>You have proficiency in the Deception skill.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency in the Deception skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/tr2917ppALQ</set>
+		</setters>
+	</element>
+	
+	<element name="Wreath in Shadow" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_GENASI_SHADOW_WREATH_IN_SHADOW">
+		<description>
+			<p>You can cast the Blur spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast the Blur spell once with this trait, requiring no material components. (Spellcasting: Constitution)</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BLUR" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/tr2917ppALQ</set>
+		</setters>
+	</element>
+</elements>

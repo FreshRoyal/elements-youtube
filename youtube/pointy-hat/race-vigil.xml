@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Vigil from Pointy Hat's YouTube</name>
+		<update version="0.0.2">
+			<file name="race-vigil.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-vigil.xml" />
+		</update>
+	</info>
+	<element name="Vigil" type="Race" source="Pointy Hat" id="ID_POINTY_HAT_RACE_VIGIL">
+		<description>
+			<p>Guardian angels have a theoretically very simple duty. They are members of the angelic court who have been sent by their god to look over a specific mortal.</p>
+			<p class="indent">Guardian angels are members of the third sphere--the lowest sphere, furthest removed from their god and the ones made to interact with mortals directly--and it’s this distance from the divine and this closeness to the mortal experience that leads some guardian angels to develop their own version of sentience. It’s a rare occurrence, but sometimes guardian angels even develop feelings for the mortals they are tasked to protect. Angels were conceived by the divine as mere executants, celestial constructs who follow their god’s commands unwaveringly and without question, devoid of feelings, but the closeness to humanity can change that, instilling in the angel actual emotions. When this happens, and the mortal and the angel enter a relationship, their coupling can give birth to a vigil.</p>
+			<p class="indent">Vigils are the product of the union between a mortal and the guardian angel who was watching over them. Vigils are instantly recognizable for their halo, which all vigils sport and which varies in appearance depending on the god that their angelic parent served. Some are made of ethereal light, while others take the shape of crackling thunder, or shining metallic gold. The halo appears around a vigil’s head in adolescence, but a vigil can be recognized from birth from their second recognizable characteristic: their vestigial wings. These are much too small to be used for flight, but all vigils have at least one set. The most common placement is on either side of the head, although some vigils see their wings sprout at their heels, their forearms, or their hips -- but never their backs.</p>
+			<p class="indent">Vestigial wings and halos might be the most common and characteristic tell-tale signs of a vigil’s celestial blood, but others may appear, albeit much more rarely. These rarer angelic qualities include additional sets of eyes, often a different color from their natural ones; white feathers that grow around their joints; or the tips of their fingers being white and hard as marble or metallic as gold. It isn’t uncommon for these divine markers to change or evolve throughout the vigil’s life--some believing they get more pronounced if the vigil gets closer to the divine source of their magic--rendering their appearance more unnerving, or more beautiful, depending on who you ask.</p>
+			<p class="indent">These visual indicators are a mark of the divine spark that was passed down to them by their angelic parent, but this parent passes on not only their power, but their duty. Vigils have what is called a Ward, someone they are metaphysically connected to, and whom they must protect at any cost. They are mortal guardian angels, tasked not by the divine but by their lineage to protect the soul of another. Vigils do not choose their ward; their servitude to them is thrusted upon them by forces that no one really understands. Some say it’s fate, that a ward is someone who must absolutely be kept alive so that they can fulfill a specific purpose, while others say who a vigil’s ward is is just a random capricious twist of the cosmos. Whatever the case may be, the bond between a vigil and their ward cannot be broken, no matter how much either of them might wish it.</p>
+			<p class="indent">Vigils are gifted not just with divine powers, but specific abilities that help them safeguard their ward. Vigils know the general location of their ward, but also their emotional state, and whether they are in danger. The Vigil feels their ward’s pain, their distress, and their anger, but also their happiness, excitement and joy, but this connection runs even deeper than that.</p>
+			<p class="indent">If the ward dies, the vigil dies with them. The vigil’s soul is intrinsically connected to the divine spark of their progenitor, and if their ward dies, this spark is extinguished, which in turn extinguishes the vigil’s life.</p>
+			<p class="indent">How a vigil leads their life faced with this reality depends on the vigil. Some vigils take to their protective role naturally, but not all of them do. A vigil might be predetermined to ward someone, but they are not predetermined to be good, or caring, or kind to them. Some deeply resent their fate as vigils, and can’t stand the fact that their existence is tied to a perfect stranger, forced into a life of servitude they didn’t choose and don’t know, or, more upsettingly, someone they greatly dislike. There are stories of vigils keeping their wards under lock and key for their entire lives, keeping them from harm but also keeping them from living a full life. There are also stories of wards deeply resenting their vigils, despising the fact that a perfect stranger watches over their every move, preventing the ward from living life as they see fit. There are even accounts of wards killing their vigil--something they can do, since a ward’s life doesn’t end with that of the vigil.</p>
+			<p class="indent">There are, however, just as many stories of vigils and wards falling deeply in love with each other, mirroring in a way the love story that gave birth to the vigil’s existence. There are entire lineages of vigils and wards, families that are somehow tied together as the divine spark moves through the generations, with a noble family of wards and a butler family of vigils. There are love stories that reoccur between two families, where members of the two families connected through a vigil-ward bond fall in love with one another every ten generations, as if they were fated to do so.</p>
+			<p class="indent">The feelings that a vigil and their ward have for each other vary, but it’s a sad truth that because of the unbreakable bond shared between them, their stories end in tragedy more often than a happy ending.</p>
+			
+			<h4>Vigil Features:</h4>
+			<p class="indent" style="margin-top:15px"><strong><em>Creature Type:</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size:</em></strong> Your size is Medium or Small.</p>
+			<p class="indent"><strong><em>Speed:</em></strong> Your base walking speed is 30 feet. </p>
+			<p class="indent"><strong><em>Darkvision:</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Celestial Resistance:</em></strong> You have resistance to necrotic damage and radiant damage.</p>
+			<p class="indent"><strong><em>Ward Connection:</em></strong> You are connected to another mortal from birth. This mortal is your ward, and the link between you helps you to protect and watch over them by giving you information on your ward: </p>
+			<ul>
+  				<li>You know the general direction to the location of your ward, but not how far away they are from you.</li>
+				<li>You know the general emotional state of your ward.</li>
+				<li>You know if your ward is in life-threatening danger.</li>
+				<li>While you are within 30 feet of your ward, your ward rolls all death saving throws with advantage.</li>
+			</ul>
+			<p class="indent">Your life is intrinsically tied to that of your ward. If your ward dies, you die with them. If your ward dies and is later revived through any means including magic, you are not automatically revived with them. You cannot be revived if your ward is dead, but if you are revived while your ward is alive, you immediately regain the effects of <i>Ward Connection</i> upon your revival.</p>
+			<p class="indent"><strong><em>Guardian's Blessing:</em></strong> As a bonus action, you can touch a creature and shroud them in your divine energy. The creature regains the maximum number of hit points possible from the next healing it receives. For example, instead of a healing spell restoring 2d6 hit points to the creature, it restores 12 hit points. Once you use this trait, you can’t use it again until you finish a short rest.</p>
+			
+			<h4>Guardian Form:</h4>
+			<p>Starting at 3rd level, you can use your bonus action to unleash the celestial energy within yourself, transforming into an angelic form and gaining the benefits of your divine ancestry. Your vestigial wings grow to their full size, giving you a flying speed equal to your walking speed. Once on each of your turns, you can choose either to deal extra radiant damage to one target when you deal damage to it with an attack or a spell, or to heal a creature within 30 feet of you at the end of your turn. The extra damage or hit points healed equals your proficiency bonus. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you use this trait, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/hyvajvK7tMg</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Vigil)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" bonus="base"/>
+
+			<select type="Racial Trait" name="Size (Vigil)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Vigil)" supports="Standard||Exotic" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_VIGIL_CELESTIAL_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_VIGIL_WARD_CONNECTION" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_VIGIL_GUARDIANS_BLESSING" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_VIGIL_GUARDIAN_FORM" level="3" />
+		</rules>
+	</element>
+	
+	<element name="Celestial Resistance" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_VIGIL_CELESTIAL_RESISTANCE">
+		<description>
+			<p>You have resistance to necrotic damage and radiant damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/hyvajvK7tMg</set>
+		</setters>
+	</element>
+
+	<element name="Ward Connection" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_VIGIL_WARD_CONNECTION">
+		<description>
+			<p>You are connected to another mortal from birth. This mortal is your ward, and the link between you helps you to protect and watch over them by giving you information on your ward:</p>
+			<ul>
+				<li>You know the general direction to the location of your ward, but not how far away they are from you.</li>
+				<li>You know the general emotional state of your ward.</li>
+				<li>You know if your ward is in life-threatening danger.</li>
+				<li>While you are within 30 feet of your ward, your ward rolls all death saving throws with advantage.</li>
+			</ul>
+			<p class="indent">Your life is intrinsically tied to that of your ward. If your ward dies, you die with them. If your ward dies and is later revived through any means including magic, you are not automatically revived with them. You cannot be revived if your ward is dead, but if you are revived while your ward is alive, you immediately regain the effects of <i>Ward Connection</i> upon your revival.</p>
+		</description>
+		<sheet>
+			<description>You are connected to another mortal from birth. This mortal is your ward, and the link between you helps you to protect and watch over them by giving you information on your ward:&#13;
+			• You know the general direction to the location of your ward, but not how far away they are from you. &#13;
+			• You know the general emotional state of your ward. &#13;
+			• You know if your ward is in life-threatening danger. &#13;
+			• While you are within 30 feet of your ward, your ward rolls all death saving throws with advantage. &#13;
+			If your ward dies, you die with them. If your ward dies and is later revived through any means including magic, you are not automatically revived with them. You cannot be revived if your ward is dead, but if you are revived while your ward is alive, you regain the effects of Ward Connection upon your revival.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/hyvajvK7tMg</set>
+		</setters>
+	</element>
+	
+	<element name="Guardian's Blessing" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_VIGIL_GUARDIANS_BLESSING">
+		<description>
+			<p>As a bonus action, you can touch a creature and shroud them in your divine energy. The creature regains the maximum number of hit points possible from the next healing it receives. For example, instead of a healing spell restoring 2d6 hit points to the creature, it restores 12 hit points. Once you use this trait, you can’t use it again until you finish a short rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You can touch a creature and shroud them in your divine energy. The creature regains the maximum number of hit points possible from the next healing it receives.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/hyvajvK7tMg</set>
+		</setters>
+	</element>
+
+	<element name="Guardian Form" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_VIGIL_GUARDIAN_FORM">
+		<description>
+			<p>Starting at 3rd level, you can use your bonus action to unleash the celestial energy within yourself, transforming into an angelic form and gaining the benefits of your divine ancestry. Your vestigial wings grow to their full size, giving you a flying speed equal to your walking speed. Once on each of your turns, you can choose either to deal extra radiant damage to one target when you deal damage to it with an attack or a spell, or to heal a creature within 30 feet of you at the end of your turn. The extra damage or hit points healed equals your proficiency bonus. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you use this trait, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You can unleash the celestial energy within yourself, gaining following benefits: &#13;
+			Your vestigial wings grow to their full size, giving you a {{speed}}ft. flying speed, and once on each of your turns, you can choose either to deal extra radiant damage to one target when you deal damage to it with an attack or a spell, or to heal a creature within 30 feet of you at the end of your turn. The extra damage or hit points healed equals {{proficiency}}. &#13;
+			Your transformation lasts for 1 minute or until you end it as a bonus action.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/hyvajvK7tMg</set>
+		</setters>
+	</element>
+	
+	
+	
+</elements>

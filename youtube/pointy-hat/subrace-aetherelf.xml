@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Aether Elf from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="subrace-aetherelf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/subrace-aetherelf.xml" />
+		</update>
+	</info>
+	<element name="Aether Elf" type="Sub Race" source="Pointy Hat" id="ID_POINTY_HAT_SUB_RACE_AETHER_ELF">
+		<supports>Elf</supports>
+		<description>
+			<p>Aether Elves are elves whose physical and metaphysical selves were affected when they left their plane of origin.</p>
+			<p class="indent">They are extraplanar in the purest sense of the word, as they do not belong in one plane of existence. When they left their home plane, they lost the tether that bound their body and soul to a specific place, becoming “unraveled”. Their form is so tenuously connected to the physical world that it has a hard time anchoring itself to the present moment. They are a striking sight, as they always seem to be enveloped in vapor, with pieces of their bodies dissipating into smoke only to reform into solid matter a moment later.</p>
+			<p class="indent">Their highly alien appearances makes it hard for them to go unnoticed, and some confuse them with ghosts, spirits, or other incorporeal undead. But their appearance is not the only thing that makes them so vastly different from others. Aether Elves can sustain themselves by consuming the ambient aether that surrounds all living things, and most choose to do so instead of eating normal meals. Their lifespan is said to extend even further than those of other elves, with some Aether Elves living up to a millennium. However, there have been many recorded sudden deaths among Aether Elves, with stories of these elves going into their nightly trance only to dissipate into aetherial smoke for no apparent reason. It’s theorized among scholars that their form is so unstable that it can become completely unraveled and vaporize into pure aether. Some academics believe this is caused by spending extended periods of time in areas where the aether is weak or corrupted, but no definitive answer has been found.</p>
+			<p class="indent">The great differences between the lived experiences of most living beings and Aether Elves makes it hard for them to adapt to living among other people. Aether elves tend to live lives of solitude and meditation. An important cultural idea among Aether Elves is the acquisition of “the Sight”, the supposed ability to see the aether that surrounds everything in all planes, with some Aether Elves dedicating their entire lives to the pursuit of this famed ability. Others, however, become interplanar adventurers, longing to see and taste the aethers of wildly different planes of existence. There are legends among Aether Elves about a hidden plane that is their own homeland, simply referred to as the “Aether Plane”. They believe that all Aether Elves are incomplete, which is why they are unraveled, and they will only become whole if they manage to go back to this famed plane. Many of these interplanar adventurers keep this dream close to their hearts, and look for their supposed home while on their journeys through the planes.</p>
+			<h4>Aether Elf Features:</h4>
+			<p>
+			<span class="feature">Ability Score Increase:</span> Your Wisdom score increases by 1.<br/>
+			<span class="feature">Aetheric Sustenance:</span> You can choose to fuel your body by consuming ambient aether instead of food. When resting in your trance state, you can choose to meditate for 8 hours instead of 4. After resting in this way, you gain the same benefit a human would from eating a healthy amount of food for one day.<br/>
+			<span class="feature">Aetheric Step:</span> You know the spell Misty Step, and can cast it as a reaction to an attack once per long rest. Additionally, if you are able to spend a spell slot to cast the Misty Step spell with the Spellcasting or Pact Magic class features, you may choose to cast it as a reaction to an attack instead of a bonus action regardless of whether you've already used this trait. <br/>
+			<span class="feature">Aetheric Form:</span> As an action, you turn your form into aetheric smoke, becoming slightly translucent and vaporous. For 1 minute, your AC increases by 1 and you have advantage on Strength, Dexterity, and Constitution saving throws. If you make an attack or cast a spell that affects an enemy creature, the effect ends and you return to your original form instantly. You can end this effect with a bonus action. Once you use this trait, you can't do so again until you finish a long rest. <br/>
+			</p>
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/nt0R5oMdj3M</set>
+		</setters>
+		<rules>
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Aether Elf)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_AETHER_ELF_AETHERIC_SUSTENANCE" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_AETHER_ELF_AETHERIC_STEP" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_AETHER_ELF_AETHERIC_FORM" />
+		</rules>
+	</element>
+	<element name="Aetheric Sustenance" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AETHER_ELF_AETHERIC_SUSTENANCE">
+		<description>
+			<p>You can choose to fuel your body by consuming ambient aether instead of food. When resting in your trance state, you can choose to meditate for 8 hours instead of 4. After resting in this way, you gain the same benefit a human would from eating a healthy amount of food for one day.</p>
+		</description>
+		<sheet>
+			<description>When resting in your trance state, you can choose to meditate for 8 hours instead of 4. After resting in this way, you gain the same benefit a human would from eating a healthy amount of food for one day.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/nt0R5oMdj3M</set>
+		</setters>
+	</element>
+	
+	<element name="Aetheric Step" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AETHER_ELF_AETHERIC_STEP">
+		<description>
+			<p>You know the spell Misty Step, and can cast it as a reaction to an attack once per long rest. Additionally, if you are able to spend a spell slot to cast the Misty Step spell with the Spellcasting or Pact Magic class features, you may choose to cast it as a reaction to an attack instead of a bonus action regardless of whether you've already used this trait.</p>
+		</description>
+		<sheet>
+			<description>You know the spell Misty Step, and can cast it as a reaction to an attack once per long rest. If you are able to spend a spell slot to cast the Misty Step spell with the Spellcasting or Pact Magic class features, you may choose to cast it as a reaction to an attack instead of a bonus action regardless of whether you've already used this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/nt0R5oMdj3M</set>
+		</setters>
+	</element>
+	
+	<element name="Aetheric Form" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AETHER_ELF_AETHERIC_FORM">
+		<description>
+			<p>As an action, you turn your form into aetheric smoke, becoming slightly translucent and vaporous. For 1 minute, your AC increases by 1 and you have advantage on Strength, Dexterity, and Constitution saving throws. If you make an attack or cast a spell that affects an enemy creature, the effect ends and you return to your original form instantly. You can end this effect with a bonus action. Once you use this trait, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you turn your form into aetheric smoke, becoming slightly translucent and vaporous. For 1 minute, your AC increases by 1 and you have advantage on Strength, Dexterity, and Constitution saving throws. If you make an attack or cast a spell that affects an enemy creature, the effect ends and you return to your original form instantly. You can end this effect with a bonus action.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/nt0R5oMdj3M</set>
+		</setters>
+	</element>
+</elements>

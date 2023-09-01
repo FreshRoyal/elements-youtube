@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Courtly Elf from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="subrace-courtlyelf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/subrace-courtlyelf.xml" />
+		</update>
+	</info>
+	<element name="Elf (Courtly)" type="Race" source="Pointy Hat" id="ID_POINTY_HAT_RACE_COURTLY_ELF">
+		<description>
+			<p><i>Note: Due to technical limitations, the Courtly Elf had to be implemented as its own race. The Ability Score Increase, Common language, and the Darkvision and Keen Senses traits from the base Elf race are still granted.</i></p>
+			
+			<p>Courtly Elves are the result of elves severing their connection to the plane of Faerie completely. The changes brought by this severance are physical, magical, and cultural.</p>
+			<p class="indent">Physically, courtly elves are more hirsute than other elves, able to grow facial hair, which they take great care of. They are also taller than other elves, and their bodies have more diverse builds than other elven subraces. Their lifespan is shorter than that of the typical elf, generally around half of the seven centuries that other elves can live.</p>
+			<p class="indent">The severance also affected the Courtly Elves’ magical abilities, losing their natural resistance to charms and other magical effects, as well as their ability to go into a trance instead of sleeping.</p>
+			<p class="indent">But the greatest differences between Courtly Elves and their fey cousins are cultural. The Courtly Elves have a proud culture. Most Courtly Elves see the schism between themselves and other elves as a point of pride, and flaunt what makes them different from the rest of the Elven people. They are aware that many elves consider them not to be elves at all, and they are not afraid to return that scorn back, disavowing Elven traditions and making a point not to follow them. This rejection of traditional Elven culture has made Courtly Elves uniquely open to other cultures, often mingling, trading, and living among other races. It’s not uncommon for Courtly Elves to live and thrive in expansive cities far away from nature.</p>
+			<p class="indent">They are, however, not entirely free from the xenophobia that characterises many of the Elven cultures. Courtly Elves see themselves as akin to the human concept of nobility simply by being Courtly Elves. They take great pride in tracking their bloodline to the schism with the Fae Plane, and it’s rare not to see ornate tapestries depicting family trees that span dozens of feet in height in every Courtly Elf household. This makes many Courtly Elf families particularly reluctant to allow their offspring to marry those who are not Courtly Elves themselves, and children are instructed and lectured from a very young age about the importance of maintaining the family’s honor and traditions. It’s very common for half-elves born from the union of a Courtly Elf and a member of another race to never meet their Elven family, and for their Elf parent to be disowned and banned from their family home, never to set foot in it again.</p>
+			<h4>Courtly Elf Features:</h4>
+			<p>
+			<span class="feature">Ability Score Increase:</span> Your Charisma score increases by 1.<br/>
+			<span class="feature">Fey Severance:</span> Unlike other elves, you do not have the Fey Ancestry feature or the Trance feature, and you don’t know the Elven language. <br/>
+			<span class="feature">Courtly Weapon Training:</span> You have proficiency with rapiers, shortswords, and fans.<br/>
+			<span class="feature">Court Education:</span> You can read, speak, and write one additional standard language of your choice other than Elven. You also have proficiency in Persuasion. If you gain proficiency in Persuasion through some other means, you have expertise in Persuasion.<br/>
+			<span class="feature">Courtly Charisma:</span> When forced to make an Intelligence or Wisdom saving throw, you can choose to make a Charisma saving throw instead. Once you use this trait, you can't do so again until you finish a short or long rest.<br/>
+			<span class="feature">Noble Duel:</span> When you make a melee attack against a creature while wielding a finesse weapon with which you are proficient, you can choose to reroll all ones in both your attack and damage rolls as long as there are no friendly creatures within 5 feet of you. You must take the second roll. You can use this trait a number of times equal to your proficiency bonus.<br/>
+			</p>
+		</description>
+		<sheet alt="Courtly Elf" display="false"/>
+		<setters>
+			<set name="names" type="male">Adran, Aelar, Aramil, Arannis, Aust, Beiro, Berrian, Carric, Enialis, Erdan, Erevan, Galinndan, Hadarai, Heian, Himo, Immeral, Ivellios, Laucian, Mindartis, Paelias, Peren, Quarion, Riardon, Rolen, Soveliss, Thamior, Tharivol, Theren, Varis</set>
+			<set name="names" type="female">Adrie, Althaea, Anastrianna, Andraste, Antinua, Bethrynna, Birel, Caelynn, Drusilia, Enna, Felosial, Ielenia, Jelenneth, Keyleth, Leshanna, Lia, Meriele, Mialee, Naivara, Quelenna, Quillathe, Sariel, Shanairra, Shava, Silaqui, Theirastra, Thia, Vadania, Valanthe, Xanaphia</set>
+			<set name="names" type="child">Ara, Bryn, Del, Eryn, Faen, Innil. Lael, Mella, Naill, Naeris, Phann, Rael, Rinn, Sai, Syllin, Thia, Vall</set>
+			<set name="names" type="family">Amakiir, Amastacia, Galanodel, Holimion, Ilphelkiir, Liadon, Meliamne, Nai'lo, Siannodel, Xiloscient</set>
+			<set name="names-format">{{name}} {{family}}</set>
+			<set name="height" modifier="2d10">4'6"</set>
+			<set name="weight" modifier="1d4">90 lb.</set>
+			<set name="sourceUrl">https://youtu.be/nt0R5oMdj3M</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elf)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Courtly Elf)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SENSES" />
+			
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_COURTLY_ELF_COURTLY_WEAPON_TRAINING" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_COURTLY_ELF_COURT_EDUCATION" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_COURTLY_ELF_COURTLY_CHARISMA" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_COURTLY_ELF_NOBLE_DUEL" />
+		</rules>
+	</element>
+	
+	<element name="Courtly Weapon Training" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_COURTLY_ELF_COURTLY_WEAPON_TRAINING">
+		<description>
+			<p>You have proficiency with rapiers, shortswords, and fans.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency with rapiers, shortswords, and fans.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_POINTY_HAT_WEAPON_PROFICIENCY_BLADED_FAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple/Martial Weapon or Tool (Courtly Weapon Training)" number="3" supports="Weapon||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/nt0R5oMdj3M</set>
+		</setters>
+	</element>
+	
+	<element name="Court Education" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_COURTLY_ELF_COURT_EDUCATION">
+		<description>
+			<p>You can read, speak, and write one additional standard language of your choice other than Elven. You also have proficiency in Persuasion. If you gain proficiency in Persuasion through some other means, you have expertise in Persuasion.</p>
+		</description>
+		<sheet display="false">
+			<description>You can read, speak, and write one additional standard language of your choice other than Elven. You also have proficiency in Persuasion. If you gain proficiency in Persuasion through some other means, you have expertise in Persuasion.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Language" name="Language (Court Education)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Standard||Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/nt0R5oMdj3M</set>
+		</setters>
+	</element>
+	
+	<element name="Courtly Charisma" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_COURTLY_ELF_COURTLY_CHARISMA">
+		<description>
+			<p>When forced to make an Intelligence or Wisdom saving throw, you can choose to make a Charisma saving throw instead. Once you use this trait, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When forced to make an Intelligence or Wisdom saving throw, you can choose to make a Charisma saving throw instead.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/nt0R5oMdj3M</set>
+		</setters>
+	</element>
+	
+	<element name="Noble Duel" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_COURTLY_ELF_NOBLE_DUEL">
+		<description>
+			<p>When you make a melee attack against a creature while wielding a finesse weapon with which you are proficient, you can choose to reroll all ones in both your attack and damage rolls as long as there are no friendly creatures within 5 feet of you. You must take the second roll. You can use this trait a number of times equal to your proficiency bonus.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you make a melee attack against a creature while wielding a finesse weapon with which you are proficient, you can choose to reroll all ones in both your attack and damage rolls as long as there are no friendly creatures within 5 feet of you.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/nt0R5oMdj3M</set>
+		</setters>
+	</element>
+</elements>

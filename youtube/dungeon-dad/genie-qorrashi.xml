@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Qorrashi from Monster of the Week</name>
+		<update version="0.0.2">
+			<file name="genie-qorrashi.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/genie-qorrashi.xml" />
+		</update>
+	</info>
+	<element name="Qorrashi" type="Archetype Feature" source="Monster of the Week" id="ID_MOTW_ARCHETYPE_FEATURE_THE_GENIE_KIND_QORRASHI">
+		<supports>The Genie Kind</supports>
+		<description>
+			<p>At 1st level, the Genie lets you choose from an expanded list of spells when you learn a warlock spell. The Genie Expanded Spells table shows the genie spells that are added to the warlock spell list for you, along with the spells associated in the table with your patron's kind. This table details spells granted by the qorrashi, an additional choice for the warlock patron.</p>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Qorroshi Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>Ray of Frost</em></td></tr>
+				<tr><td>2nd</td><td><em>Rime's Binding Ice</em></td></tr>
+				<tr><td>3rd</td><td><em>Sleet Storm</em></td></tr>
+				<tr><td>4th</td><td><em>Ice Storm</em></td></tr>
+				<tr><td>5th</td><td><em>Cone of Cold</em></td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/w0sa3Ffc0Xs</set>
+		</setters>
+		<sheet display="false">
+			<description>The Qorrashi from the Monster of the Week.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_MOTW_ARCHETYPE_FEATURE_THE_GENIE_EXPANDED_SPELL_LIST_QORRASHI" />
+			<grant type="Archetype Feature" id="ID_MOTW_ARCHETYPE_FEATURE_THE_GENIE_GENIES_VESSEL_GENIES_WRATH_QORRASHI" level="1" />
+			<grant type="Archetype Feature" id="ID_MOTW_ARCHETYPE_FEATURE_THE_GENIE_ELEMENTAL_GIFT_QORRASHI" level="6" />
+		</rules>
+	</element>
+	
+	<element name="Khayal Expanded Spells" type="Grants" source="Monster of the Week" id="ID_MOTW_ARCHETYPE_FEATURE_THE_GENIE_EXPANDED_SPELL_LIST_QORRASHI">
+		<compendium display="false" />
+		<spellcasting name="Warlock" extend="true">			
+			<extend>ID_PHB_SPELL_RAY_OF_FROST</extend>
+			<extend>ID_WOTC_FTOD_SPELL_RIMES_BINDING_ICE</extend>
+			<extend>ID_PHB_SPELL_SLEET_STORM</extend>
+			<extend>ID_PHB_SPELL_ICE_STORM</extend>
+			<extend>ID_PHB_SPELL_CONE_OF_COLD</extend>
+		</spellcasting>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/w0sa3Ffc0Xs</set>
+		</setters>
+	</element>
+	
+	<element name="Genie’s Wrath" type="Archetype Feature" source="Monster of the Week" id="ID_MOTW_ARCHETYPE_FEATURE_THE_GENIE_GENIES_VESSEL_GENIES_WRATH_QORRASHI">
+		<compendium display="false" />
+		<description>
+			<p>Once during each of your turns when you hit with an attack roll, you can deal extra damage to the target equal to your proficiency bonus. The type of this damage is determined by your patron: Cold(Qorrashi).</p>
+		</description>
+		<sheet>
+			<description>Once during each of your turns when you hit with an attack roll, you can deal {{proficiency}} Cold extra damage to the target.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/w0sa3Ffc0Xs</set>
+		</setters>
+	</element>
+	
+	<element name="Elemental Gift" type="Archetype Feature" source="Monster of the Week" id="ID_MOTW_ARCHETYPE_FEATURE_THE_GENIE_ELEMENTAL_GIFT_QORRASHI">
+		<compendium display="false" />
+		<description>
+			<p>At 6th level, you begin to take on characteristics of your patron's kind. You now have resistance to a damage type determined by your patron's kind. Warlocks who make a pact with a Qorrashi gain resistance to cold damage. </p>
+			<p class="indent">In addition, as a bonus action, you can give yourself a flying speed of 30 feet that lasts for 10 minutes, during which you can hover. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You can give yourself a flying speed of 30 feet that lasts for 10 minutes, during which you can hover.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/w0sa3Ffc0Xs</set>
+		</setters>
+	</element>
+</elements>
