@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Fan Weapon from Pointy Hat's YouTube</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="weapon-fan.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/weapon-fan.xml" />
 		</update>
 	</info>
@@ -13,6 +13,7 @@
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_POINTY_HAT_WEAPON_PROPERTY_BLADED_FAN_RETURNING</supports>
 		<description>
 			<p></p>
+			<div element="ID_POINTY_HAT_WEAPON_PROPERTY_BLADED_FAN_RETURNING" />
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
