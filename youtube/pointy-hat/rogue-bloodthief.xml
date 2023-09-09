@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Blood Thief from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="rogue-bloodthief.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/rogue-bloodthief.xml" />
+		</update>
+	</info>
+
+	<element name="Blood Thief" type="Archetype" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_ROGUE_BLOOD_THIEF">
+		<supports>Roguish Archetype</supports>
+		<description>
+			<div class="sidebar">
+				<p class="flavor">“The title of Blood Thief, master in the art of blood magic, is not easily achieved. Some believe that blood magic, just like any magic, can be learned by anyone with sufficient training. Others believe that only a few, chosen from birth, can control the blood running through the veins of all living things. All agree that blood magic is the most difficult school to master. Most who start on their path towards this mastery never quite make it to the end, remaining what is commonly referred to as a blood mage. But those who do master this elusive school and earn the title of Blood Thief find that their hard work is rarely rewarded.</p>
+				<p class="flavor">Blood magic and Blood Thieves are more feared than admired. The ability to manipulate the very essence of life, taking control of the blood of others to use against them or to rejuvenate and heal the user, strikes a primal fear and disgust into most people. Those who practice blood magic are often seen as parasitic at best, and vampiric at worst.</p>
+				<p class="flavor">But, like any magic, blood magic is neutral. Blood magic can certainly be used for evil, but it can just as easily be used for good. It can heal the sick, strike down the wicked, and control the tyrannous. It’s in the hands of those who practice blood magic to choose how to use their power, and in the hands -- or on the knife -- of a Blood Thief, this is a choice with deadly consequences."</p>
+			</div>
+
+			<p>The Blood Thief Subclass is based more on newer rogue subclasses than older ones. It gains blood magic as its own resource, and elevates the tactical uses of your Sneak Attack. Although a Blood Thief gains a bit of bulk with their resistance to poison, they are not particularly suited for survival in the middle of the battlefield, but they still need to remain close to the action in order to use their powers. This subclass forces the rogue to think critically about when and how to engage, always with a plan to get out of trouble, and adds a layer of complexity by forcing the rogue to manage their limited uses of blood magic.</p>
+			<p class="indent">As a Blood Thief, a rogue can set up interesting situations and battle tactics for their party. They can choose to take a hit for a companion in order to heal themselves right after, give disadvantage on attacks to their foe to minimize the damage they can inflict, or incapacitate them with blood puppetry among many others. They also get a strong utility ability to complement the already utility-heavy rogue class with the Blood Hound feature.</p>
+			<p class="indent">The subclass has a strong magical flair without becoming a hybrid quarter-caster like the Eldritch Knight or the Arcane Trickster, with its own unique flavor and its own niche among the other roguish archetypes.</p>
+			
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_MAGIC" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_PURGE" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_HOUND" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_PUPPETEER" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_THIEF" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_PURGE" level="3" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_HOUND" level="9" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_PUPPETEER" level="13" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_THIEF" level="17" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/3dViwgbrt-c</set>
+		</setters>
+	</element>
+
+	<element name="Blood Magic" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_MAGIC">
+		<description>
+			<p>When you choose this archetype at 3rd level, you can use the blood or life essence your attacks spill to weaken your enemy or heal yourself. After dealing Sneak Attack damage against a creature, you can use your bonus action to activate your Blood Magic and choose one of the following effects:</p>
+			<ul>
+				<li><strong><em>Blood Transfusion:</em></strong> You siphon the life force contained within the blood of your enemy, using it to seal your own wounds. You heal yourself for an amount equal to half of the damage inflicted by your Sneak Attack, rounding down.</li>
+				<li><strong><em>Blood Stain:</em></strong> You pollute the blood of your enemy, turning it into a deadly ichor that harms their body from the inside. The creature damaged by your Sneak Attack must make a Constitution saving throw against your Blood Magic DC. On a failure, the creature is poisoned for 1 minute. It can repeat this saving throw at the end of each of their turns.</li>
+			</ul>
+			<p class="indent">Your Blood Magic save DC is equal to 8 + your proficiency bonus + your Intelligence modifier.</p>
+			<p class="indent">You can only use your Blood Magic a number of times equal to your proficiency bonus. You regain all uses of your Blood Magic at the end of a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>After dealing Sneak Attack damage against a creature, you can activate your Blood Magic. Your Blood Magic save DC is {{blood magic:dc}}.</description>
+		</sheet>
+		<rules>
+			<stat name="blood magic:dc" value="8" />
+			<stat name="blood magic:dc" value="proficiency" />
+			<stat name="blood magic:dc" value="intelligence:modifier" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_TRANSFUSION" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_STAIN" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_PUPPETRY" requirements="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_PUPPETEER" level="13" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/3dViwgbrt-c</set>
+		</setters>
+	</element>
+
+	<element name="Blood Purge" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_PURGE">
+		<description>
+			<p>Also at 3rd level, your control over blood allows you to neutralize any poison entering your body. You gain advantage on saving throws against poison, and you gain resistance against poison damage. If you are already resistant against poison damage, you become invulnerable to it. If you already have advantage on saving throws against poison, you become invulnerable to the poisoned condition.</p>
+		</description>
+		<sheet>
+			<description>You gain advantage on saving throws against poison. If you already have advantage on saving throws against poison, you become invulnerable to the poisoned condition.</description>
+		</sheet>
+		<rules>
+			<!--add immunity exception-->
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/3dViwgbrt-c</set>
+		</setters>
+	</element>
+
+	<element name="Blood Hound" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_HOUND">
+		<description>
+			<p>At 9th level, you can use a creature’s own blood to track it down. When you are in possession of the blood of a creature, you use an action to read the blood of your enemy. When you do so, you know the direction of where that creature currently is in relation to you, as long as the creature is on the same plane of existence as you. The accuracy of your tracking capabilities depend on when the blood was spilled:</p>
+			<ul>
+				<li><strong><em>Less than 1 hour ago:</em></strong> You know the exact direction of where the creature is currently located in relation to you and the distance in feet between you and the creature.</li>
+				<li><strong><em>Less than 12 hours ago:</em></strong> You know the general direction of where the creature is currently located in relation to you (north, northeast, east, south, etc.) and if the creature is within 1.000 feet of you or not.</li>
+				<li><strong><em>Less than a day ago:</em></strong> You know if the creature is currently located north, south, east, or west from your current position.</li>
+			</ul>
+			<p class="indent">You cannot use this ability on blood that was spilled more than one day ago, as it completely loses the life essence connecting it to its origin.</p>
+		</description>
+		<sheet action="Action">
+			<description>When you are in possession of the blood of a creature, you can read the blood. When you do so, you know the direction of where that creature currently is in relation to you, as long as the creature is on the same plane of existence as you. The accuracy of your tracking capabilities depend on when the blood was spilled:
+			• Less than 1 hour ago: You know the exact direction of where the creature is currently located in relation to you and the distance in feet between you and the creature.
+			• Less than 12 hours ago: You know the general direction of where the creature is currently located in relation to you (north, northeast, east, south, etc.) and if the creature is within 1.000 ft of you or not.• Less than a day ago: You know if the creature is currently located north, south, east, or west from your current position.
+			You cannot use this ability on blood that was spilled more than 1 day ago.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/3dViwgbrt-c</set>
+		</setters>
+	</element>
+
+	<element name="Blood Puppeteer" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_PUPPETEER">
+		<description>
+			<p>At 13th level, you gain the ability to control the blood coursing through your enemy’s veins. You gain a new use of your Blood Magic:</p>
+			<ul>
+				<li><strong><em>Blood Puppetry:</em></strong> The creature damaged by your Sneak Attack must make a Wisdom saving throw against your Blood Magic DC. On a failure, you put the creature under the effect of the compulsion spell. It repeats its saving throw at the end of every turn.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/3dViwgbrt-c</set>
+		</setters>
+	</element>
+
+	<element name="Blood Thief" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_THIEF">
+		<description>
+			<p>At 17th level, you have gained mastery over blood magic, making you a true Blood Thief. When you roll initiative and have no uses of Blood Magic remaining, you regain 1 use of Blood Magic.</p>
+			<p class="indent">Additionally, each use of your Blood Magic gains an additional effect:</p>
+			<ul>
+				<li><strong><em>Blood Transfusion:</em></strong> When choosing this effect, you can choose to heal a creature within 20 feet of you instead of yourself.</li>
+				<li><strong><em>Blood Stain:</em></strong> When you choose this effect, the creature damaged by your Sneak Attack has disadvantage on all Constitution saving throws to avoid the poisoned condition for 1 minute, including those against your Blood Stain ability.</li>
+				<li><strong><em>Blood Puppetry:</em></strong> If the creature damaged by your Sneak Attack fails its Wisdom saving throw, you can choose to put the creature under the effect of either the compulsion spell, the command spell, or the hold person spell. If you choose compulsion or hold person, the creature repeats its saving throw at the end of every turn.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description>When you roll initiative and have no uses of Blood Magic remaining, you regain 1 use of Blood Magic.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/3dViwgbrt-c</set>
+		</setters>
+	</element>
+
+	<!--Blood Magic Features-->
+
+	<element name="Blood Transfusion" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_TRANSFUSION">
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet usage="Blood Magic">
+			<description>You heal yourself for an amount equal to half of the damage inflicted by your sneak attack.</description>
+			<description level="17">You heal yourself or a creature within 20 ft of you for an amount equal to half of the damage inflicted by your sneak attack.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/3dViwgbrt-c</set>
+		</setters>
+	</element>
+
+	<element name="Blood Stain" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_STAIN">
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet usage="Blood Magic">
+			<description>The creature damaged by your sneak attack must make a Constitution saving throw against your Blood Magic DC. On a failure, the creature is poisoned for 1 minute. It can repeat this saving throw at the end of each of their turns.</description>
+			<description level="17">The creature damaged by your Sneak Attack must make a Constitution saving throw against your Blood Magic DC. On a failure, the creature is poisoned for 1 minute. The creature damaged by your sneak attack also has disadvantage on all Constitution saving throws to avoid the poisoned condition for 1 minute. It can repeat this saving throw at the end of each of their turns.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/3dViwgbrt-c</set>
+		</setters>
+	</element>
+
+	<element name="Blood Puppetry" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BLOOD_THIEF_BLOOD_PUPPETRY">
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet usage="Blood Magic">
+			<description>The creature damaged by your sneak attack must make a Wisdom saving throw against your Blood Magic DC. On a failure, you put the creature under the effect of the compulsion spell. It repeats its saving throw at the end of every turn.</description>
+			<description level="17">The creature damaged by your sneak attack must make a Wisdom saving throw against your Blood Magic DC. On a failure, you can choose to put the creature under the effect of either the compulsion spell, the command spell, or the hold person spell. If you choose compulsion or hold person, the creature repeats its saving throw at the end of every turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMPULSION" level="13"/>
+			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" level="17"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="17"/>
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/3dViwgbrt-c</set>
+		</setters>
+	</element>
+  
+</elements>

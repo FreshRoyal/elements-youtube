@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of the City Subclass from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="druid-city.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/druid-city.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of the City" type="Archetype" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_DRUID_STONES">
+		<supports>Druid Circle</supports>
+		<description>
+			<div class="sidebar">
+				<p class="flavor">"Druids belonging to the Circle of the City go against what most think of when they envision a druid. Instead of protecting nature by seeking to preserve the spaces untouched by civilization, they bring nature to the spaces where people live, and seek to establish a symbiotic relationship between mankind and the natural world. They see villages, towns, and cities as ecosystems in their own right, no different from a forest, jungle, or desert. These druids forgo the secrecy and reclusiveness that most druidic circles hold dear and sacred, and replace it by what they see as a stronger force better able to enact long-lasting change: Community. They are pillars of these communities, establishing and preserving green spaces that not only bring nature into the day-to-day lives of the city’s inhabitants, but also double as useful tools for the residents.</p>              
+				<p class="flavor">The work on the urban druid is not done in isolated, magical forests, but in parks, communal gardens, and city orchards. They are not only concerned with the lives of wolves, bears, and other majestic wild animals, but also the lives of street dogs, abandoned cats, and what most see as vermin. Their mission is not to create a space for nature inside of a city, but to erase the line between nature and city completely.</p>
+				<p class="flavor">Some Circle of the City druids remain in one city, making it their life's mission to tend to it like a garden and becoming a political force in their places of residence; some travel, bringing some of their primal magic to every settlement they visit; and some embark on pilgrimages to abandoned temples, castle ruins, poisonous swamps, and other places where nature has overtaken the living spaces of people, bringing balance to these sites and making them habitable for new people to breathe life into them once more."</p>
+			</div>
+			<p>The Circle of the City subclass is meant to give those who wish to play a non-conventional druid a completely new flavor for their character. It puts the focus on urban and man-made environments rather than natural landscapes untouched by civilization, and is intrinsically tied to settlements and the people living in them, allowing you to create a druid that thrives on communal efforts rather than hermitism. Gameplay-wise, the subclass has been designed to take advantage of the druid’s unorthodox tanking abilities, giving it a completely different use of the signature wild shape ability as well as the capacity to don metallic armor. The trademark feature of this subclass is its dual approach to its main features: Terrain Tactician and Wild Shaper. Depending on the terrain the city druid is standing on, the effects of these features will change. This allows you to change your strategies and approach to combat depending on the terrain you stand on, which works with the flavor of the subclass and keeps fights interesting and unique. We strongly advise talking to your GM before choosing this subclass to ensure that they are aware of this core feature so that they may plan fights with it in mind, allowing you to take advantage of clever positioning to get the desired effect.</p>
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_PRIMAL_FORTRESS" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_TERRAIN_TACTICIAN" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_WILD_SHAPER" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_LANDS_SPOILS" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_TEEMING_TERRAIN" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_TERRAFORMER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_PRIMAL_FORTRESS" level="2" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_TERRAIN_TACTICIAN" level="2" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_WILD_SHAPER" level="2" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_LANDS_SPOILS" level="6" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_TEEMING_TERRAIN" level="10" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_TERRAFORMER" level="14" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/_hS4jG27HMw</set>
+		</setters>
+	</element>
+
+	<element name="Primal Fortress" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_PRIMAL_FORTRESS">
+		<description>
+			<p>When you choose this circle at 2nd level, you are able to benefit from mankind’s innovations without losing your connection to nature. You gain proficiency with heavy armor, and are able to don armor and use shields made of metal.</p>
+		</description>
+		<sheet>
+			<description>You are able to don armor and use shields made of metal.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR"/> 
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/_hS4jG27HMw</set>
+		</setters>
+	</element>
+
+	<element name="Terrain Tactician" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_TERRAIN_TACTICIAN">
+		<description>
+			<p>At 2nd level, you are able to call on the power of nature and harness its effects. The effects you gain depend on whether you are standing on “natural” or “constructed” terrain. Natural terrain is any ground that has not been significantly shaped by civilization, such as soil, grass, or snow. Constructed terrain is the opposite: ground that has been fabricated or shaped by mankind’s hands, such as cut stone, metal sheets, or wooden boards. Standing on a rock in the forest would be considered Natural Terrain, whereas standing on stone bricks on a castle’s ramparts would be considered Constructed Terrain. Whether a terrain is considered natural or constructed does not depend on if the materials used are “natural” or not, but rather the amount of people’s involvement in giving it its current shape. If it is ambiguous, which ground you are standing on is at the GM’s discretion.</p>
+			<ul>
+				<li>While standing on Natural Terrain, you harness the healing energy of nature and become attuned to its consciousness:&#13;
+				You gain 1d4 temporary healing at the beginning of each turn.
+				You gain proficiency with the Perception skill.</li>
+				<li>While standing on Constructed Terrain, you strengthen your body against harmful effects and are able to harness the wisdom of mankind:&#13;
+				You add 1d6 to all dexterity saves you make.
+				You gain proficiency with the Insight skill.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain effects depending on whether you are standing on “natural” (soil, grass, snow, etc.) or “constructed” (cut stone, metal sheets, wooden boards, etc.) terrain.
+			• While standing on Natural Terrain:&#13;
+			  - You gain 1d{{natural-terrain:dice size}} temporary healing at the beginning of each turn.&#13;
+			  - You gain proficiency with the Perception skill.&#13;
+			  • While standing on Constructed Terrain:&#13;
+			  - You add 1d{{constructed-terrain:dice size}} to all dexterity saves you make.&#13;
+			  - You gain proficiency with the Insight skill.</description>
+		</sheet>
+		<rules>
+			<stat name="natural-terrain:dice size" value="4" bonus="base" />
+			<stat name="constructed-terrain:dice size" value="6" bonus="base" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/_hS4jG27HMw</set>
+		</setters>
+	</element>
+
+	<element name="Wild Shaper" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_WILD_SHAPER">
+		<description>
+		<p>Also at 2nd level, you can strengthen your pull on the natural energies you gain from your environment. As an action, you can expend a use of your Wild Shape feature to embolden the effects you gain from the terrain you’re standing on, rather than transforming into a beast form. While this feature is active, you gain the following benefits:</p>
+			<ul>
+				<li>While standing on Natural Terrain, you add your wisdom modifier to the temporary hit points you gain at the beginning of each turn.</li>
+				<li>While standing on Constructed Terrain, choose one damage type between acid, cold, fire, lightning, or poison. You are now resistant to that damage type until the start of your next turn, upon which you may choose the same damage resistance or a different one.</li>
+			</ul>
+			<p class="indent">These benefits last for 10 minutes or until you use your Wild Shape again.</p>
+		</description>
+		<sheet action="Action" usage="Wild Shape">
+			<description>You can embolden the effects you gain from the terrain you’re standing on, rather than transforming into a beast form. While this feature is active, you gain the following benefits:
+			• While standing on Natural Terrain, you add {{wisdom:modifier}} to the temporary hp you gain at the beginning of each turn.
+			• While standing on Constructed Terrain, choose one damage type between acid, cold, fire, lightning, or poison. You are now resistant to that damage type until the start of your next turn, upon which you may choose the same damage resistance or a different one.&#13;
+			These benefits last for 10 minutes or until you use your Wild Shape again.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/_hS4jG27HMw</set>
+		</setters>
+	</element>
+	
+	<element name="Land's Spoils" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_LANDS_SPOILS">
+		<description>
+			<p>At 6th level, your influence over the terrain you walk on extends past yourself, allowing you to share the gifts of the land with your allies and encumber those who go against your vision. Any space within 10 feet of you becomes difficult terrain for any creature of your choice. Additionally, while your Wild Shaper feature is active, you can use a bonus action to choose a creature within 10 feet of you. While that creature is within 10 feet of you, they enjoy the same bonuses you derive from the Terrain Tactician feature.</p>
+		</description>
+		<sheet>
+			<description>Any space within 10 feet of you becomes difficult terrain for any creature of your choice. Additionally, while your Wild Shaper feature is active, you can use a bonus action to choose a creature within 10 ft of you. While that creature is within 10 ft of you, they enjoy the same bonuses you derive from the Terrain Tactician feature.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/_hS4jG27HMw</set>
+		</setters>
+	</element>
+
+	<element name="Teeming Terrain" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_TEEMING_TERRAIN">
+		<description>
+			<p>At 10th level, your influence over the environment surrounding you grows, harvesting stronger fruits from its effects. The temporary hit points and bonuses to saving throws given by the Terrain Tactician feature increase, rolling a d6 instead of a d4 for the temporary hit points gained when standing on Natural Terrain, and rolling a d8 instead of a d6 to add to Dexterity saving throws when standing on Constructed Terrain. Additionally, you can choose two creatures within 10 feet of you to enjoy the same bonuses from your Terrain Tactician feature while your Wild Shaper feature is active.</p>
+		</description>
+		<sheet>
+			<description>You can choose two creatures within 10 ft of you to enjoy the same bonuses from your Terrain Tactician feature while your Wild Shaper feature is active.</description>
+		</sheet>
+		<rules>
+			<stat name="natural-terrain:dice size" value="6" bonus="base" />
+			<stat name="constructed-terrain:dice size" value="8" bonus="base" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/_hS4jG27HMw</set>
+		</setters>
+	</element>
+
+	<element name="Terraformer" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CITY_TERRAFORMER">
+		<description>
+			<p>At 14th level, you are no longer constrained by the terrain you stand on, now able to change its nature to your will. When you expend a use of Wild Shape to gain the benefits of your Wild Shaper feature, you choose whether the terrain within 10 feet of you is considered Natural or Constructed, and transform it to match. For example, wooden floorboards grow vines and roots, or dirt covered in sand and rock turns to a cobblestone road. You can change the terrain around you again at the beginning of each subsequent turn as a free action for as long as your Wild Shaper feature is active.</p>
+		</description>
+		<sheet>
+			<description>When you expend a use of Wild Shape to gain the benefits of your Wild Shaper feature, you choose whether the terrain within 10 ft of you is considered Natural or Constructed, and transform it to match. You can change the terrain around you again at the beginning of each subsequent turn as a free action for as long as your Wild Shaper feature is active.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/_hS4jG27HMw</set>
+		</setters>
+	</element>
+
+</elements>

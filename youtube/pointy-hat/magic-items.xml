@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magic Items from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="magic-items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/magic-items.xml" />
+		</update>
+	</info>
+	
+	<!--The Banshee Blade-->
+
+	<element name="Banshee Blade" type="Magic Item" source="Pointy Hat" id="ID_POINTY_HAT_MAGIC_ITEM_BANSHEE_BLADE">
+		<description>
+			<p>This sword hums an almost imperceptible tune when wielded that only its user can hear. You gain a +1 bonus to attack and damage rolls made with this magic sword. As a bonus action, you can make the banshee blade either sing or shriek.</p>
+			<ul>
+				<li>When the banshee blade sings, you select up to four creatures you can see, which can include yourself. The selected creatures add a +1 to their attack rolls when they are within 10 feet of the banshee blade.</li>
+				<li>When the banshee blade shrieks, you select up to four creatures you can see. The selected creatures subtract a -1 to their attack rolls when they are within 10 feet of the banshee blade.</li>
+			</ul>
+			<p class="indent">While the banshee blade is singing or shrieking, you have disadvantage on stealth checks. The banshee blade sings or shrieks for 4 turns. Once the banshee blade has sung or shrieked, it can’t do so again until you finish a short rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">any sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="sourceUrl">https://youtu.be/-6uDXfB4BjI</set>
+		</setters>
+	</element>
+
+	<element name="Empowered Banshee Blade" type="Magic Item" source="Pointy Hat" id="ID_POINTY_HAT_MAGIC_ITEM_EMPOWERED_BANSHEE_BLADE">
+		<description>
+			<p>This sword sings an inspiring song when wielded that only its user can hear. You gain a +2 bonus to attack and damage rolls made with this magic sword. As a bonus action, you can make the empowered banshee blade either sing or shriek.</p>
+			<ul>
+				<li>When the empowered banshee blade sings, you select up to four creatures you can see, which can include yourself. The selected creatures add a 1d4 to all their attack rolls when they are within 10 feet of the banshee blade. You reroll the d4 each time a selected creature attacks.</li>
+				<li>When the empowered banshee blade shrieks, you select up to four creatures you can see. The selected creatures subtract a 1d4 to all their attack rolls when they are within 10 feet of the banshee blade. You reroll the d4 each time a selected creature attacks.</li>
+			</ul>
+			<p class="indent">While the banshee blade is singing or shrieking, you have disadvantage on stealth checks. The banshee blade sings or shrieks for 4 turns. Once the banshee blade has sung or shrieked, it can’t do so again until you finish a short rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">any sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="sourceUrl">https://youtu.be/-6uDXfB4BjI</set>
+		</setters>
+	</element>
+
+	<element name="Exalted Banshee Blade" type="Magic Item" source="Pointy Hat" id="ID_POINTY_HAT_MAGIC_ITEM_EXALTED_BANSHEE_BLADE">
+		<description>
+			<p>This sword chants a stirring hymn when wielded that only its user can hear. You gain a +3 bonus to attack and damage rolls made with this magic sword. As a bonus action, you can make the exalted banshee blade either sing or shriek.</p>
+			<ul>
+				<li>When the exalted banshee blade sings, you select up to four creatures you can see, which can include yourself. The selected creatures add a 1d4 to all their attack rolls and saving throws when they are within 10 feet of the banshee blade. You reroll the d4 each time a selected creature attacks or makes a saving throw.</li>
+				<li>When the exalted banshee blade shrieks, you select up to four creatures you can see. The selected creatures subtract a 1d4 to all their attack rolls and saving throws when they are within 10 feet of the banshee blade. You reroll the d4 each time a selected creature attacks or makes a saving throw.</li>
+			</ul>
+			<p class="indent">While the banshee blade is singing or shrieking, you have disadvantage on stealth checks. The banshee blade sings or shrieks for 4 turns. Once the banshee blade has sung or shrieked, it can’t do so again until you finish a short rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">any sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="sourceUrl">https://youtu.be/-6uDXfB4BjI</set>
+		</setters>
+	</element>
+
+</elements>

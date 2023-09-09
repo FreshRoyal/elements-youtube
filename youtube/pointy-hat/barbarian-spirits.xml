@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of Spirits from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="barbarian-spirits.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/barbarian-spirits.xml" />
+		</update>
+	</info>
+
+	<element name="Path of Spirits" type="Archetype" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_BARBARIAN_PATH_OF_SPIRITS">
+		<supports>Primal Path</supports>
+		<description>
+			<div class="sidebar">
+				<p class="flavor">“Though we often think of the line between the living and the dead as a clear and defined wall that separates those who belong to either realm, there are those among the living who have the uncanny ability to reach through that wall as if it was mist. Some do so through magic, some through an innate ability, and some, like the barbarians who walk the Path of Spirits, do so with the pure raw strength of their feeling.</p>
+				<p class="flavor">Barbarians who take this path summon the spirits of the dead through an unconventional and oft-maligned way: possession. The barbarian reaches out through the veil into the realm of the dead, and invites a spirit into the realm of the living by offering their body as an anchor. Spirits are beings of pure raw emotion; the feeling that they most strongly felt in life or at the time of their death becomes their very nature. When the barbarian invites a spirit to possess them, the spirit’s pure, distilled emotion mixes with the barbarian’s own rage, granting them incredibly powerful supernatural abilities in battle and allowing the spirit to manifest itself once more in the realm of the living.</p>
+				<p class="flavor">Although there are those who cultivate and teach the ways of this path, most barbarians begin their walk along the path of spirits inadvertently. A mother filled with rage at the death of her son summoning the spirit of her child, a ranger filled with grief summoning the spirit of their animal companion, a soldier filled with fear summoning the spirit of their fallen general during a battle they cannot win -- stories like these are often told of those who walk the path of spirits. These stories all start from grief, but what they do with their newfound power, only those that walk the path of spirits can decide."</p>
+			</div>
+
+			<p>The Path of the Spirits barbarian subclass is meant to explore a different aspect of the word “spirit” that is often associated with other barbarian subclasses. Some paths use revered ancestors, while others concentrate on spiritual animals. The barbarian Path of Spirits puts the focus on spirits as their most common incarnation: ghosts, the souls of the deceased. Death is common in character backstories, and this subclass allows you to center the death of a loved one and bring it forward from the realm of backstory into the mechanics of the game. With this subclass, you can play a child protected by the spirit of their dead parent, a lover haunted by the memory and the undead shade of their partner, a medium seeking to help spirits cross into the afterlife, or something else entirely different.</p>
+			<p class="indent">In terms of abilities, the Path of Spirits subclass enhances the tanking capabilities of the barbarian in different ways with different types of possession. These impact the way a barbarian fights, and they allow the barbarian to switch their tactics depending on the fight. Additionally, abilities like Spirit-Touched and Grave Message bring utility to the barbarian’s arsenal, expanding what they can do outside of combat. The subclass’ capstone ability is focused on combat utility, allowing you to empower an ally with the boons given to you by your spirits.</p>
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_SPIRIT_TOUCHED" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_POSSESSION" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_DEATH_SAVANT" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_GRAVE_MESSAGE" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_SPIRITUAL_HOST" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_SPIRIT_CATALYST" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_SPIRIT_TOUCHED" level="3" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_POSSESSION" level="3" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_DEATH_SAVANT" level="6" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_GRAVE_MESSAGE" level="6" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_SPIRITUAL_HOST" level="10" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_SPIRIT_CATALYST" level="14" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/OaekpBgbtlc</set>
+		</setters>
+	</element>
+
+	<element name="Spirit-Touched" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_SPIRIT_TOUCHED">
+		<description>
+			<p>Choosing this path gives you an inherent connection with the spirits of the dead. At 3rd level, when you adopt this path, you are aware of the presence, but not the location, of any undead creature within 60 feet of you. Additionally, you gain the ability to cast the Speak with Dead and Gentle Repose spells, but only as rituals.</p>
+		</description>
+		<sheet>
+			<description>You are aware of the presence, but not the location, of any undead creature within 60 ft of you. Additionally, you gain the ability to cast the speak with dead and gentle repose spells, but only as rituals.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD"/>
+			<grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE"/>
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/OaekpBgbtlc</set>
+		</setters>
+	</element>
+
+	<element name="Possession" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_POSSESSION">
+		<description>
+			<p>Your barbarian rage is the result of a spirit entering your body and granting you its power. When you choose this path at 3rd level, you choose a spirit and gain its feature. You form a connection with a specific spirit you want to summon into your body by reaching out to them past the realm of the living and into the realm of the dead. This spirit can be anyone, but they must embody the quality of the spirit you wish to summon. For example, a spirit of protection might be a parent who died defending their children, or a general who died so their troops could escape.</p>
+			<p class="indent">If you wish, you can change in subtle ways to reflect the personality of the spirit that shares your body. For example, your posture, your voice, or your general demeanor may change depending on the spirit possessing your body.</p>
+			<p class="indent">You choose one spirit when gaining this feature at level 3, and gain an additional spirit at levels 6 and 14. You choose the spirit you wish to be possessed by each time you rage:</p>
+			<ul>
+				<li><strong><em>Spirit of Ecstasy.</em></strong> While raging, your movement increases by 5 feet. Additionally, when you receive damage, you can use your reaction to move up to half your movement speed.</li>
+				<li><strong><em>Spirit of Fury.</em></strong> While raging, you double your rage damage when you make a reckless attack, and your weapon attacks score a critical hit on a roll of 19 or 20.</li>
+				<li><strong><em>Spirit of Protection.</em></strong> While raging, your AC increases by half your rage damage, rounding up. Additionally, when you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw.</li>
+				<li><strong><em>Spirit of Resolve.</em></strong> While raging, you can’t be put to sleep by magical means, you do not suffer the effects of exhaustion, and you are immune to the following conditions: charmed, paralyzed, frightened, exhausted, and stunned.</li>
+				<li><strong><em>Spirit of Sacrifice.</em></strong> While raging, if another creature you can see within 60 feet of you takes damage, you can use your reaction to take the damage instead. If you do so, the damage is doubled.</li>
+				<li><strong><em>Spirit of Vengeance.</em></strong> While raging, if you have taken any damage during the previous round, you make all attacks with advantage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you rage, you choose a spirit and gain its feature.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Spirit (Level 3)" supports="Pointy Hat Path of Spirits Possession" level="3" />
+			<select type="Archetype Feature" name="Spirit (Level 6)" supports="Pointy Hat Path of Spirits Possession" level="6" />
+			<select type="Archetype Feature" name="Spirit (Level 14)" supports="Pointy Hat Path of Spirits Possession" level="14" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/OaekpBgbtlc</set>
+		</setters>
+	</element>
+
+	<element name="Death Savant" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_DEATH_SAVANT">
+		<description>
+			<p>At 6th level, your mastery over the domain of death grows, blurring the line between the realms of the living and the dead. You have resistance to necrotic damage, you cannot succumb to instant death by massive damage, and you only suffer one death saving throw failure when taking damage at 0 hit points, regardless of whether the damage taken is from a critical hit.</p>
+		</description>
+		<sheet>
+			<description>You cannot succumb to instant death by massive damage, and you only suffer one death saving throw failure when taking damage at 0 hp.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/OaekpBgbtlc</set>
+		</setters>
+	</element>
+
+	<element name="Grave Message" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_GRAVE_MESSAGE">
+		<description>
+			<p>Also at 6th level, your connection with your chosen spirit has become even stronger, allowing you to call for their aid without the need of possession and use them to enter the bodies of others to learn their secrets. As an action, you can summon a spirit and covertly send them into the body of another creature you can see within 60 feet of you. If the creature you choose has an Intelligence of 3 or lower or doesn’t speak any language, the creature is unaffected. When you do so, you learn the surface thoughts of the creature — what is most on its mind in that moment. The creature is not aware of this incursion at this stage.</p>
+			<p class="indent">You can then recall the spirit, or instruct it to delve deeper into the creature’s mind and body. The target must succeed on a Constitution saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice):</p>
+			<ul>
+				<li>The target becomes blinded and deafened until their next turn and must use half their movement to move in one direction of your choosing.</li>
+				<li>You learn a piece of information of your choosing that the target knows. For example, provided the target knows, you could learn the location of an object, the name of a specific person, or their deepest desire.</li>
+			</ul>
+			<p class="indent">If the target fails on their saving throw, they remain unaware. If the target succeeds on their saving throw, the possession ends without effect and the target is aware of the spirit’s incursion into their mind.</p>
+			<p class="indent">You can take this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<rules>
+			<stat name="grave message:dc" value="8" />
+			<stat name="grave message:dc" value="proficiency" />
+			<stat name="grave message:dc" value="constitution:modifier" />
+		</rules>
+		<sheet action="Action" usage="{{proficiency}}/Long Rest">
+			<description>You can summon a spirit and covertly send them into the body of another creature you can see within 60 ft of you. If the creature you choose has an Intelligence of 3 or lower or doesn’t speak any language, the creature is unaffected. When you do so, you learn the surface thoughts of the creature. The creature is not aware of this incursion at this stage. You can then recall the spirit, or instruct it to delve deeper into the creature’s mind and body. The target must succeed on a Constitution saving throw (DC:{{grave message:dc}}) or suffer one of the following effects:
+			• The target becomes blinded and deafened until their next turn and must use half their movement to move in one direction of your choosing.
+			• You learn a piece of information of your choosing that the target knows.
+			If the target fails on their saving throw, they remain unaware. If the target succeeds on their saving throw, the possession ends without effect and the target is aware of the spirit’s incursion.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/OaekpBgbtlc</set>
+		</setters>
+	</element>
+
+	<element name="Spiritual Host" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_SPIRITUAL_HOST">
+		<description>
+			<p>At 10th level, your body has become a perfect vessel for spiritual possession. When you enter rage, you now choose two spirits to possess you at the same time.</p>
+		</description>
+		<sheet>
+			<description>When you enter rage, you now choose two spirits to possess you at the same time.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/OaekpBgbtlc</set>
+		</setters>
+	</element>
+
+	<element name="Spirit Catalyst" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_SPIRIT_CATALYST">
+		<description>
+			<p>At 14th level, your mastery over possession grows so powerful that you can use spirits’ strength to enhance others. When you enter rage, choose another willing creature that you can see within 30 feet of you. Until your rage ends, that chosen creature now benefits from the bonuses granted from the spirit you have chosen that isn’t currently possessing you. The chosen creature is not considered to be raging while enjoying the effects of the possession.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you enter rage, choose another willing creature that you can see within 30 ft of you. Until your rage ends, that chosen creature now benefits from the bonuses granted from the spirit you have chosen that isn’t currently possessing you. The chosen creature is not considered to be raging while enjoying the effects of the possession.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/OaekpBgbtlc</set>
+		</setters>
+	</element>
+
+	<!--Spirits-->
+
+	<element name="Spirit of Ecstasy" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_POSSESSION_ECSTASY">
+		<compendium display="false"/>
+		<supports>Pointy Hat Path of Spirits Possession</supports>
+		<description>
+			<p>While raging, your movement increases by 5 feet. Additionally, when you receive damage, you can use your reaction to move up to half your movement speed.</p>
+		</description>
+		<sheet usage="Possession">
+			<description>Your movement increases by 5 ft. Additionally, when you receive damage, you can use your reaction to move up to half your movement speed.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/OaekpBgbtlc</set>
+		</setters>
+	</element>
+
+	<element name="Spirit of Fury" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_POSSESSION_FURY">
+		<compendium display="false"/>
+		<supports>Pointy Hat Path of Spirits Possession</supports>
+		<description>
+			<p>While raging, you double your rage damage when you make a reckless attack, and your weapon attacks score a critical hit on a roll of 19 or 20.</p>
+		</description>
+		<sheet usage="Possession">
+			<description>You double your rage damage when you make a reckless attack, and your weapon attacks score a critical hit on a roll of 19 or 20.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/OaekpBgbtlc</set>
+		</setters>
+	</element>
+
+	<element name="Spirit of Protection" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_POSSESSION_PROTECTION">
+		<compendium display="false"/>
+		<supports>Pointy Hat Path of Spirits Possession</supports>
+		<description>
+			<p>While raging, your AC increases by half your rage damage, rounding up. Additionally, when you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw.</p>
+		</description>
+		<sheet usage="Possession">
+			<description>Your AC increases by half your rage damage, rounding up. Additionally, when you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/OaekpBgbtlc</set>
+		</setters>
+	</element>
+
+	<element name="Spirit of Resolve" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_POSSESSION_RESOLVE">
+		<compendium display="false"/>
+		<supports>Pointy Hat Path of Spirits Possession</supports>
+		<description>
+			<p>While raging, you can’t be put to sleep by magical means, you do not suffer the effects of exhaustion, and you are immune to the following conditions: charmed, paralyzed, frightened, exhausted, and stunned.</p>
+		</description>
+		<sheet usage="Possession">
+			<description>You can’t be put to sleep by magical means, you do not suffer the effects of exhaustion, and you are immune to the following conditions: charmed, paralyzed, frightened, exhausted, and stunned.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/OaekpBgbtlc</set>
+		</setters>
+	</element>
+
+	<element name="Spirit of Sacrifice" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_POSSESSION_SACRIFICE">
+		<compendium display="false"/>
+		<supports>Pointy Hat Path of Spirits Possession</supports>
+		<description>
+			<p>While raging, you can’t be put to sleep by magical means, you do not suffer the effects of exhaustion, and you are immune to the following conditions: charmed, paralyzed, frightened, exhausted, and stunned.</p>
+		</description>
+		<sheet action="Reaction" usage="Possession">
+			<description>If another creature you can see within 60 feet of you takes damage, you can take the damage instead. If you do so, the damage is doubled.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/OaekpBgbtlc</set>
+		</setters>
+	</element>
+
+	<element name="Spirit of Vengeance" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_PATH_OF_SPIRITS_POSSESSION_VENGEANCE">
+		<compendium display="false"/>
+		<supports>Pointy Hat Path of Spirits Possession</supports>
+		<description>
+			<p>While raging, if you have taken any damage during the previous round, you make all attacks with advantage.</p>
+		</description>
+		<sheet usage="Possession">
+			<description>If you have taken any damage during the previous round, you make all attacks with advantage.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/OaekpBgbtlc</set>
+		</setters>
+	</element>
+  
+</elements>
