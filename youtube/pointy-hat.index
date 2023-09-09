@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Pointy Hat YouTube Content</name>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="pointy-hat.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat.index" />
 		</update>
 	</info>
@@ -20,12 +20,16 @@
 		<file name="subrace-courtlyelf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/subrace-courtlyelf.xml" />
 
 		<!--Subclasses-->
+		<file name="barbarian-spirits.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/barbarian-spirits.xml" />
 		<file name="bard-dance.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/bard-dance.xml" />
+		<file name="druid-city.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/druid-city.xml" />
 		<file name="monk-flesh.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/monk-flesh.xml" />
 		<file name="paladin-love.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/paladin-love.xml" />
 		<file name="ranger-cowboy.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/ranger-cowboy.xml" />
+		<file name="rogue-bloodthief.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/rogue-bloodthief.xml" />
 
 		<!--Other-->
+		<file name="magic-items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/magic-items.xml" />
 		<file name="weapon-fan.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/weapon-fan.xml" />
 
 	</files>
