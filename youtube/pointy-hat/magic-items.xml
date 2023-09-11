@@ -2,10 +2,28 @@
 <elements>
 	<info>
 		<name>Magic Items from Pointy Hat's YouTube</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="magic-items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/magic-items.xml" />
 		</update>
 	</info>
+	
+	<!--Horn of Plenty-->
+	<element name="Horn of Plenty" type="Magic Item" source="Pointy Hat" id="ID_POINTY_HAT_MAGIC_ITEM_HORN_OF_PLENTY">
+		<description>
+			<p>A beautifully carved golden horn with a small hole on one of its ends and a large one on the other.</p>
+			<p class="indent">This horn has 3 charges. When you use an action to blow it, you can cast the spell healing word at level 1 using your highest ability modifier, provided the target of the spell is within 60 feet of you and can hear you. Any sleeping creature within 30 feet of you is immediately woken up when you blow the horn and cast the spell. If you blow the horn after consuming all three charges, the horn produces no sound. The horn regains 1d4 expended charges daily at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Item</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="charges">1d4</set>
+			<set name="sourceUrl">https://youtu.be/7BTxqnFK-4Y</set>
+		</setters>
+	</element>
 	
 	<!--The Banshee Blade-->
 
