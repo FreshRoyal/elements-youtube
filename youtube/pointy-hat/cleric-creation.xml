@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Creation Domain from Pointy Hat's YouTube</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="cleric-creation.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/cleric-creation.xml" />
 		</update>
 	</info>
@@ -27,7 +27,7 @@
 			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_CD_CREATE_ENVOY" />
 			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_EXALTED_CREATION" />
 			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_POTENT_SPELLCASTING" />
-			<div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_GRAVE_DOMAIN_KEEPER_OF_SOULS" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_EXALTED_ENVOY" />
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -37,7 +37,7 @@
 			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_CD_CREATE_ENVOY" level="2"/>
 			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_EXALTED_CREATION" level="6"/>
 			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_POTENT_SPELLCASTING" level="8"/>
-			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_GRAVE_DOMAIN_KEEPER_OF_SOULS" level="17"/>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_EXALTED_ENVOY" level="17"/>
 		</rules>
 		<setters>
 			<set name="sourceUrl">https://youtu.be/x1q36d4GIzk</set>
@@ -61,7 +61,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_FLOATING_DISK" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TENSERS_FLOATING_DISK" level="1" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_SHIELD" level="1" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" level="3" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="3" spellcasting="Cleric" prepared="true" />
@@ -157,7 +157,7 @@
 		</setters>
 	</element>
 
-	<element name="Exalted Envoy" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_EXALTED_ENVOY">
+	<element name="Exalted Envoy" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_EXALTED_ENVOY">
 		<description>
 			<p>At 17th level, you can combine the envoys you brought to life to bring forth an even more powerful creation. As an action, if two of your envoys are within 5 feet of each other, you can use an additional use of channel divinity to combine them, creating an exalted envoy. The exalted envoy appears in an unoccupied space 20 feet from the space occupied by the envoys used in its creation. If there is not enough space for the exalted envoy to appear, the summoning fails.</p>
 			<p class="indent">If the exalted envoy is forced to make an ability check or saving throw, it uses your ability scores.</p>
