@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>DnD Shorts YouTube Content</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="dnd-shorts.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dnd-shorts.index" />
 		</update>
 	</info>
@@ -11,5 +11,8 @@
 
 		<!--Races-->
 		<file name="race-spellforged.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dnd-shorts/race-spellforged.xml" />
+		
+		<!--Subclasses-->
+		<file name="paladin-dragonrider.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dnd-shorts/paladin-dragonrider.xml" />
 	</files>
 </index>
