@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Cowboy Ranger Subclass from Pointy Hat's YouTube</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="ranger-cowboy.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/ranger-cowboy.xml" />
 		</update>
 	</info>
@@ -92,8 +92,8 @@
 			<p><em>3rd-level Cowboy feature</em></p>
 			<p>Also at 3rd level, your expertise and know-how of dealing with animals allows you to create a supernatural bond with any beast. As an action, you can attempt to befriend a beast that can see and hear you and is within 30 feet of you. You must make a Wisdom (Animal Handling) check. The DC for this check equals the 10 + CR of the beast, rounding up. If the check is successful, the beast is friendly to you, trusts you, and will heed some of your commands within reason. The beast won’t attack your enemies and it won’t engage in any action that will lead to its certain death. The beast will, among other things, bring you an object out of your reach, carry a message to someone it could reasonably find, indicate the way of a location it knows, scout ahead, or, if its biology permits it, carry you and be used as a mount. If you choose to do so, it gains +10 feet to its speed when you mount it. Willingly harming the beast will make it stop seeing you as a friend, at which point it might turn hostile depending on the nature of the beast in question, at the GM’s discretion. The beast will not leave the general location where it lives for more than 100 feet, as in, befriending an elk that lives in a particular forest means the elk won’t follow you anymore once you are 100 feet away from the forest it lives in.</p>
 		</description>
-		<sheet>
-			<description>As an action, you can attempt to befriend a beast that can see and hear you and is within 30 feet of you. You must make a Wisdom (Animal Handling) check. The DC for this check equals the 10 + CR of the beast, rounding up. If the check is successful, the beast is friendly to you, trusts you, and will heed some of your commands within reason. The beast won’t attack your enemies and it won’t engage in any action that will lead to its certain death. The beast will, among other things, bring you an object out of your reach, carry a message to someone it could reasonably find, indicate the way of a location it knows, scout ahead, or, if its biology permits it, carry you and be used as a mount. If you choose to do so, it gains +10 feet to its speed when you mount it. Willingly harming the beast will make it stop seeing you as a friend, at which point it might turn hostile depending on the nature of the beast in question, at the GM’s discretion. The beast will not leave the general location where it lives for more than 100 feet.</description>
+		<sheet action="Action">
+			<description>You can attempt to befriend a beast that can see and hear you and is within 30 feet of you. You must make a Wisdom (Animal Handling) check. The DC for this check equals the 10 + CR of the beast, rounding up. If the check is successful, the beast is friendly to you, trusts you, and will heed some of your commands within reason. The beast won’t attack your enemies and it won’t engage in any action that will lead to its certain death. The beast will, among other things, bring you an object out of your reach, carry a message to someone it could reasonably find, indicate the way of a location it knows, scout ahead, or, if its biology permits it, carry you and be used as a mount. If you choose to do so, it gains +10 feet to its speed when you mount it. Willingly harming the beast will make it stop seeing you as a friend, at which point it might turn hostile depending on the nature of the beast in question, at the GM’s discretion. The beast will not leave the general location where it lives for more than 100 feet.</description>
 		</sheet>
 		<setters>
 			<set name="sourceUrl">https://youtu.be/Ltt9MIj5UDw</set>
