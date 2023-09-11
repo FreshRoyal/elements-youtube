@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of the Dragon Rider from DnD Shorts</name>
+		<update version="0.0.1">
+			<file name="paladin-dragonrider.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dnd-shorts/paladin-dragonrider.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of the Dragon Rider" type="Archetype" source="DnD Shorts" id="ID_DND_SHORTS_ARCHETYPE_PALADIN_OATH_OF_THE_DRAGON_RIDER">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of the Dragon Rider calls to paladins who harness a connection with their steeds to inspire hope and courage on the battlefield. A common choice for holy cavalry, these paladins form deep bonds with their warrior mounts, forging a path of glory through the thickets of bloody combat.</p>
+			<p class="indent">To these paladins, a steed is more than a mere tool of war. They see great spiritual value in the preservation, study and defense of beasts and nature. Fiercely protective of their companions, Oath of the Dragon Rider Paladins train ceaselessly in mounted combat, and take pride in treating their mounts with the same respect and dignity as any other warrior. They are more than transport, a steed is one’s first and last ally, and most powerful weapon.</p>
+			
+			<h5 class="caption">Tenets of the Dragon Rider</h5>
+			<p>A paladin who takes this oath commits these tenets to memory.</p>
+			<p class="indent"><strong><em>Strength in Unity:</em></strong> The one who fights alone is the first to fall. Against the terrible forces of darkness and chaos, only together can those who stand against them prevail. Be thankful for all allies where you can find them. Strength is numbers.</p>
+			<p class="indent"><strong><em>Loyalty unto Death:</em></strong> Once trust is earned, it is kept forever. To abandon one’s people, or betray one’s Oath, is the most terrible crime one can commit. Better to die standing with honor alongside your allies than to flee alone and live as a coward.</p>
+			<p class="indent"><strong><em>Discipline:</em></strong> In the heat of battle, it is discipline which cuts through the terror and the blood. Only through vehement training and order can one develop the skills to survive. Do not trust to instinct; trust to discipline.</p>
+			<p class="indent"><strong><em>Friendship:</em></strong> It is the bonds formed between friends and family that will save us at the last. There is little point to fighting if not to protect those whom you love. The best path to resolving conflict is to find ways to forge bonds and understand one another. Rarely is lasting peace forged with the sword.</p>
+			<div element="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_DRAGON_RIDER_OATH_SPELLS" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_CHANNEL_DIVINITY" />
+			<div element="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_RIDER_AURA_OF_THE_RIDER" />
+			<div element="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_RIDER_DRACONIC_STEED" />
+			<div element="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_DRAGON_RIDER_TRUE_DRAGON_RIDER" />
+			<div element="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_DRAGON_RIDER_MASTER_OF_THE_MOUNT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_DRAGON_RIDER_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_OATH_OF_LOVE_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_RIDER_AURA_OF_THE_RIDER" level="7" />
+			<grant type="Archetype Feature" id="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_RIDER_DRACONIC_STEED" level="7" />
+			<grant type="Archetype Feature" id="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_DRAGON_RIDER_TRUE_DRAGON_RIDER" level="15" />
+			<grant type="Archetype Feature" id="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_DRAGON_RIDER_MASTER_OF_THE_MOUNT" level="20" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://dndshorts.myshopify.com/collections/digital-content/products/free-oat-of-the-dragon-rider-sub-class</set>
+		</setters>
+	</element>
+
+	<element name="Oath Spells" type="Archetype Feature" source="DnD Shorts" id="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_DRAGON_RIDER_OATH_SPELLS">
+		<description>
+			<p>You gain Oath Spells at the Paladin levels listed in the Oath of the Dragon Riders table.</p>
+			<table>
+				<thead>
+					<tr><td>Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Find Familiar, Longstrider</em></td></tr>
+				<tr><td>5th</td><td><em>Find Steed, Warding Bond</em></td></tr>
+				<tr><td>9th</td><td><em>Phantom Steed, Haste</em></td></tr>
+				<tr><td>13th</td><td><em>Find Greater Steed, Polymorph</em></td></tr>
+				<tr><td>17th</td><td><em>Conjure Elemental, Hold Monster</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_STEED" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PHANTOM_STEED" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_FIND_GREATER_STEED" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" spellcasting="Paladin" level="17" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" spellcasting="Paladin" level="17" prepared="true" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://dndshorts.myshopify.com/collections/digital-content/products/free-oat-of-the-dragon-rider-sub-class</set>
+		</setters>
+	</element>
+
+	<element name="Channel Divinity" type="Archetype Feature" source="DnD Shorts" id="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_DRAGON_RIDER_CHANNEL_DIVINITY">
+		<description>
+			<p>When you take this Oath at 3rd Level, you gain the following channel divinity options:</p>
+			<p class="indent"><strong><em>Lead the Charge!.</em></strong> As a bonus action, you can use your Channel Divinity to empower a furious, headlong assault on the enemy. You or your mount can move up to 30ft, and then you can immediately make a single melee weapon attack against a creature within range.</p>
+			<p class="indent"><strong><em>Primal Command.</em></strong> You can use your Channel Divinity to utter a primal command that beasts can understand. As an action, you present your holy symbol, and each beast of your choice within range that can hear you must make a Wisdom saving throw. On a failed save, the beast is charmed by you for 1 hour or you or your companions deal damage to it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_DRAGON_RIDER_CD_LEAD_THE_CHARGE" />
+			<grant type="Archetype Feature" id="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_DRAGON_RIDER_CD_PRIMAL_COMMAND" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://dndshorts.myshopify.com/collections/digital-content/products/free-oat-of-the-dragon-rider-sub-class</set>
+		</setters>
+	</element>
+
+	<element name="Channel Divinity: Lead the Charge!" type="Archetype Feature" source="DnD Shorts" id="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_DRAGON_RIDER_CD_LEAD_THE_CHARGE">
+		<compendium display="false" />
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Lead the Charge!" action="Bonus Action" usage="Channel Divinity">
+			<description>You or your mount can move up to 30ft, and then you can immediately make a single melee weapon attack against a creature within range.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://dndshorts.myshopify.com/collections/digital-content/products/free-oat-of-the-dragon-rider-sub-class</set>
+		</setters>
+	</element>
+
+	<element name="Channel Divinity: Primal Command" type="Archetype Feature" source="DnD Shorts" id="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_DRAGON_RIDER_CD_PRIMAL_COMMAND">
+		<compendium display="false" />
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Primal Command" action="Action" usage="Channel Divinity">
+			<description>You present your holy symbol, and each beast of your choice within range that can hear you must make a Wisdom saving throw. On a failed save, the beast is charmed by you for 1 hour or you or your companions deal damage to it.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://dndshorts.myshopify.com/collections/digital-content/products/free-oat-of-the-dragon-rider-sub-class</set>
+		</setters>
+	</element>
+
+	<element name="Aura of the Rider" type="Archetype Feature" source="DnD Shorts" id="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_RIDER_AURA_OF_THE_RIDER">
+		<description>
+			<p>Starting at 7th level, you emanate an aura of command while you are not incapacitated. The aura extends 10 feet from you in every direction, but not through total cover.</p>
+			<p class="indent">Friendly creatures in your aura that you have summoned (through a spell such as Find Steed or Find Familiar) gain temporary hit points equal to your Charisma modifier at the start of each of their turns, and may use your Spell Save DC when they force another creature to make a saving throw.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You emanate an aura of command while you are not incapacitated. The aura extends 10 ft from you in every direction, but not through total cover. Friendly creatures in your aura that you have summoned gain {{charisma:modifier}} temporary hp at the start of each of their turns, and may use your Spell Save DC when they force another creature to make a saving throw.</description>
+			<description level="18">You emanate an aura of command while you are not incapacitated. The aura extends 30 ft from you in every direction, but not through total cover. Friendly creatures in your aura that you have summoned gain {{charisma:modifier}} temporary hp at the start of each of their turns, and may use your Spell Save DC when they force another creature to make a saving throw.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://dndshorts.myshopify.com/collections/digital-content/products/free-oat-of-the-dragon-rider-sub-class</set>
+		</setters>
+	</element>
+
+	<element name="Draconic Steed" type="Archetype Feature" source="DnD Shorts" id="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_RIDER_DRACONIC_STEED">
+		<description>
+			<p>Also at 7th level, you can summon a spiritual dragon with the spell Find Steed. Use the Copper Dragon Wyrmling stat block for this creature’s statistics, except its size is large, not medium, and it’s alignment changes to match yours, and its fly speed is equal to half your walking speed while a creature is mounted on it.</p>
+			<p class="indent">In addition, if you are mounted on an independent creature that takes its own turns, when you move on your turn, you may choose to move your mount, using their movement speed, instead.</p>
+		</description>
+		<sheet>
+			<description>You can summon a spiritual dragon with the spell Find Steed. Use the Copper Dragon Wyrmling stat block for this creature’s statistics, except its size is large, not medium, and it’s alignment changes to match yours, and its fly speed is equal to half your walking speed while a creature is mounted on it.&#13;
+			If you are mounted on an independent creature that takes its own turns, when you move on your turn, you may choose to move your mount, using their movement speed, instead.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://dndshorts.myshopify.com/collections/digital-content/products/free-oat-of-the-dragon-rider-sub-class</set>
+		</setters>
+	</element>
+
+	<element name="True Dragon Rider" type="Archetype Feature" source="DnD Shorts" id="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_DRAGON_RIDER_TRUE_DRAGON_RIDER">
+		<description>
+			<p>Starting at 15th level, you can summon a powerful spiritual dragon with the spell Find Greater Steed. Use the Red Dragon Wyrmling stat block for this creature’s statistics, except its size is large, not medium, and its alignment changes to match yours.</p>
+		</description>
+		<sheet>
+			<description>You can summon a powerful spiritual dragon with the spell Find Greater Steed. Use the Red Dragon Wyrmling stat block for this creature’s statistics, except its size is large, not medium, and its alignment changes to match yours.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/FqP2-afugl8</set>
+		</setters>
+	</element>
+	
+	<element name="Master of the Mount" type="Archetype Feature" source="DnD Shorts" id="ID_DND_SHORTS_ARCHETYPE_FEATURE_OATH_OF_THE_DRAGON_RIDER_MASTER_OF_THE_MOUNT">
+		<description>
+			<p>From 20th level, your mastery of combat imbues you with divine power while mounted. As an action while mounted, you gain the following benefits for one minute:</p>
+			<ul>
+				<li>You and your mount gain a +2 bonus to your AC.</li>
+				<li>Your mount gains resistance to all damage.</li>
+				<li>The first time your mount would fall to 0 hit points while you are conscious, it falls to 1 hit point instead.</li>
+				<li>You may treat any roll for your mount to regain a recharge action as a 6.</li>
+			</ul>
+		</description>
+		<sheet action="Action">
+			<description>While mounted, you gain the following benefits for one minute: 
+			• You and your mount gain a +2 bonus to your AC.
+			• Your mount gains resistance to all damage.
+			• The first time your mount would fall to 0 hp while you are conscious, it falls to 1 hp instead.
+			• You may treat any roll for your mount to regain a recharge action as a 6.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://dndshorts.myshopify.com/collections/digital-content/products/free-oat-of-the-dragon-rider-sub-class</set>
+		</setters>
+	</element>	
+  
+</elements>
