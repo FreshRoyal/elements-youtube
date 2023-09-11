@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>YouTube Content</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="youtube.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube.index" />
 		</update>
 	</info>
