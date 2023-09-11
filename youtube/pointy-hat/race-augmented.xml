@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Augmented from Pointy Hat's YouTube</name>
-		<update version="0.0.1">
-			<file name="race-vigil.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-augmented.xml" />
+		<update version="0.0.2">
+			<file name="race-augmented.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-augmented.xml" />
 		</update>
 	</info>
 	<element name="Augmented" type="Race" source="Pointy Hat" id="ID_POINTY_HAT_RACE_AUGMENTED">
