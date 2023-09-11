@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Augmented from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="race-vigil.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-augmented.xml" />
+		</update>
+	</info>
+	<element name="Augmented" type="Race" source="Pointy Hat" id="ID_POINTY_HAT_RACE_AUGMENTED">
+		<description>
+			<p>Those who choose to become augmented are anything but a monolith. Most augmented become so after losing a limb or the capability to hear, see, walk, even speak. Faced with the challenges that naturally come from their situation, they reach out to master crafters: artificers specializing in the making and installing of wondrous magical prosthetics to a living, humanoid body.</p>
+			<p class="indent">These artificers take incredible pride in their work, and each add a unique, personal touch to their craft. As a result, no two augmentations look or work the same. They are personally made for the person augmented with them.</p>
+			<p class="indent">Most of the time, a lost arm is replaced with an artificial limb, meant to work exactly like an arm would, but artificers are inventive by nature, and so many augmented are given secondary characteristics to their augmentations, not just allowing them to replace their lost limb or sense but also giving them new capabilities that their original limb did not have.</p>
+			<p class="indent">Some augmented outfit their augmentations with combat capabilities, incorporating finely-tuned weapons into them. Some are given incredibly powerful legs or fast seats that allow them to move through the battlefield even faster than before, and some add tools to their augmentations, opening up a myriad of possibilities from integrated musical instruments to perfectly concealed thieves’ tools.</p>
+			<p class="indent">There are also some who decide to become augmented not after the loss of a sense or limb, but because of the incredible capabilities that their augmentations would grant them. There are assassin clans that augment their members, making them even deadlier at their sinister craft. There are racers who choose to undergo augmentation to participate in the fastest ever races involving living people. There are even whispers of truly heinous master craftsmen, artificers who force their unethical augmentations on unwilling subjects. Regardless of why and how someone becomes augmented, they all share in common one thing: their augmentations are all as different and unique as the people attached to them.</p>
+			
+			<h4>Augmented Features:</h4>
+			<p class="indent" style="margin-top:15px"><strong><em>Creature Type:</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size:</em></strong> Your size is Medium or Small.</p>
+			<p class="indent"><strong><em>Speed:</em></strong> Your base walking speed is 30 feet. </p>
+			<p class="indent"><strong><em>Starting Point:</em></strong> You can choose to keep certain elements of another race when picking augmented as the race of your character: any skill proficiencies given to you with that race, and any climbing, flying, or swimming speed.</p>
+			<p class="indent">If you instead choose to not keep those elements, you gain proficiency in two skills of your choice.</p>
+			<p class="indent"><strong><em>Tinkerer:</em></strong> The routine upkeep of your augmentation has made you particularly proficient in the usage of the necessary tools required to maintain your magical prosthetic. You have expertise (your proficiency bonus is doubled when making checks) with tinker’s tools.</p>
+			<p class="indent"><strong><em>Patching Up:</em></strong> Your augmentation is magically connected to your own body, and therefore your life force. As an action, you can make an ability check using your tinker’s tools on your augmentation. The DC is equal to 15 if your current HP is above half of your hit point maximum (rounding down), or 18 if your current HP is below half of your hit point maximum. On a success, you gain an amount of hit points equal to 1d4 + your proficiency bonus. You can use this feature a number of times equal to your proficiency bonus. </p>
+
+			<div element="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION" />
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/qSjh6-mA638</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Augmented)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" bonus="base"/>
+
+			<select type="Racial Trait" name="Size (Augmented)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Augmented)" supports="Standard||Exotic" />
+			
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_STARTING_POINT" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_TINKERER" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_PATCHING_UP" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION" />
+		</rules>
+	</element>
+	
+	<element name="Starting Point" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_STARTING_POINT">
+		<description>
+			<p>You can choose to keep certain elements of another race when picking augmented as the race of your character: any skill proficiencies given to you with that race, and any climbing, flying, or swimming speed.</p>
+			<p class="indent">If you instead choose to not keep those elements, you gain proficiency in two skills of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency, Starting Point" supports="Skill" number="2" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/qSjh6-mA638</set>
+		</setters>
+	</element>
+
+	<element name="Tinkerer" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_TINKERER">
+		<description>
+			<p>The routine upkeep of your augmentation has made you particularly proficient in the usage of the necessary tools required to maintain your magical prosthetic. You have expertise (your proficiency bonus is doubled when making checks) with tinker’s tools.</p>
+		</description>
+		<sheet>
+			<description>You have expertise in tinker's tools.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/qSjh6-mA638</set>
+		</setters>
+	</element>
+
+	<element name="Patching Up" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_PATCHING_UP">
+		<description>
+			<p>Your augmentation is magically connected to your own body, and therefore your life force. As an action, you can make an ability check using your tinker’s tools on your augmentation. The DC is equal to 15 if your current HP is above half of your hit point maximum (rounding down), or 18 if your current HP is below half of your hit point maximum. On a success, you gain an amount of hit points equal to 1d4 + your proficiency bonus. You can use this feature a number of times equal to your proficiency bonus.</p>
+		</description>
+		<sheet action="Action" usage="{{proficiency}}/Long Rest">
+			<description>You can make an ability check using your tinker’s tools on your augmentation. The DC is 15 if your current hp is above half of your hp maximum, or 18 if your current hp is below half of your hp maximum. On a success, you gain 1d4+{{proficiency}}.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/qSjh6-mA638</set>
+		</setters>
+	</element>
+
+	<element name="Augmentation" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION">
+		<description>
+			<p>Your body has been outfitted with a magical artificial augmentation that you can use in a variety of ways depending on the specific augmentation. Choose one of the following augmentations when choosing this race:</p>
+
+			<p class="indent"><strong><em>Utility Augmentation:</em></strong></p>
+			<p class="indent">This magical augmentation grants you utility capabilities that far surpass the ones granted to you by the original body part you have replaced.</p>
+			<p class="indent">You gain expertise in one skill and one tool (doubling your proficiency bonus on any ability checks made with them). The tool chosen is inlaid into your augmentation and cannot be dropped unless you are somehow parted with your augmentation.</p>
+			<p class="indent"><strong><em>Enhanced Augmentation:</em></strong> At 10th level, provided you have access to a master craftsman specializing in magical augmentations and 500 gold pieces to pay for their services, you can choose an additional skill and tool to gain expertise with. It takes 1d4 days for the master craftsman to outfit your augmentation with its new capabilities, during which you do not gain the advantages that your augmentation grants you.</p>
+			<p class="indent">Examples of this augmentation include:</p>
+			<ul>
+				<li>An artificial eye that grants you expertise with navigator tools and the Perception skill.</li>
+				<li>A set of magically-enhanced mechanical hands that grant you expertise with thieves’ tools and the Sleight of Hand skill.</li>
+				<li>A clockwork voice box that grants you expertise with one musical instrument and the Performance skill.</li>
+			</ul>
+
+			<p class="indent"><strong><em>Combat Augmentation:</em></strong></p>
+			<p class="indent">This magical augmentation grants you combat capabilities that allow you to use your augmentation as a weapon.</p>
+			<p class="indent">Your AC increases by 1, and a weapon with which you are proficient with is fitted into your augmentation. Attacks made with this weapon count as magical for the purposes of overcoming resistances, and the weapon cannot be dropped. You can change this weapon by spending 1 hour fitting it to your augmentation and 30 gold in new parts.</p>
+			<p class="indent"><strong><em>Enhanced Augmentation:</em></strong> At 10th level, provided you have access to a master craftsman specializing in magical augmentations and 500 gold pieces to pay for their services, you can fit your augmentation with an additional weapon you are proficient with. Your AC increases by 1 again, to a total of +2, and you are able to stow one weapon into your augmentation and draw the other weapon for free during your turn. This new weapon has the same capabilities as the first weapon attached to your augmentation.</p>
+			<p class="indent">Examples of this augmentation include:</p>
+			<ul>
+				<li>A mechanical arm outfitted with a blade that comes out between the knuckles of your hand augmentation.</li>
+				<li>A crossbow inlaid into your forearm.</li>
+				<li>Your artificial hand is attached to your arm by a chain, allowing you to use it as a flail.</li>
+			</ul>
+
+			<p class="indent"><strong><em>Movement Augmentation:</em></strong></p>
+			<p class="indent">This magical augmentation enhances your movement, allowing you to move faster, even through hard to navigate terrain.</p>
+			<p class="indent">Your walking speed increases by 5 feet. Additionally, moving through non-magical difficult terrain does not cost you extra movement.</p>
+			<p class="indent"><strong><em>Enhanced Augmentation:</em></strong> At 10th level, provided you have access to a master craftsman specializing in magical augmentations and 500 gold pieces to pay for their services, you can enhance your augmentation to grant you even faster movement and additional traversal abilities. Your walking speed increases by 5 feet, bringing the total increase to 10 feet. Additionally, you gain the ability to move along vertical surfaces without falling during the move.</p>
+			<p class="indent">Examples of this augmentation include:</p>
+			<ul>
+				<li>A set of mechanical hydraulic-powered legs.</li>
+				<li>A seat that hovers 5 inches above the ground.</li>
+				<li>A set of artificial calves with magically-powered jets of energy.</li>
+			</ul>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Racial Trait" name="Augmentation" supports="PH Augmentation" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/qSjh6-mA638</set>
+		</setters>
+	</element>
+	
+	<!--Utility-->
+	<!--Really need to figure out the expertise stuff at some point. Not today...-->
+	<element name="Utility Augmentation" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY">
+		<supports>PH Augmentation</supports>
+		<description>
+			<p>This magical augmentation grants you utility capabilities that far surpass the ones granted to you by the original body part you have replaced.</p>
+			<p class="indent">You gain expertise in one skill and one tool (doubling your proficiency bonus on any ability checks made with them). The tool chosen is inlaid into your augmentation and cannot be dropped unless you are somehow parted with your augmentation.</p>
+			<p class="indent"><strong><em>Enhanced Augmentation:</em></strong> At 10th level, provided you have access to a master craftsman specializing in magical augmentations and 500 gold pieces to pay for their services, you can choose an additional skill and tool to gain expertise with. It takes 1d4 days for the master craftsman to outfit your augmentation with its new capabilities, during which you do not gain the advantages that your augmentation grants you.</p>
+			<p class="indent">Examples of this augmentation include:</p>
+			<ul>
+				<li>An artificial eye that grants you expertise with navigator tools and the Perception skill.</li>
+				<li>A set of magically-enhanced mechanical hands that grant you expertise with thieves’ tools and the Sleight of Hand skill.</li>
+				<li>A clockwork voice box that grants you expertise with one musical instrument and the Performance skill.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have expertise in the tool you picked with this trait.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency, Utility Augmentation" supports="Skill" />
+			<select type="Class Feature" name="Expertise, Utility Augmentation" supports="Expertise, Skill" />
+			<select type="Proficiency" name="Tool Proficiency, Utility Augmentation" supports="Tool" />
+			<select type="Racial Trait" name="Enhanced Augmentation" supports="PH Utility Augmentation" level="10" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/qSjh6-mA638</set>
+		</setters>
+	</element>
+
+	<element name="Enhanced Augmentation" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_ENHANCED">
+		<supports>PH Utility Augmentation</supports>
+		<compendium display="false" />
+		<description>
+			<p>At 10th level, provided you have access to a master craftsman specializing in magical augmentations and 500 gold pieces to pay for their services, you can choose an additional skill and tool to gain expertise with. It takes 1d4 days for the master craftsman to outfit your augmentation with its new capabilities, during which you do not gain the advantages that your augmentation grants you.</p>
+		</description>
+		<sheet>
+			<description>You have expertise in the tool you picked with this trait.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency, Enhanced Augmentation" supports="Skill" />
+			<select type="Class Feature" name="Expertise, Enhanced Augmentation" supports="Expertise, Skill" />
+			<select type="Proficiency" name="Tool Proficiency, Enhanced Augmentation" supports="Tool" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/qSjh6-mA638</set>
+		</setters>
+	</element>
+
+	<!--Combat-->
+	<element name="Combat Augmentation" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_COMBAT">
+		<supports>PH Augmentation</supports>
+		<description>
+			<p>This magical augmentation grants you combat capabilities that allow you to use your augmentation as a weapon.</p>
+			<p class="indent">Your AC increases by 1, and a weapon with which you are proficient with is fitted into your augmentation. Attacks made with this weapon count as magical for the purposes of overcoming resistances, and the weapon cannot be dropped. You can change this weapon by spending 1 hour fitting it to your augmentation and 30 gold in new parts.</p>
+			<p class="indent"><strong><em>Enhanced Augmentation:</em></strong> At 10th level, provided you have access to a master craftsman specializing in magical augmentations and 500 gold pieces to pay for their services, you can fit your augmentation with an additional weapon you are proficient with. Your AC increases by 1 again, to a total of +2, and you are able to stow one weapon into your augmentation and draw the other weapon for free during your turn. This new weapon has the same capabilities as the first weapon attached to your augmentation.</p>
+			<p class="indent">Examples of this augmentation include:</p>
+			<ul>
+				<li>A mechanical arm outfitted with a blade that comes out between the knuckles of your hand augmentation.</li>
+				<li>A crossbow inlaid into your forearm.</li>
+				<li>Your artificial hand is attached to your arm by a chain, allowing you to use it as a flail.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>A weapon with which you are proficient with is fitted into your augmentation. Attacks made with this weapon count as magical for the purposes of overcoming resistances, and the weapon cannot be dropped. You can change this weapon by spending 1 hour fitting it to your augmentation and 30 gold in new parts.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" />
+			<select type="Racial Trait" name="Enhanced Augmentation" supports="PH Combat Augmentation" level="10" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/qSjh6-mA638</set>
+		</setters>
+	</element>
+
+	<element name="Enhanced Augmentation" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_COMBAT_ENHANCED">
+		<supports>PH Combat Augmentation</supports>
+		<compendium display="false" />
+		<description>
+			<p>At 10th level, provided you have access to a master craftsman specializing in magical augmentations and 500 gold pieces to pay for their services, you can fit your augmentation with an additional weapon you are proficient with. Your AC increases by 1 again, to a total of +2, and you are able to stow one weapon into your augmentation and draw the other weapon for free during your turn. This new weapon has the same capabilities as the first weapon attached to your augmentation.</p>
+		</description>
+		<sheet>
+			<description>You are able to stow one weapon into your augmentation and draw the other weapon for free during your turn. This new weapon has the same capabilities as the first weapon attached to your augmentation.You must be proficient with the other weapon.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/qSjh6-mA638</set>
+		</setters>
+	</element>
+
+	<!--Movement-->
+	<element name="Movement Augmentation" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_MOVEMENT">
+		<supports>PH Augmentation</supports>
+		<description>
+			<p>This magical augmentation enhances your movement, allowing you to move faster, even through hard to navigate terrain.</p>
+			<p class="indent">Your walking speed increases by 5 feet. Additionally, moving through non-magical difficult terrain does not cost you extra movement.</p>
+			<p class="indent"><strong><em>Enhanced Augmentation:</em></strong> At 10th level, provided you have access to a master craftsman specializing in magical augmentations and 500 gold pieces to pay for their services, you can enhance your augmentation to grant you even faster movement and additional traversal abilities. Your walking speed increases by 5 feet, bringing the total increase to 10 feet. Additionally, you gain the ability to move along vertical surfaces without falling during the move.</p>
+			<p class="indent">Examples of this augmentation include:</p>
+			<ul>
+				<li>A set of mechanical hydraulic-powered legs.</li>
+				<li>A seat that hovers 5 inches above the ground.</li>
+				<li>A set of artificial calves with magically-powered jets of energy.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Moving through non-magical difficult terrain does not cost you extra movement.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed" value="5" />
+			<select type="Racial Trait" name="Enhanced Augmentation" supports="PH Movement Augmentation" level="10" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/qSjh6-mA638</set>
+		</setters>
+	</element>
+
+	<element name="Enhanced Augmentation" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_MOVEMENT_ENHANCED">
+		<supports>PH Movement Augmentation</supports>
+		<compendium display="false" />
+		<description>
+			<p>At 10th level, provided you have access to a master craftsman specializing in magical augmentations and 500 gold pieces to pay for their services, you can enhance your augmentation to grant you even faster movement and additional traversal abilities. Your walking speed increases by 5 feet, bringing the total increase to 10 feet. Additionally, you gain the ability to move along vertical surfaces without falling during the move.</p>
+		</description>
+		<sheet>
+			<description>You can move along vertical surfaces without falling during the move.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed" value="5" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/qSjh6-mA638</set>
+		</setters>
+	</element>
+	
+</elements>

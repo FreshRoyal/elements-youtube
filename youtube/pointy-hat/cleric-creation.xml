@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Creation Domain from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="cleric-creation.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/cleric-creation.xml" />
+		</update>
+	</info>
+	
+	<element name="Creation Domain" type="Archetype" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_CLERIC_CREATION_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<div class="sidebar">
+				<p class="flavor">“There is nothing more divine than creation, and clerics of this domain are given what they consider with the manifestation of the most holy of gifts. Creation clerics are known for their ability to manifest objects, structures, and even living beings out of thin air. They channel the divine energy that grants them power and solidify it into tangible form. These clerics worship deities that are at the center of origin stories, or are known for creating worlds, great works, and even peoples.</p>
+				<p class="flavor">The mission of a creation cleric varies as much as their creations. Some decide to continue on the work of their god, raising structures in their image and following the rules that their god dictated for their creations. Some task themselves with protecting their god’s divine creations, repairing and preserving their beauty and worth.</p>
+				<p class="flavor">There are however creation clerics that believe that they were given the gift of creation to shape the world around them as they see fit, bending it and adding to it as if it was made of clay to twist it into what they believe the world ought to look like. Whether these clerics leave behind a better or worse version of the world they inhabit depends on the cleric’s own divine vision.”</p>
+			</div>
+			
+			<p>The Cleric Divine Domain of Creation is a cleric subclass that focuses on a cleric playstyle that emphasizes set up and upkeep, as well as clever, outside of the box thinking.</p>
+			<p class="indent">Their envoy ability allows them to set up ongoing damage, healing, and protection on the battlefield, freeing the cleric’s own actions to do as they see fit. They’ve been given abilities that boost their initiative to make this set up process easier and quick during battle, maximizing the utility of their costly abilities. This set up process relies heavily on their use of Channel Divinity, so the creation domain also gives the cleric ways to mitigate this cost. Creation Clerics get a sort of “ultimate” ability in the summoning of an exalted envoy, an extremely powerful but short-lived ability that allows you to command a large and powerful construct of your own creation.</p>
+			<p class="indent">The second pillar of this subclass comes in the shape of the creation cleric’s ability to create walls. This was designed as an extremely open-ended ability that starts out as versatile but only grows in power and versatility as the cleric becomes stronger. To fully capitalize on its power the player must challenge themselves to think on new and creative uses for their walls, using them in new and unique ways. Walls could be used as cover, as obstacles, as ways to traverse spaces, or as a way to separate enemies from their allies, as well as an innumerable number of other uses that the cleric must think of on their own.</p>
+			<p class="indent">Players that enjoy coming up with creative uses for their abilities as well as a busier style of gameplay will particularly enjoy this subclass for clerics.</p>
+
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_DOMAIN_SPELLS" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_BLESSING_OF_CREATION" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_EYES_OF_THE_CREATOR" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_CD_CREATE_ENVOY" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_EXALTED_CREATION" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_POTENT_SPELLCASTING" />
+			<div element="ID_WOTC_XGTE_ARCHETYPE_FEATURE_GRAVE_DOMAIN_KEEPER_OF_SOULS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_DOMAIN_SPELLS" level="1"/>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_BLESSING_OF_CREATION" level="1"/>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_EYES_OF_THE_CREATOR" level="1"/>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_CD_CREATE_ENVOY" level="2"/>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_EXALTED_CREATION" level="6"/>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_POTENT_SPELLCASTING" level="8"/>
+			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_GRAVE_DOMAIN_KEEPER_OF_SOULS" level="17"/>
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/x1q36d4GIzk</set>
+		</setters>
+	</element>
+
+	<element name="Domain Spells" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_DOMAIN_SPELLS">
+		<description>
+			<p>Starting at 1st level, you learn an additional spell when you reach certain levels in this class, as shown in the Creation Domain Spells table. The spell counts as a cleric spell for you, but it doesn't count against the number of cleric spells you know.</p>
+			<h5>Grave Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>Floating Disk, Shield</em></td></tr>
+				<tr><td>3rd</td><td><em>Enlarge/Reduce, Shatter</em></td></tr>
+				<tr><td>5th</td><td><em>Meld into Stone, Tiny Hut</em></td></tr>
+				<tr><td>7th</td><td><em>Fabricate, Stone Shape</em></td></tr>
+				<tr><td>9th</td><td><em>Awaken, Passwall</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FLOATING_DISK" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MELD_INTO_STONE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TINY_HUT" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FABRICATE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STONE_SHAPE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AWAKEN" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASSWALL" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/x1q36d4GIzk</set>
+		</setters>
+	</element>
+
+	<element name="Blessing of Creation" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_BLESSING_OF_CREATION">
+		<description>
+			<p>Starting when you choose this domain at 1st level, you gain the ability to harness the power of divine creation. When you prepare your spells, you also choose if you wish to be able to create food, an object, a shield, or a set of tools. As an action, you are able to produce a maximum of 10 pounds of the food or drink of your choice, a non-magical object worth less than 5 gold pieces, or any simple weapon, shield, or set of tools. Once you use this trait, you can't use it again until you finish a long rest. The food or object you created using this feature disappears into thin air at the end of your next long rest.</p>
+			<p class="indent">In addition, you learn the Mending cantrip, which doesn’t count against the number of cleric cantrips you know. For you, it has a range of 30 feet and you can cast it as an action.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You are able to produce a maximum of 10 pounds of the food or drink of your choice, a non-magical object worth less than 5 gold pieces, or any simple weapon, shield, or set of tools. The food or object you created using this feature disappears into thin air at the end of your next long rest. In addition, you learn the Mending cantrip. For you, it has a range of 30 ft and you can cast it as an action.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MENDING" spellcasting="Cleric" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/x1q36d4GIzk</set>
+		</setters>
+	</element>
+
+	<element name="Eyes of the Creator" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_EYES_OF_THE_CREATOR">
+		<description>
+			<p>Also at 1st level, your eyes see past the existing world before you and into the possibilities that the gift of creation opens to you. As an action, you can consume a spell slot to create a 1/2 foot thick wall in an unoccupied space within 60 feet of you. The wall is made of stone, such as granite or marble, but you decide the appearance of the wall itself. The length and width of the wall depends on the spell slot level consumed to create it: 10 foot in width or length per spell slot level. For example, if you consume a level 4 spell slot, you can create a 10 foot tall, 40 foot wide wall, or a 40 foot tall, 10 foot wide wall, or a 20 foot tall, 20 foot wide wall, your choice. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface.</p>
+			<p class="indent">The wall's AC is 10 and its HP is 20. It’s immune to poison and psychic damage and has resistance against slashing damage. Each 10 foot section of the wall has its own HP. If one section is destroyed, the others stay in place. The wall lasts for 1 hour, after which it disappears into thin air.</p>
+			<p class="indent">You also gain an additional bonus to your initiative rolls equal to your Wisdom modifier.</p>
+		</description>
+		<sheet action="Action" usage="Spell Slot">
+			<description>You create a 1/2 foot thick wall in an unoccupied space within 60 feet of you. The wall is made of stone, such as granite or marble, but you decide the appearance of the wall itself. The length and width of the wall depends on the spell slot level consumed to create it: 10 ft in width or length per spell slot level. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface.
+			The wall's AC is 10 and its HP is 20. It’s immune to poison and psychic damage and has resistance against slashing damage. Each 10 foot section of the wall has its own HP. If one section is destroyed, the others stay in place. The wall lasts for 1 hour, after which it disappears into thin air.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative:misc" value="1" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/x1q36d4GIzk</set>
+		</setters>
+	</element>
+
+	<element name="Channel Divinity: Create Envoy" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_CD_CREATE_ENVOY">
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to create a living divine construct.</p>
+			<p class="indent">As an action, you create an envoy in an unoccupied space you can see within 30 feet from you. When you summon the envoy, choose between Healing, Protection, or Harm. You cannot create a new envoy of the same type as a currently existing envoy.</p>
+
+			<p class="indent">If an envoy is forced to make an ability check or saving throw, it uses your ability scores.</p>
+			<p class="indent">In combat, the envoy acts during your turn. It can move on its own, but the only action it takes is the Dodge action, unless you take a bonus action on your turn to command it to take another action. You can only command one envoy using a bonus action, regardless of how many envoys are active at a time. If a bonus action is not used to command an envoy, their Divine Healing, Divine Protection, or Divine Harm abilities are still in effect.</p>
+			<p class="indent">If the mending cantrip is cast on an envoy, it regains 2d6 hit points. The envoy disappears if it is reduced to 0 hit points or after 1 hour. You can dismiss it early as an action.</p>
+		</description>
+		<sheet alt="Create Envoy" action="Action" usage="Channel Divinity">
+			<description>You create an envoy in an unoccupied space you can see within 30 feet from you. When you summon the envoy, choose between Healing, Protection, or Harm. You cannot create a new envoy of the same type as a currently existing envoy.
+			If an envoy is forced to make an ability check or saving throw, it uses your ability scores. The envoy acts during your turn. It can move on its own, but the only action it takes is the Dodge action, unless you take a bonus action on your turn to command it to take another action. You can only command one envoy using a bonus action, regardless of how many envoys are active at a time. If a bonus action is not used to command an envoy, their Divine Healing, Divine Protection, or Divine Harm abilities are still in effect.
+			If the mending cantrip is cast on an envoy, it regains 2d6 hp. The envoy disappears if it is reduced to 0 hp or after 1 hour. You can dismiss it early as an action.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://docs.google.com/document/d/1f273q9eKGA3AHSpxVQZdvuI9qYcWkQki_Zcb8eTYKuA/edit</set>
+		</setters>
+	</element>
+
+	<element name="Exalted Creation" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_EXALTED_CREATION">
+		<description>
+			<p>Your powers embolden and perfect your divine creations. Walls created with the Eyes of the Creator ability can now be curved to form an arched shape or a perfect circle. They have an AC of 15 and an HP of 40. You can also cast the mending cantrip on a wall you have created. When you do so, it regains 2d6 hit points.</p>
+			<p class="indent">In addition, you are able to create one envoy without consuming any uses of Channel Divinity. Once you’ve created an envoy using this ability you can’t do so again until finishing a long rest, but you can still spend a use of Channel Divinity to create additional envoys.</p>
+		</description>
+		<sheet>
+			<description>Walls created with the Eyes of the Creator ability can now be curved to form an arched shape or a perfect circle. They have an AC of 15 and an hp of 40. You can also cast the mending cantrip on a wall you have created. When you do so, it regains 2d6 hp.
+			You are able to create one envoy without consuming any uses of Channel Divinity. Once you’ve created an envoy using this ability you can’t do so again until finishing a long rest.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/x1q36d4GIzk</set>
+		</setters>
+	</element>
+
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_POTENT_SPELLCASTING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
+		<description>
+			<p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip. You also add your wisdom modifier to any healing done with your mending cantrip.</p>
+		</description>
+		<sheet>
+			<description>Add {{wisdom:modifier}} to damage dealt with a cleric cantrip. You also add {{wisdom:modifier}} to any healing done with your mending cantrip.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/x1q36d4GIzk</set>
+		</setters>
+	</element>
+
+	<element name="Exalted Envoy" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_EXALTED_ENVOY">
+		<description>
+			<p>At 17th level, you can combine the envoys you brought to life to bring forth an even more powerful creation. As an action, if two of your envoys are within 5 feet of each other, you can use an additional use of channel divinity to combine them, creating an exalted envoy. The exalted envoy appears in an unoccupied space 20 feet from the space occupied by the envoys used in its creation. If there is not enough space for the exalted envoy to appear, the summoning fails.</p>
+			<p class="indent">If the exalted envoy is forced to make an ability check or saving throw, it uses your ability scores.</p>
+			<p class="indent">In combat, the envoy acts immediately before or after your turn, your choice. You can command it telepathically as a free action instead of a bonus action. If the mending cantrip is cast on the exalted envoy, it regains 2d6 hit points. The envoy disappears if it is reduced to 0 hit points or after a number of turns equal to your proficiency bonus. You can dismiss it early as an action. Once you’ve summoned an exalted envoy you cannot do so again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="Channel Divinity/Long Rest">
+			<description>If two of your envoys are within 5 ft of each other, you can combine them, creating an exalted envoy. The exalted envoy appears in an unoccupied space 20 ft from the space occupied by the envoys used in its creation. If there is not enough space for the exalted envoy to appear, the summoning fails.
+			If the exalted envoy is forced to make an ability check or saving throw, it uses your ability scores.
+			In combat, the envoy acts immediately before or after your turn. You can command it telepathically as a free action instead of a bonus action. If the mending cantrip is cast on the exalted envoy, it regains 2d6 hp. The envoy disappears if it is reduced to 0 hp or after {{proficiency}} turns. You can dismiss it early as an action.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://docs.google.com/document/d/1f273q9eKGA3AHSpxVQZdvuI9qYcWkQki_Zcb8eTYKuA/edit</set>
+		</setters>
+	</element>
+</elements>
