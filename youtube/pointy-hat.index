@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Pointy Hat YouTube Content</name>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="pointy-hat.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat.index" />
 		</update>
 	</info>
@@ -10,6 +10,7 @@
 		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/source.xml" />
 
 		<!--Races-->
+		<file name="race-augmented.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-augmented.xml" />
 		<file name="race-brownie.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-brownie.xml" />
 		<file name="race-dragontouched.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-dragontouched.xml" />
 		<file name="race-felis.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-felis.xml" />
@@ -22,6 +23,7 @@
 		<!--Subclasses-->
 		<file name="barbarian-spirits.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/barbarian-spirits.xml" />
 		<file name="bard-dance.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/bard-dance.xml" />
+		<file name="cleric-creation.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/cleric-creation.xml" />
 		<file name="druid-city.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/druid-city.xml" />
 		<file name="monk-flesh.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/monk-flesh.xml" />
 		<file name="paladin-love.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/paladin-love.xml" />
