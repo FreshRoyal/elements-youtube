@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Circle of the City Subclass from Pointy Hat's YouTube</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="druid-city.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/druid-city.xml" />
 		</update>
 	</info>
@@ -56,12 +56,18 @@
 		<description>
 			<p>At 2nd level, you are able to call on the power of nature and harness its effects. The effects you gain depend on whether you are standing on “natural” or “constructed” terrain. Natural terrain is any ground that has not been significantly shaped by civilization, such as soil, grass, or snow. Constructed terrain is the opposite: ground that has been fabricated or shaped by mankind’s hands, such as cut stone, metal sheets, or wooden boards. Standing on a rock in the forest would be considered Natural Terrain, whereas standing on stone bricks on a castle’s ramparts would be considered Constructed Terrain. Whether a terrain is considered natural or constructed does not depend on if the materials used are “natural” or not, but rather the amount of people’s involvement in giving it its current shape. If it is ambiguous, which ground you are standing on is at the GM’s discretion.</p>
 			<ul>
-				<li>While standing on Natural Terrain, you harness the healing energy of nature and become attuned to its consciousness:&#13;
-				You gain 1d4 temporary healing at the beginning of each turn.
-				You gain proficiency with the Perception skill.</li>
-				<li>While standing on Constructed Terrain, you strengthen your body against harmful effects and are able to harness the wisdom of mankind:&#13;
-				You add 1d6 to all dexterity saves you make.
-				You gain proficiency with the Insight skill.</li>
+				<li>While standing on Natural Terrain, you harness the healing energy of nature and become attuned to its consciousness:
+					<ul>
+						<li>You gain 1d4 temporary healing at the beginning of each turn.</li>
+						<li>You gain proficiency with the Perception skill.</li>
+					</ul>
+				</li>
+				<li>While standing on Constructed Terrain, you strengthen your body against harmful effects and are able to harness the wisdom of mankind:
+					<ul>
+						<li>You add 1d6 to all dexterity saves you make.</li>
+						<li>You gain proficiency with the Insight skill.</li>
+					</ul>
+				</li>
 			</ul>
 		</description>
 		<sheet>
