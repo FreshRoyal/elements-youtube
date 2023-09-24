@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Fan Weapon from Pointy Hat's YouTube</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="weapon-fan.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/weapon-fan.xml" />
 		</update>
 	</info>
@@ -40,6 +40,21 @@
 		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_ONEHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_POINTY_HAT_WEAPON_PROPERTY_BLADED_FAN_RETURNING</supports>
 	</element>
 	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_POINTY_HAT_WEAPON_PROFICIENCY_BLADED_FAN" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_BARD">
+		<rules>
+			<grant type="Proficiency" id="ID_POINTY_HAT_WEAPON_PROFICIENCY_BLADED_FAN" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_MONK">
+		<rules>
+			<grant type="Proficiency" id="ID_POINTY_HAT_WEAPON_PROFICIENCY_BLADED_FAN" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_ROGUE">
 		<rules>
 			<grant type="Proficiency" id="ID_POINTY_HAT_WEAPON_PROFICIENCY_BLADED_FAN" />
 		</rules>
