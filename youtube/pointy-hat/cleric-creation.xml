@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Creation Domain from Pointy Hat's YouTube</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="cleric-creation.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/cleric-creation.xml" />
 		</update>
 	</info>
@@ -115,7 +115,16 @@
 		<description>
 			<p>Starting at 2nd level, you can use your Channel Divinity to create a living divine construct.</p>
 			<p class="indent">As an action, you create an envoy in an unoccupied space you can see within 30 feet from you. When you summon the envoy, choose between Healing, Protection, or Harm. You cannot create a new envoy of the same type as a currently existing envoy.</p>
-
+			<div class="reference">
+				<div element="ID_POINTY_HAT_INFORMATION_ENVOY_OF_HEALING_STATBLOCK" />
+			</div>
+			<div class="reference">
+				<div element="ID_POINTY_HAT_INFORMATION_ENVOY_OF_PROTECTION_STATBLOCK" />
+			</div>
+			<div class="reference">
+				<div element="ID_POINTY_HAT_INFORMATION_ENVOY_OF_HARM_STATBLOCK" />
+			</div>
+			<p></p>
 			<p class="indent">If an envoy is forced to make an ability check or saving throw, it uses your ability scores.</p>
 			<p class="indent">In combat, the envoy acts during your turn. It can move on its own, but the only action it takes is the Dodge action, unless you take a bonus action on your turn to command it to take another action. You can only command one envoy using a bonus action, regardless of how many envoys are active at a time. If a bonus action is not used to command an envoy, their Divine Healing, Divine Protection, or Divine Harm abilities are still in effect.</p>
 			<p class="indent">If the mending cantrip is cast on an envoy, it regains 2d6 hit points. The envoy disappears if it is reduced to 0 hit points or after 1 hour. You can dismiss it early as an action.</p>
@@ -126,7 +135,7 @@
 			If the mending cantrip is cast on an envoy, it regains 2d6 hp. The envoy disappears if it is reduced to 0 hp or after 1 hour. You can dismiss it early as an action.</description>
 		</sheet>
 		<setters>
-			<set name="sourceUrl">https://docs.google.com/document/d/1f273q9eKGA3AHSpxVQZdvuI9qYcWkQki_Zcb8eTYKuA/edit</set>
+			<set name="sourceUrl">https://youtu.be/x1q36d4GIzk</set>
 		</setters>
 	</element>
 
@@ -160,6 +169,10 @@
 	<element name="Exalted Envoy" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_CREATION_DOMAIN_EXALTED_ENVOY">
 		<description>
 			<p>At 17th level, you can combine the envoys you brought to life to bring forth an even more powerful creation. As an action, if two of your envoys are within 5 feet of each other, you can use an additional use of channel divinity to combine them, creating an exalted envoy. The exalted envoy appears in an unoccupied space 20 feet from the space occupied by the envoys used in its creation. If there is not enough space for the exalted envoy to appear, the summoning fails.</p>
+			<div class="reference">
+				<div element="ID_POINTY_HAT_INFORMATION_EXALTED_ENVOY_STATBLOCK" />
+			</div>
+			<p></p>
 			<p class="indent">If the exalted envoy is forced to make an ability check or saving throw, it uses your ability scores.</p>
 			<p class="indent">In combat, the envoy acts immediately before or after your turn, your choice. You can command it telepathically as a free action instead of a bonus action. If the mending cantrip is cast on the exalted envoy, it regains 2d6 hit points. The envoy disappears if it is reduced to 0 hit points or after a number of turns equal to your proficiency bonus. You can dismiss it early as an action. Once you’ve summoned an exalted envoy you cannot do so again until you finish a long rest.</p>
 		</description>
@@ -169,7 +182,85 @@
 			In combat, the envoy acts immediately before or after your turn. You can command it telepathically as a free action instead of a bonus action. If the mending cantrip is cast on the exalted envoy, it regains 2d6 hp. The envoy disappears if it is reduced to 0 hp or after {{proficiency}} turns. You can dismiss it early as an action.</description>
 		</sheet>
 		<setters>
-			<set name="sourceUrl">https://docs.google.com/document/d/1f273q9eKGA3AHSpxVQZdvuI9qYcWkQki_Zcb8eTYKuA/edit</set>
+			<set name="sourceUrl">https://youtu.be/x1q36d4GIzk</set>
 		</setters>
 	</element>
+
+	<!--Envoy Stats-->
+	<element name="Envoy of Healing" type="Information" source="Pointy Hat" id="ID_POINTY_HAT_INFORMATION_ENVOY_OF_HEALING_STATBLOCK">
+		<description>
+			<p><em>Small construct, unaligned</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 13 + Your Proficiency Bonus</li>
+				<li><strong>Hit Points</strong> five times your cleric level</li>
+				<li><strong>Speed</strong> 20 ft.</li>
+			</ul>
+			<ul class="unstyled mb">
+				<li><strong>Damage Immunities</strong> psychic, poison</li>
+				<li><strong>Senses</strong> darkvision 60 ft., your passive Perception</li>
+			</ul>
+			<p><strong><em>Divine Healing.</em></strong> At the start of your turn, the envoy of healing grants 1d6 temporary hit points to any creature of your choice within 10 feet of it.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Envoy Healing.</em></strong> The envoy of healing restores 1d6 + your Wisdom modifier hit points to a creature it can see within 30 feet of it. The envoy of healing can heal a number of times equal to 1 + your Wisdom modifier. After healing that number of times, the envoy is no longer able to use the envoy healing action.</p>
+		</description>
+	</element>
+
+	<element name="Envoy of Protection" type="Information" source="Pointy Hat" id="ID_POINTY_HAT_INFORMATION_ENVOY_OF_PROTECTION_STATBLOCK">
+		<description>
+			<p><em>Small construct, unaligned</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 15 + Your Proficiency Bonus</li>
+				<li><strong>Hit Points</strong> 5 + five times your cleric level</li>
+				<li><strong>Speed</strong> 20 ft.</li>
+			</ul>
+			<ul class="unstyled mb">
+				<li><strong>Damage Immunities</strong> psychic, poison</li>
+				<li><strong>Senses</strong> darkvision 60 ft., your passive Perception</li>
+			</ul>
+			<p><strong><em>Divine Protection.</em></strong> All creatures of your choice (excluding the envoy of protection) within 10 feet of the envoy of protection gain +1 to their AC and have advantage on a saving throw of your choice. You choose the saving throw when you create the envoy.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Envoy Protection.</em></strong> The envoy assumes a protective stance. Until the beginning of your next turn the envoy becomes resistant to all damage except necrotic and can use its reaction to make itself the target of an attack made against a friendly creature within 10 feet of it.</p>
+		</description>
+	</element>
+
+	<element name="Envoy of Harm" type="Information" source="Pointy Hat" id="ID_POINTY_HAT_INFORMATION_ENVOY_OF_HARM_STATBLOCK">
+		<description>
+			<p><em>Small construct, unaligned</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 13 + Your Proficiency Bonus</li>
+				<li><strong>Hit Points</strong> five times your cleric level</li>
+				<li><strong>Speed</strong> 20 ft.</li>
+			</ul>
+			<ul class="unstyled mb">
+				<li><strong>Damage Immunities</strong> psychic, poison</li>
+				<li><strong>Senses</strong> darkvision 60 ft., your passive Perception</li>
+			</ul>
+			<p><strong><em>Divine Harm.</em></strong> You can cast spells as though you were in the envoy of harm’s place.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Envoy Harm.</em></strong> <em>Ranged Spell Attack:</em> Your spell attack modifier to hit, reach 60 ft., one creature. <em>Hit:</em> 1d8 radiant damage. The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+		</description>
+	</element>
+
+	<element name="Exalted Envoy" type="Information" source="Pointy Hat" id="ID_POINTY_HAT_INFORMATION_EXALTED_ENVOY_STATBLOCK">
+		<description>
+			<p><em>Large construct, unaligned</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 16 + Your Proficiency Bonus</li>
+				<li><strong>Hit Points</strong> 10 + five times your cleric level</li>
+				<li><strong>Speed</strong> 40 ft.</li>
+			</ul>
+			<ul class="unstyled mb">
+				<li><strong>Damage Immunities</strong> psychic, poison</li>
+				<li><strong>Senses</strong> darkvision 60 ft., your passive Perception</li>
+			</ul>
+			<p><strong><em>Divine Combination.</em></strong> The exalted envoy gains the Divine Healing, Divine Protection, and/or the Divine Harm abilities, depending on what envoys were used in its creation.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Multiaction.</em></strong> The exalted envoy can use two of its actions on its turn. Its actions depend on what envoys were used in its creation. It cannot use the same action twice on the same turn.</p>
+			<p><strong><em>Exalted Healing.</em></strong> The exalted envoy restores 2d6 + your Wisdom modifier hit points to a creature it can see within 30 feet of it. The envoy of healing can heal a number of times equal to 1 + your Wisdom modifier. After healing that number of times, the envoy is no longer able to use the exalted healing action.</p>
+			<p><strong><em>Exalted Protection.</em></strong> The exalted envoy assumes a protective stance. The envoy becomes resistant to all damage and can use its reaction to divert attacks made against a friendly creature within 20 feet of it to itself until the beginning of its next turn. If you are within 60 feet of the exalted envoy, all damage to you is negated and instantly transferred to the exalted envoy.</p>
+			<p><strong><em>Exalted Harm.</em></strong> <em>Ranged Spell Attack:</em> Your spell attack modifier to hit, reach 60 ft., one creature. <em>Hit:</em> 4d10 + your Wisdom modifier radiant damage.</p>
+		</description>
+	</element>
+
+
 </elements>

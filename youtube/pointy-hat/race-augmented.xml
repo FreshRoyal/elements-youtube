@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Augmented from Pointy Hat's YouTube</name>
-		<update version="0.0.2">
+		<update version="0.0.4">
 			<file name="race-augmented.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-augmented.xml" />
 		</update>
 	</info>
@@ -135,7 +135,6 @@
 	</element>
 	
 	<!--Utility-->
-	<!--Really need to figure out the expertise stuff at some point. Not today...-->
 	<element name="Utility Augmentation" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY">
 		<supports>PH Augmentation</supports>
 		<description>
@@ -153,10 +152,9 @@
 			<description>You have expertise in the tool you picked with this trait.</description>
 		</sheet>
 		<rules>
-			<select type="Proficiency" name="Skill Proficiency, Utility Augmentation" supports="Skill" />
-			<select type="Class Feature" name="Expertise, Utility Augmentation" supports="Expertise, Skill" />
+			<select type="Racial Trait" name="Expertise, Utility Augmentation" supports="PH Augmented Skill Expertise" />
 			<select type="Proficiency" name="Tool Proficiency, Utility Augmentation" supports="Tool" />
-			<select type="Racial Trait" name="Enhanced Augmentation" supports="PH Utility Augmentation" level="10" />
+			<select type="Racial Trait" name="Enhanced Augmentation" supports="PH Utility Augmentation" level="10" optional="true" />
 		</rules>
 		<setters>
 			<set name="sourceUrl">https://youtu.be/qSjh6-mA638</set>
@@ -173,8 +171,7 @@
 			<description>You have expertise in the tool you picked with this trait.</description>
 		</sheet>
 		<rules>
-			<select type="Proficiency" name="Skill Proficiency, Enhanced Augmentation" supports="Skill" />
-			<select type="Class Feature" name="Expertise, Enhanced Augmentation" supports="Expertise, Skill" />
+			<select type="Racial Trait" name="Expertise, Enhanced Augmentation" supports="PH Augmented Skill Expertise" />
 			<select type="Proficiency" name="Tool Proficiency, Enhanced Augmentation" supports="Tool" />
 		</rules>
 		<setters>
@@ -201,7 +198,7 @@
 		</sheet>
 		<rules>
 			<stat name="ac:misc" value="1" />
-			<select type="Racial Trait" name="Enhanced Augmentation" supports="PH Combat Augmentation" level="10" />
+			<select type="Racial Trait" name="Enhanced Augmentation" supports="PH Combat Augmentation" level="10" optional="true" />
 		</rules>
 		<setters>
 			<set name="sourceUrl">https://youtu.be/qSjh6-mA638</set>
@@ -244,7 +241,7 @@
 		</sheet>
 		<rules>
 			<stat name="innate speed" value="5" />
-			<select type="Racial Trait" name="Enhanced Augmentation" supports="PH Movement Augmentation" level="10" />
+			<select type="Racial Trait" name="Enhanced Augmentation" supports="PH Movement Augmentation" level="10" optional="true" />
 		</rules>
 		<setters>
 			<set name="sourceUrl">https://youtu.be/qSjh6-mA638</set>
@@ -266,6 +263,313 @@
 		<setters>
 			<set name="sourceUrl">https://youtu.be/qSjh6-mA638</set>
 		</setters>
+	</element>
+
+	<!--Utility Augmentation Expertise-->
+	<element name="Acrobatics" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_ACROBATICS">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_ACROBATICS" />
+		</rules>
+	</element>
+
+	<element name="Animal Handling" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_ANIMALHANDLING">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_ANIMALHANDLING" />
+		</rules>
+	</element>
+
+	<element name="Arcana" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_ARCANA">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_ARCANA" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_ARCANA" />
+		</rules>
+	</element>
+
+	<element name="Athletics" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_ATHLETICS">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_ATHLETICS" />
+		</rules>
+	</element>
+
+	<element name="Deception" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_DECEPTION">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_DECEPTION" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_DECEPTION" />
+		</rules>
+	</element>
+
+	<element name="History" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_HISTORY">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_HISTORY" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_HISTORY" />
+		</rules>
+	</element>
+
+	<element name="Insight" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_INSIGHT">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_INSIGHT" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_INSIGHT" />
+		</rules>
+	</element>
+
+	<element name="Intimidation" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_INTIMIDATION">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_INTIMIDATION" />
+		</rules>
+	</element>
+
+	<element name="Investigation" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_INVESTIGATION">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_INVESTIGATION" />
+		</rules>
+	</element>
+
+	<element name="Medicine" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_MEDICINE">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_MEDICINE" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_MEDICINE" />
+		</rules>
+	</element>
+
+	<element name="Nature" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_NATURE">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_NATURE" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_NATURE" />
+		</rules>
+	</element>
+
+	<element name="Perception" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_PERCEPTION">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+
+	<element name="Performance" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_PERFORMANCE">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_PERFORMANCE" />
+		</rules>
+	</element>
+
+	<element name="Persuasion" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_PERSUASION">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_PERSUASION" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_PERSUASION" />
+		</rules>
+	</element>
+
+	<element name="Religion" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_RELIGION">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_RELIGION" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_RELIGION" />
+		</rules>
+	</element>
+
+	<element name="Sleight of Hand" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_SLEIGHTOFHAND">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_SLEIGHTOFHAND" />
+		</rules>
+	</element>
+
+	<element name="Stealth" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_STEALTH">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_STEALTH" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_STEALTH" />
+		</rules>
+	</element>
+
+	<element name="Survival" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_AUGMENTED_AUGMENTATION_UTILITY_SURVIVAL">
+		<compendium display="false" />
+		<supports>PH Augmented Skill Expertise</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			</div>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_SURVIVAL" />
+		</rules>
 	</element>
 	
 </elements>
