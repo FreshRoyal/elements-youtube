@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Magic Items from Pointy Hat's YouTube</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="magic-items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/magic-items.xml" />
 		</update>
 	</info>
@@ -15,7 +15,7 @@
 		</description>
 		<setters>
 			<set name="keywords"></set>
-			<set name="category">Wondrous Item</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="attunement">true</set>
