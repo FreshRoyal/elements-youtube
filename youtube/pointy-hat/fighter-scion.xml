@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Scion Subclass from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="fighter-scion.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/fighter-scion.xml" />
+		</update>
+	</info>
+	<element name="Scion" type="Archetype" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FIGHTER_SCION">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>The Scion Martial Archetype seeks to allow players the ability to play the archetype of the wielder of an extremely powerful magical weapon, who is on a journey to master it. This was hard to do in the game before, as 5e encourages you to change weapons as you find more powerful loot along your adventures. This subclass makes it so that your weapon, called a mythic arm, evolves along with its wielder, unlocking more of the arm’s power. It brings new ways to build on the versatility inherent in the fighter class by allowing you to customize the mythic arm in order to make it feel unique. The mythic arm gains an additional damage type of your choice, as well as the ability to literally change its properties to unlock completely new combos.</p>
+			<p class="indent">The Scion Martial Archetype also seeks to give fighters more prompts while in character creation, to bring additional flavor to the class through the choice of subclass. How did your Scion come upon their mythic arm? Is it a weapon passed down from generation to generation of their family, or did they steal it from one of these families? Did they find the mythic arm somewhere, and have to figure out the weapon’s history?</p>
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_MYTHIC_ARM" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_WIELDING_LEGEND" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_WONDROUS_WIELDER" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_UNLOCKED_POTENTIAL" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_UNLEASH_POTENTIAL" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_MYTHIC_SCION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_MYTHIC_ARM" level="3" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_WIELDING_LEGEND" level="3" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_WONDROUS_WIELDER" level="7" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_UNLOCKED_POTENTIAL" level="10" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_UNLEASH_POTENTIAL" level="15" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_MYTHIC_SCION" level="18" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/j1rSKF5Aj_0</set>
+		</setters>
+	</element>
+	
+	<element name="Mythic Arm" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_MYTHIC_ARM">
+		<description>
+			<p>When you choose this archetype at 3rd level, you wield a mythic arm, an extremely powerful weapon brimming with boundless potential for you to unlock. How you acquired this mythic arm is up to you, but it must be a weapon you are proficient with.</p>
+			<p class="indent">When you reach 3rd level, choose one of the following damage types: acid, cold, fire, lightning, necrotic, poison, radiant, or thunder. All mythic arm attacks made with the additional action granted by your action surge deal 1d8 of your chosen damage along with your weapon damage.</p>
+		</description>
+		<sheet>
+			<description>You wield a mythic arm, an extremely powerful weapon brimming with boundless potential for you to unlock. It must be a weapon you are proficient with. &#13;
+			All mythic arm attacks made with the additional action granted by your Action Surge deal 1d8 or your chosen damage along with your weapon damage.</description>
+			<description level="10">You wield a mythic arm, an extremely powerful weapon brimming with boundless potential for you to unlock. It must be a weapon you are proficient with. &#13;
+			All mythic arm attacks made with the additional action granted by your Action Surge deal 2d8 or your chosen damage along with your weapon damage.</description>
+			<description level="18">You wield a mythic arm, an extremely powerful weapon brimming with boundless potential for you to unlock. It must be a weapon you are proficient with. &#13;
+			All mythic arm attacks made with the additional action granted by your Action Surge deal 3d8 or your chosen damage along with your weapon damage.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Mythic Arm Damage Type" supports="Scion Mythic Arm Damage PH" />
+			<select type="Archetype Feature" name="Mythic Arm Damage Type" supports="Scion Mythic Arm Damage PH" level="10" />
+			<select type="Archetype Feature" name="Mythic Arm Damage Type" supports="Scion Mythic Arm Damage PH" level="18" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/cjFVRN3VCj4</set>
+		</setters>
+	</element>
+	
+	<element name="Wielding Legend" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_WIELDING_LEGEND">
+		<description>
+			<p>At 3rd level, the powerful magic that makes your weapon a mythic arm binds it to you and protects it from tampering. Your mythic arm counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, cannot rust, be dulled, or break, and you cannot be disarmed while wielding your mythic arm as long as you’re not incapacitated. You can also sense the direction of the mythic arm’s location and in which plane of existence it’s located. If the arm is moving, you know the direction of its movement.</p>
+			<p class="indent">Additionally, your mythic arm can absorb the enchantment and the shape of another weapon. When you acquire an enchanted weapon, you can spend one hour to transfer the enchantment from the enchanted weapon into your mythic arm. For example, if you wield a longsword as your mythic arm and acquire a +1 handaxe that has advantage on all attack rolls against beasts, you can take one hour to transfer that enchantment to your mythic arm, after which it will be a +1 longsword that has advantage on all attack rolls against beasts.</p>
+			<p class="indent">You are also able to change your mythic arm into the shape of any weapon it has absorbed an enchantment from by spending one hour concentrating on it. For example, after absorbing the enchantment from the +1 handaxe of the previous example, you can now turn your mythic arm into a handaxe by spending one hour concentrating on the mythic arm.</p>
+			<p class="indent">If you do not meet the prerequisites to attune to the weapon, you cannot transfer its enchantment into your mythic arm.</p>
+			<p class="indent">Once you have transferred an enchantment into the mythic arm, the original weapon loses its enchantment.</p>
+		</description>
+		<sheet>
+			<description>Your mythic arm counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage, cannot rust, be dulled, or break, and you cannot be disarmed while wielding your mythic arm as long as you’re not incapacitated. You can also sense the direction of the mythic arm’s location and in which plane of existence it’s located. If the arm is moving, you know the direction of its movement. &#13;
+			Your mythic arm can absorb the enchantment and the shape of another weapon. When you acquire an enchanted weapon, you can spend one hour to transfer the enchantment from the enchanted weapon into your mythic arm. &#13;
+			You are also able to change your mythic arm into the shape of any weapon it has absorbed an enchantment from by spending one hour concentrating on it. &#13;
+			If you do not meet the prerequisites to attune to the weapon, you cannot transfer its enchantment into your mythic arm. &#13;
+			Once you have transferred an enchantment into the mythic arm, the original weapon loses its enchantment.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/cjFVRN3VCj4</set>
+		</setters>
+	</element>
+
+	<element name="Wondrous Wielder" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_WONDROUS_WIELDER">
+		<description>
+			<p>At 7th level, you gain further control of your mythic arm, and you can manipulate the way you wield it in battle to transcend the limits of normal weapons. At the end of a long rest, you can select one of the following weapon properties to apply to your mythic arm: finesse, light, reach, or thrown (range 20/60).</p>
+		</description>
+		<sheet>
+			<description>At the end of a long rest, you can select one of the following weapon properties to apply to your mythic arm: finesse, light, reach, or thrown (range 20/60).</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/cjFVRN3VCj4</set>
+		</setters>
+	</element>
+	
+	<element name="Unlocked Potential" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_UNLOCKED_POTENTIAL">
+		<description>
+			<p>At 10th level, the bond between you and your mythic arm allows you to draw even more power from your weapon:</p>
+			<ul>
+				<li>The additional damage you deal when making an attack with your mythic arm with the additional action granted by your action surge increases to 2d8. At 18th level, it becomes 3d8.</li>
+				<li>You choose an additional damage type for your Mythic Arm feature. When you use an action surge, you choose which of the available damage types your additional attacks will deal. At 18th level, you can choose one additional damage type.</li>
+				<li>You can absorb an additional enchantment into your mythic arm. At 18th level, you gain the option to absorb yet another additional enchantment, to a total of 3.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can absorb an additional enchantment into your mythic arm, making it a total of 2.</description>
+			<description level="18">You can absorb 2 additional enchantments into your mythic arm, making it a total of 3.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/cjFVRN3VCj4</set>
+		</setters>
+	</element>
+	
+	<element name="Unleash Potential" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_UNLEASH_POTENTIAL">
+		<description>
+			<p>At 15th level, you gain further control of your mythic arm, allowing you to unlock some of its hidden potential without exerting yourself in the process. On a successful attack, you can deal the additional damage you would deal with your action surge attacks. You can use this feature only once per turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>On a successful attack, you can deal the additional damage you would deal with your action surge attacks.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/cjFVRN3VCj4</set>
+		</setters>
+	</element>
+	
+	<element name="Mythic Scion" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_MYTHIC_SCION">
+		<description>
+			<p>At 18th level, your mythic arm has become an extension of yourself, unlocking its full potential. Whenever you make an attack roll after you use your action surge, you treat all rolls of 9 or lower as a 10, and those attack rolls cannot be made at disadvantage.</p>
+			<p class="indent">Additionally, when you roll for initiative and have no uses of action surge remaining, you regain 1 use.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make an attack roll after you use your action surge, you treat all rolls of 9 or lower as a 10, and those attack rolls cannot be made at disadvantage. Additionally, when you roll for initiative and have no uses of action surge remaining, you regain 1 use.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/cjFVRN3VCj4</set>
+		</setters>
+	</element>
+
+	<!--Mythic Arm Damage Types-->
+	<element name="Acid" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_MYTHIC_ARM_ACID">
+		<supports>Scion Mythic Arm Damage PH</supports>
+		<compendium display="false"/>
+		<description>
+			<p>Your mythic arm deals acid damage.</p>
+		</description>
+		<sheet alt="Mythic Arm, Acid Damage">
+			<description>Your mythic arm deals acid damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Cold" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_MYTHIC_ARM_COLD">
+		<supports>Scion Mythic Arm Damage PH</supports>
+		<compendium display="false"/>
+		<description>
+			<p>Your mythic arm deals cold damage.</p>
+		</description>
+		<sheet alt="Mythic Arm, Cold Damage">
+			<description>Your mythic arm deals cold damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Fire" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_MYTHIC_ARM_FIRE">
+		<supports>Scion Mythic Arm Damage PH</supports>
+		<compendium display="false"/>
+		<description>
+			<p>Your mythic arm deals fire damage.</p>
+		</description>
+		<sheet alt="Mythic Arm, Fire Damage">
+			<description>Your mythic arm deals fire damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Lightning" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_MYTHIC_ARM_LIGHTNING">
+		<supports>Scion Mythic Arm Damage PH</supports>
+		<compendium display="false"/>
+		<description>
+			<p>Your mythic arm deals lightning damage.</p>
+		</description>
+		<sheet alt="Mythic Arm, Lightning Damage">
+			<description>Your mythic arm deals lightning damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Necrotic" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_MYTHIC_ARM_NECROTIC">
+		<supports>Scion Mythic Arm Damage PH</supports>
+		<compendium display="false"/>
+		<description>
+			<p>Your mythic arm deals necrotic damage.</p>
+		</description>
+		<sheet alt="Mythic Arm, Necrotic Damage">
+			<description>Your mythic arm deals necrotic damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Poison" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_MYTHIC_ARM_POISON">
+		<supports>Scion Mythic Arm Damage PH</supports>
+		<compendium display="false"/>
+		<description>
+			<p>Your mythic arm deals poison damage.</p>
+		</description>
+		<sheet alt="Mythic Arm, Poison Damage">
+			<description>Your mythic arm deals poison damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Radiant" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_MYTHIC_ARM_RADIANT">
+		<supports>Scion Mythic Arm Damage PH</supports>
+		<compendium display="false"/>
+		<description>
+			<p>Your mythic arm deals radiant damage.</p>
+		</description>
+		<sheet alt="Mythic Arm, Radiant Damage">
+			<description>Your mythic arm deals radiant damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Thunder" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_SCION_MYTHIC_ARM_THUNDER">
+		<supports>Scion Mythic Arm Damage PH</supports>
+		<compendium display="false"/>
+		<description>
+			<p>Your mythic arm deals thunder damage.</p>
+		</description>
+		<sheet alt="Mythic Arm, Thunder Damage">
+			<description>Your mythic arm deals thunder damage.</description>
+		</sheet>
+	</element>
+
+</elements>
