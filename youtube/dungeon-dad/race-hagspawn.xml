@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Hagspawn from Monster of the Week</name>
+		<update version="0.0.1">
+			<file name="race-hagspawn.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/race-hagspawn.xml" />
+		</update>
+	</info>
+	
+	<!--Hagspawn-->
+	<element name="Hagspawn" type="Race" source="Monster of the Week" id="ID_MOTW_RACE_HAGSPAWN">
+		<description>
+			<p class="flavor">A humanoid shape stands before you. Its elongated arms and hunched back cut a truly uncanny silhouette. The creature has mop of long, dishevelled hair and skin with a greenish tint. It grips a weapon fashioned of wood and bone, ready for anything.</p>
+			<p class="indent"><strong><em>Bastard Sons.</em></strong> Hags are known to propagate their species in truly grotesque ways. The most common way for a hag to beget another of its kind is by making a dark bargain with a humanoid mortal, offering something they want in exchange for their offspring. Once they have their clutches on the baby, they consume it, and later give birth to a daughter who will grow up to become a hag of the same variety as their mother. In some cases a hag, often disguised with magic, will find a suitable humanoid partner to father their young. In either case the offspring is almost always female, however, on extremely rare occasion a hag may give birth to a male child. Such children will not grow up to be hags, but rather mature as hagspwan.</p>
+			<p class="indent"><strong><em>Cruelty of Crones.</em></strong> Hagspawn are often abandoned and discarded by their mothers, and rejected by their fathers (assuming they still live). They are marked with many of the telltale features attributed to hags, but lack their innate magical powers. Left to their own devices, or in some rare cases the mercy of kind strangers, hagspawn are typically destined to carve their own path in life. As sentient creatures with thoughts and feelings, one individual can vary widely from the next. Some hagspawn give in to despair and allow the cruel circumstances of their birth to guide them down a path of solitude. Such individuals can be found living lonesome lives as outlanders, or in some cases leading bands of brigands that respect them for their unnatural strength and iron will. Others reject the cruelty of the world and choose to tread the path of the righteous and well-meaning, occasionally even taking oaths akin to that of a paladin in order to grant them strength in their fight against evil. Such individuals are a force to be reckoned with and potentially powerful allies to the just.</p>
+
+			<h4>Hagspawn as Characters</h4>
+			<p>Hagspawn characters may have a variety of different abilities depending on the type of hag who mothered them. There are five subraces of hagspawn found throughout the worlds of D&amp;D: Annis, Bheur, Green, Night, and Sea. Choose one of these subraces.</p>
+			<p class="indent">A hagspawn character has certain traits in common with all other hagspawn species.</p>
+
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Hagspawn age at the same rate as humans, however, they can live upwards of 200 years.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Hagspawn are bulky and have elongated features. They range from 6 to 7 feet tall. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Lupins are roughly the same size as humans, but tend toward a sturdy build. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Your hag ancestry grants you perfect vision in the dark.  You can see in dim light and darkness within 60 feet of you as if it were bright light.</p>
+			<p class="indent"><strong><em>Survivalist.</em></strong> You gain proficiency in the Survival skill.</p>
+			<p class="indent"><strong><em>Monstrous Blood.</em></strong> You are immune to effects that only target humanoids such as the <em>charm person</em> or <em>hold person</em> spells.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Sylvan.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Hagspawn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_HAGSPAWN_SURVIVALIST" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_HAGSPAWN_MONSTROUS_BLOOD" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_HAGSPAWN_SUBRACE" />
+		</rules>
+	</element>
+
+	<element name="Survivalist" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_HAGSPAWN_SURVIVALIST">
+		<description>
+			<p>You gain proficiency in the Survival skill.</p>
+		</description>
+		<sheet display="false">
+			<description />
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+	</element>
+
+	<element name="Monstrous Blood" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_HAGSPAWN_MONSTROUS_BLOOD">
+		<description>
+			<p>You are immune to effects that only target humanoids such as the <em>charm person</em> or <em>hold person</em> spells.</p>
+		</description>
+		<sheet>
+			<description>You are immune to effects that only target humanoids such as the charm person or hold person spells.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+	</element>
+
+	<element name="Hagspawn Subrace" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_HAGSPAWN_SUBRACE">
+		<description>
+			<p>Hagspawn characters may have a variety of different abilities depending on the type of hag who mothered them. There are five subraces of hagspawn found throughout the worlds of D&amp;D: Annis, Bheur, Green, Night, and Sea. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Hagspawn Subrace" supports="MotW Hagspawn" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+	</element>
+
+	<!--Annis Hagspawn-->
+	<element name="Annis Hagspawn" type="Sub Race" source="Monster of the Week" id="ID_MOTW_SUB_RACE_ANNIS_HAGSPAWN">
+		<supports>MotW Hagspawn</supports>
+		<description>
+			<p>You are descended from the most physically powerful and imposing of the hag races, Annis hags rely on both brutality and overwhelming force to destroy their enemies.</p>
+			<p class="indent">Annis hagspawn typically have light blue or grey skin, black hair, and exceptionally large frames. Often the body of an annis hagspawn has many lumps and bumps, as well as odd patterns that run across their flesh.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength increases by 1.</p>
+			<p class="indent"><strong><em>Claws.</em></strong> You have razor sharp claws with the strength of iron that afford you a climbing speed of 10 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Iron Token.</em></strong> You can pull out one of your teeth, or a fingernail, and spend 1 minute shaping and polishing it into an iron coin. Any creature holding this coin can communicate telepathically with you as long as they are within 10 miles of you and on the same plane of existence. You may only have one iron token active at any given time. If you create a new iron token, any previously created iron tokens cease to function permanently.</p>
+			<p class="indent"><strong><em>Crushing Grip.</em></strong> Like your mother, you have an iron grip capable of crushing anyone you can get your hands on. You have advantage on Athletics (Strength) checks made to grapple another creature. At the end of your turn, you may cause any creature you are grappling to take 1d6 bludgeoning damage. This damage increases to 1d8 at 5th level, and to 1d12 at 10th level.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Annis Hagspawn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_ANNIS_HAGSPAWN_CLAWS" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_ANNIS_HAGSPAWN_IRON_TOKEN" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_ANNIS_HAGSPAWN_CRUSHING_GRIP" />
+		</rules>
+	</element> 	
+
+	<element name="Claws" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_ANNIS_HAGSPAWN_CLAWS">
+		<description>
+			<p>You have razor sharp claws with the strength of iron that afford you a climbing speed of 10 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4+{{strength:modifier}}, instead of the bludgeoning damage normal for an unarmed strike.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:climb" value="10" bonus="base" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+	</element>
+
+	<element name="Iron Token" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_ANNIS_HAGSPAWN_IRON_TOKEN">
+		<description>
+			<p>You can pull out one of your teeth, or a fingernail, and spend 1 minute shaping and polishing it into an iron coin. Any creature holding this coin can communicate telepathically with you as long as they are within 10 miles of you and on the same plane of existence. You may only have one iron token active at any given time. If you create a new iron token, any previously created iron tokens cease to function permanently. </p>
+		</description>
+		<sheet>
+			<description>You can pull out one of your teeth, or a fingernail, and spend 1 minute shaping and polishing it into an iron coin. Any creature holding this coin can communicate telepathically with you as long as they are within 10 miles of you and on the same plane of existence. You may only have one iron token active at any given time. If you create a new iron token, any previously created iron tokens cease to function permanently.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+	</element>
+
+	<element name="Iron Token" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_ANNIS_HAGSPAWN_CRUSHING_GRIP">
+		<description>
+			<p>Like your mother, you have an iron grip capable of crushing anyone you can get your hands on. You have advantage on Athletics (Strength) checks made to grapple another creature. At the end of your turn, you may cause any creature you are grappling to take 1d6 bludgeoning damage. This damage increases to 1d8 at 5th level, and to 1d12 at 10th level. </p>
+		</description>
+		<sheet>
+			<description> You have advantage on Athletics (Strength) checks made to grapple another creature. At the end of your turn, you may cause any creature you are grappling to take 1d6 bludgeoning damage.</description>
+			<description level="5"> You have advantage on Athletics (Strength) checks made to grapple another creature. At the end of your turn, you may cause any creature you are grappling to take 1d8 bludgeoning damage.</description>
+			<description level="10"> You have advantage on Athletics (Strength) checks made to grapple another creature. At the end of your turn, you may cause any creature you are grappling to take 1d12 bludgeoning damage.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+	</element>
+
+	<!--Bheur Hagspawn-->
+	<element name="Bheur Hagspawn" type="Sub Race" source="Monster of the Week" id="ID_MOTW_SUB_RACE_BHEUR_HAGSPAWN">
+		<supports>MotW Hagspawn</supports>
+		<description>
+			<p>You are descended from the frigid bheur hags of the Northern wastes. Bheur hags are exceptionally cruel and cunning, relying on their sway over weather to aid them against their numerous enemies.</p>
+			<p class="indent">Bheur hagspawn typically have skin resembling someone who has frozen to death, ranging from a pallid grey to an icy blue. Their hair is often stark white, and they have piercing blue eyes.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma increases by 1.</p>
+			<p class="indent"><strong><em>Cold Resistance.</em></strong> You have resistance to cold damage.</p>
+			<p class="indent"><strong><em>Frigid Blood.</em></strong> You learn the <i>ray of frost</i> cantrip. Additionally, you can cast the <i>armor of agathys</i> spell, or the <i>ice knife</i> spell once with this trait, requiring no material components, and you regain the ability to cast them this way when you finish a long rest. Constitution is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Bheur Hagspawn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_BHEUR_HAGSPAWN_COLD_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_BHEUR_HAGSPAWN_FRIGID_BLOOD" />
+		</rules>
+	</element>
+
+	<element name="Cold Resistance" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_BHEUR_HAGSPAWN_COLD_RESISTANCE">
+		<description>
+			<p>You have resistance to cold damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+	</element>
+
+	<element name="Frigid Blood" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_BHEUR_HAGSPAWN_FRIGID_BLOOD">
+		<description>
+			<p>You learn the <i>ray of frost</i> cantrip. Additionally, you can cast the <i>armor of agathys</i> spell, or the <i>ice knife</i> spell once with this trait, requiring no material components, and you regain the ability to cast them this way when you finish a long rest. Constitution is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet>
+			<description>You know the ray of frost cantrip. &#13;
+			You can cast the armor of agathys spell or the ice knife spell with this trait, without requiring a material component once each per long rest. &#13;
+			Your spellcasting ability for these spells is Constitution.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_FROST" />
+			<grant type="Spell" id="ID_PHB_SPELL_ARMOR_OF_AGATHYS" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ICE_KNIFE" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+	</element>
+
+	<!--Green Hagspawn-->
+	<element name="Green Hagspawn" type="Sub Race" source="Monster of the Week" id="ID_MOTW_SUB_RACE_GREEN_HAGSPAWN">
+		<supports>MotW Hagspawn</supports>
+		<description>
+			<p>You are descended from the wretched and hateful green hag that dwell in the dying forests and marshes of the world. Manipulative schemers, they weaponise trickery and desire to their twisted ends.</p>
+			<p class="indent">Green hagspawn typically have sickly green skin and wiry grey, white, or black hair.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom increases by 1.</p>
+			<p class="indent"><strong><em>Mimicry.</em></strong> You can mimic both animal sounds and humanoid voices. A creature that hears the sounds you make can tell they are imitations with a successful Wisdom (Insight) check opposed by your Charisma (Deception) check.</p>
+			<p class="indent"><strong><em>Hateful Blood.</em></strong> You learn the <i>vicious mockery</i> cantrip. Additionally, you can cast the <i>invisibility</i> spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+		<rules>
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Green Hagspawn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_GREEN_HAGSPAWN_MIMICRY" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_GREEN_HAGSPAWN_HATEFUL_BLOOD" />
+		</rules>
+	</element>
+
+	<element name="Mimicry" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_GREEN_HAGSPAWN_MIMICRY">
+		<description>
+			<p>You can mimic both animal sounds and humanoid voices. A creature that hears the sounds you make can tell they are imitations with a successful Wisdom (Insight) check opposed by your Charisma (Deception) check.</p>
+		</description>
+		<sheet>
+			<description>You can mimic both animal sounds and humanoid voices. A creature that hears the sounds you make can tell they are imitations with a successful Wisdom (Insight) check opposed by your Charisma (Deception) check.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+	</element>
+
+	<element name="Hateful Blood" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_GREEN_HAGSPAWN_HATEFUL_BLOOD">
+		<description>
+			<p>You learn the <i>vicious mockery</i> cantrip. Additionally, you can cast the <i>invisibility</i> spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet>
+			<description>You know the vicious mockery cantrip. &#13;
+			You can cast the invisibility spell with this trait, without requiring a material component once each per long rest. &#13;
+			Your spellcasting ability for these spells is Constitution.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_VICIOUS_MOCKERY" />
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+	</element>
+
+	<!--Night Hagspawn-->
+	<element name="Night Hagspawn" type="Sub Race" source="Monster of the Week" id="ID_MOTW_SUB_RACE_NIGHT_HAGSPAWN">
+		<supports>MotW Hagspawn</supports>
+		<description>
+			<p>You are descended from the sly and subversive night hag. These hags want to see virtuous creatures turn to villainy and kindness turned to hate. They take perverse joy in corrupting mortal souls and stealing them for trade in the Nine Hells.</p>
+			<p class="indent">Night hags typically have skin that is dark blue or purple in colour. Your hair is likely jet black and you may even have small horns growing from either side of your head.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence increases by 1.</p>
+			<p class="indent"><strong><em>Fire Resistance.</em></strong> You have resistance to fire damage.</p>
+			<p class="indent"><strong><em>Infernal Legacy.</em></strong> You can speak, read, and write Infernal.</p>
+			<p class="indent"><strong><em>Twilight Blood.</em></strong> You learn the <i>toll the dead</i> cantrip. Additionally, you can cast the <i>sleep</i> spell once with this trait, requiring no material components. Any creatures you put to sleep with the use of this spell are wracked by terrible nightmares and take psychic damage equal to 1d6 plus your Intelligence modifier at the start of each of their turns. This damage does not cause them to wake from their slumber. The damage increases to 2d6 at 5th level, and to 4d6 at 10th level. You regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Night Hagspawn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_NIGHT_HAGSPAWN_FIRE_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_NIGHT_HAGSPAWN_INFERNAL_LEGACY" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_NIGHT_HAGSPAWN_TWILIGHT_BLOOD" />
+		</rules>
+	</element>
+
+	<element name="Fire Resistance" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_NIGHT_HAGSPAWN_FIRE_RESISTANCE">
+		<description>
+			<p>You have resistance to fire damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+	</element>
+
+	<element name="Infernal Legacy" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_NIGHT_HAGSPAWN_INFERNAL_LEGACY">
+		<description>
+			<p>You can speak, read, and write Infernal.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_INFERNAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+	</element>
+
+	<element name="Twilight Blood" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_NIGHT_HAGSPAWN_TWILIGHT_BLOOD">
+		<description>
+			<p>You learn the <i>toll the dead</i> cantrip. Additionally, you can cast the <i>sleep</i> spell once with this trait, requiring no material components. Any creatures you put to sleep with the use of this spell are wracked by terrible nightmares and take psychic damage equal to 1d6 plus your Intelligence modifier at the start of each of their turns. This damage does not cause them to wake from their slumber. The damage increases to 2d6 at 5th level, and to 4d6 at 10th level. You regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet>
+			<description>You know the toll the dead cantrip. &#13;
+			You can cast the invisibility sleep with this trait, without requiring a material component once each per long rest. Any creatures you put to sleep with the use of this spell are wracked by terrible nightmares and take 1d6 + {{intellignece:modifier}} psychic damage at the start of each of their turns. This damage does not cause them to wake from their slumber. &#13;
+			Your spellcasting ability for these spells is Constitution.</description>
+			<description level="5">You know the toll the dead cantrip. &#13;
+			You can cast the invisibility sleep with this trait, without requiring a material component once each per long rest. Any creatures you put to sleep with the use of this spell are wracked by terrible nightmares and take 2d6 + {{intellignece:modifier}} psychic damage at the start of each of their turns. This damage does not cause them to wake from their slumber. &#13;
+			Your spellcasting ability for these spells is Constitution.</description>
+			<description level="10">You know the toll the dead cantrip. &#13;
+			You can cast the invisibility sleep with this trait, without requiring a material component once each per long rest. Any creatures you put to sleep with the use of this spell are wracked by terrible nightmares and take 4d6 + {{intellignece:modifier}} psychic damage at the start of each of their turns. This damage does not cause them to wake from their slumber. &#13;
+			Your spellcasting ability for these spells is Constitution.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_TOLL_THE_DEAD" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLEEP" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+	</element>
+
+	<!--Sea Hagspawn-->
+	<element name="Sea Hagspawn" type="Sub Race" source="Monster of the Week" id="ID_MOTW_SUB_RACE_Sea_HAGSPAWN">
+		<supports>MotW Hagspawn</supports>
+		<description>
+			<p>You are descended from the hideous sea hag, a creature obsessed with the destruction of all things beautiful. Whether luring ships to their doom, or plotting schemes to decimate coastal towns, the sea hag plots from beneath the waves.</p>
+			<p class="indent">Sea hagspawn are typically quite ugly. Rather than typical skin, they have scales which are often a shade on the spectrum of blue greens, from a deep dark navy blue to a brilliant aquamarine. Their hair resembles kelp both in texture and in colour and their eyes tend to be bulging orbs.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity increases by 2 and your Charisma is reduced by 2.</p>
+			<p class="indent"><strong><em>Amphibious.</em></strong> You can breathe air and water.</p>
+			<p class="indent"><strong><em>Horrific Visage.</em></strong> You can channel the feywild magic in your veins to truly accentuate your most uncanny features. As an action, you can use this trait to force all creatures of your choice within 30 feet that can see you to make a Wisdom saving throw opposed by your Charisma (Intimidation) check. When you make this check, any negative modifiers to your Charisma should be treated as positive when determining the check’s result. Any creatures that fail this saving throw are frightened of you for 1 minute. Frightened creatures may attempt a Wisdom saving throw at the end of each of their turns to end the frightened condition on themselves with a DC equal to whatever your original Charisma (Intimidation) check was. You regain the use of this trait after taking a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Sea Hagspawn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="-2" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_SEA_HAGSPAWN_AMPHIBIOUS" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_SEA_HAGSPAWN_HORRIFIC_VISAGE" />
+		</rules>
+	</element>
+
+	<element name="Amphibious" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_SEA_HAGSPAWN_AMPHIBIOUS">
+		<description>
+			<p>You can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description>You can breathe air and water.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+	</element>
+
+	<element name="Horrific Visage" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_SEA_HAGSPAWN_HORRIFIC_VISAGE">
+		<description>
+			<p>You can channel the feywild magic in your veins to truly accentuate your most uncanny features. As an action, you can use this trait to force all creatures of your choice within 30 feet that can see you to make a Wisdom saving throw opposed by your Charisma (Intimidation) check. When you make this check, any negative modifiers to your Charisma should be treated as positive when determining the check’s result. Any creatures that fail this saving throw are frightened of you for 1 minute. Frightened creatures may attempt a Wisdom saving throw at the end of each of their turns to end the frightened condition on themselves with a DC equal to whatever your original Charisma (Intimidation) check was. You regain the use of this trait after taking a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can use this trait to force all creatures of your choice within 30 feet that can see you to make a Wisdom saving throw opposed by your Charisma (Intimidation) check. When you make this check, any negative modifiers to your Charisma should be treated as positive when determining the check’s result. Any creatures that fail this saving throw are frightened of you for 1 minute. Frightened creatures may attempt a Wisdom saving throw at the end of each of their turns to end the frightened condition on themselves with a DC equal to whatever your original Charisma (Intimidation) check was.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
+		</setters>
+	</element>
+
+</elements>
