@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Dungeon Dad YouTube Content</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="dungeon-dad.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad.index" />
 		</update>
 	</info>
@@ -14,5 +14,6 @@
 		<file name="race-lupin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/race-lupin.xml" />
 		<file name="subrace-icegenasi.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/subrace-icegenasi.xml" />
 		<file name="genie-qorrashi.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/genie-qorrashi.xml" />
+		<file name="race-hagspawn.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/race-hagspawn.xml" />
 	</files>
 </index>
