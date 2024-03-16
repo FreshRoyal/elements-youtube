@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Verdant Orc from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="race-verdantorc.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-verdantorc.xml" />
+		</update>
+	</info>
+	<element name="Verdant Orc" type="Race" source="Pointy Hat" id="ID_POINTY_HAT_RACE_VERDANT_ORC">
+		<description>
+			<p>Verdant orcs are orcs intrinsically connected to their original creator deity. When he was sundered, the Orc Father lost his essence, turning him into a god-like monster, but part of his original self keeps fighting within the monster, and this is the part that reached out to his children and created verdant orcs.</p>
+			<p class="indent">Verdant orcs are what orcs were meant to be at their creation. They have an intrinsic connection not only to their creator, but also to nature. They retain the green tint to their skin that gives them their name, but their connection to nature is not just skin deep. Verdant orcs can literally sustain themselves through photosynthesis like a plant would, and their connection to their creator god allows them to be creators themselves, excelling in all tasks that require equal knowledge and control of nature and civilization, such as farming or woodworking.</p>
+			<p class="indent">To assume their natural connection or their crafting abilities makes verdant orcs less fearsome warriors than their other orcish siblings would be a mistake, as they retain the powerful bodies characteristic of the orc race. Verdant orcs excel at combat, both in all-out brawls and covert ambushes in their forests. Their connection to their divine Father enhances their resilience, allowing them to gain a surge of energy when pushed to the brink of death.</p>
+			<p class="indent">Verdant orc communities tend to live in the forest, where they thrive, but many leave these bastions of nature. Some do so for personal reasons, but many others go on a quest larger than themselves. Many verdant orcs believe that their Father can be saved and restored to who he formerly was, and it falls onto them, those who have received the blessing that was once afforded to all orcs, to save their creator.</p>
+
+			<h4>Verdant Orc Features:</h4>
+			<p>
+			<span class="feature">Creature Type.</span>  You are a Humanoid.<br/>
+			<span class="feature">Size.</span> Your size is Medium.<br/>
+			<span class="feature">Speed.</span> Your walking speed is 30 feet.<br/>
+			<span class="feature">Darkvision.</span> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+			<span class="feature">Relentless Endurance.</span> When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this trait, you can’t do so again until you finish a long rest.<br/>
+			<span class="feature">Verdant.</span> Your body is equal parts plant and flesh. You can regrow any limb you lose in 1d8+1 weeks. Additionally, you can go without food or drink as long as you spend an hour per day in direct sunlight.<br/>
+			<span class="feature">Verdant Surge.</span> Once you’ve used your Relentless Endurance Trait, you gain temporary hit points equal to double your proficiency bonus, you double your proficiency bonus when making any attack roll, and you gain 10 feet of movement to your speed. This effect lasts until you regain any hit points or until you take a long or short rest.<br/>
+			<span class="feature">Languages.</span> Your character can speak, read, and write Common and one other language that you and your DM agree is appropriate for the character.<br/>
+			</p>
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/Ve7lFJT2UoM</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Jinx)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Verdant Orc)" supports="Standard||Exotic" />
+			
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_VERDANT_ORC_RELENTLESS_ENDURANCE" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_VERDANT_ORC_VERDANT" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_VERDANT_ORC_VERDANT_SURGE" />
+		</rules>
+	</element>
+	
+	<element name="Relentless Endurance" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_VERDANT_ORC_RELENTLESS_ENDURANCE">
+		<description>
+			<p>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this trait, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" >
+			<description>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/Ve7lFJT2UoM</set>
+		</setters>
+	</element>
+	
+	<element name="Verdant" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_VERDANT_ORC_VERDANT">
+		<description>
+			<p>Your body is equal parts plant and flesh. You can regrow any limb you lose in 1d8+1 weeks. Additionally, you can go without food or drink as long as you spend an hour per day in direct sunlight.</p>
+		</description>
+		<sheet>
+			<description>Your body is equal parts plant and flesh. You can regrow any limb you lose in 1d8 + 1 weeks. Additionally, you can go without food or drink as long as you spend an hour per day in direct sunlight.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/Ve7lFJT2UoM</set>
+		</setters>
+	</element>
+	
+	<element name="Verdant Surge" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_VERDANT_ORC_VERDANT_SURGE">
+		<description>
+			<p>Once you’ve used your Relentless Endurance Trait, you gain temporary hit points equal to double your proficiency bonus, you double your proficiency bonus when making any attack roll, and you gain 10 feet of movement to your speed. This effect lasts until you regain any hit points or until you take a long or short rest.</p>
+		</description>
+		<sheet usage="Relentless Endurance" >
+			<description>You gain temporary hit points equal to {{hp:verdant surge}}, you double your proficiency bonus when making any attack roll, and you gain 10 feet of movement to your speed. This effect lasts until you regain any hit points or until you take a long or short rest.</description>
+		</sheet>
+		<rules>
+			<stat name="hp:verdant surge" value="proficiency" />
+			<stat name="hp:verdant surge" value="proficiency" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/Ve7lFJT2UoM</set>
+		</setters>
+	</element>
+	
+</elements>
