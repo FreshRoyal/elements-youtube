@@ -2,12 +2,12 @@
 <elements>
 	<info>
 		<name>Circle of the City Subclass from Pointy Hat's YouTube</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="druid-city.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/druid-city.xml" />
 		</update>
 	</info>
 
-	<element name="Circle of the City" type="Archetype" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_DRUID_STONES">
+	<element name="Circle of the City" type="Archetype" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_DRUID_CITY">
 		<supports>Druid Circle</supports>
 		<description>
 			<div class="sidebar">
