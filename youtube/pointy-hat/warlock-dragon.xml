@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dragon Otherworldly Patron Subclass from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/warlock-dragon.xml" />
+		</update>
+	</info>
+
+	<element name="The Dragon" type="Archetype" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_WARLOCK_THE_DRAGON">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>The Dragon Otherworldly Patron is a warlock subclass built to give warlocks more enticing options than <i>eldritch blast</i>. It does this by offering warlocks a sort of “superpowered” form that can be accessed by consuming their precious few spell slots. This form scales in power and usefulness as the warlock gains additional levels, to offer an alternative to the warlock’s reliance on multiclassing. It’s also written to appeal to those who particularly like stories based and themed around dragons, since the patron of the draconic warlock is, unsurprisingly, a dragon.</p>
+			<p class="indent">The draconic warlock’s powers are themed around abilities that traditional dragons exhibit in the game, with access to flight, scale armor, and even legendary resistance, to name a few. It continues with the warlock class’ identity by letting you choose how you build your draconic warlock every step of the way, giving the player many choices to customize their draconic warlock. It was also written to work both with traditional dragons and the Pointy Hat’s warden dragons in mind, so using the latter is not required to play the draconic warlock.</p>
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_EXPANDED_SPELL_LIST" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_ELDRITCH_BREATH" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_PRESENCE" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_PROTECTOR" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_ESSENCE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND" level="1" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM" level="1" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_ELDRITCH_BREATH" level="1" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_PRESENCE" level="6" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_PROTECTOR" level="10" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_ESSENCE" level="14" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+
+	<element name="Dragon Kind" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND">
+		<description>
+			<p>You choose your patron’s kind and the damage associated with it or determine it randomly, using the Dragon Kind table.</p>
+			<table>
+				<thead>
+					<tr><td>1d10</td><td>Kind</td><td>Damage</td></tr>
+				</thead>
+				<tr><td>1</td><td>Red</td><td>Fire</td></tr>
+				<tr><td>2</td><td>Gold</td><td>Fire</td></tr>
+				<tr><td>3</td><td>Brass</td><td>Fire</td></tr>
+				<tr><td>4</td><td>Blue</td><td>Lightning</td></tr>
+				<tr><td>5</td><td>Bronze</td><td>Lightning</td></tr>
+				<tr><td>6</td><td>Copper</td><td>Acid</td></tr>
+				<tr><td>7</td><td>Green</td><td>Poison</td></tr>
+				<tr><td>8</td><td>White</td><td>Cold</td></tr>
+				<tr><td>9</td><td>Silver</td><td>Cold</td></tr>
+				<tr><td>10</td><td>Warden</td><td>Force</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Dragon Kind" supports="Pointy Hat The Dragon Dragon Kind" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Red" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_RED">
+		<supports>Pointy Hat The Dragon Dragon Kind</supports>
+		<compendium display="false"/>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind:damage" value="fire"/>
+		</rules>
+	</element>
+	<element name="Gold" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_GOLD">
+		<supports>Pointy Hat The Dragon Dragon Kind</supports>
+		<compendium display="false"/>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind:damage" value="fire"/>
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Brass" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_BRASS">
+		<supports>Pointy Hat The Dragon Dragon Kind</supports>
+		<compendium display="false"/>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind:damage" value="fire"/>
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Blue" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_BLUE">
+		<supports>Pointy Hat The Dragon Dragon Kind</supports>
+		<compendium display="false"/>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind:damage" value="lightning"/>
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Bronze" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_BRONZE">
+		<supports>Pointy Hat The Dragon Dragon Kind</supports>
+		<compendium display="false"/>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind:damage" value="lightning"/>
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Copper" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_COPPER">
+		<supports>Pointy Hat The Dragon Dragon Kind</supports>
+		<compendium display="false"/>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind:damage" value="acid"/>
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Green" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_GREEN">
+		<supports>Pointy Hat The Dragon Dragon Kind</supports>
+		<compendium display="false"/>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind:damage" value="poison"/>
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="White" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_WHITE">
+		<supports>Pointy Hat The Dragon Dragon Kind</supports>
+		<compendium display="false"/>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind:damage" value="cold"/>
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Silver" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_SILVER">
+		<supports>Pointy Hat The Dragon Dragon Kind</supports>
+		<compendium display="false"/>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind:damage" value="cold"/>
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Warden" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_WARDEN">
+		<supports>Pointy Hat The Dragon Dragon Kind</supports>
+		<compendium display="false"/>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind:damage" value="force"/>
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+
+	<element name="Expanded Spell List" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_EXPANDED_SPELL_LIST">
+		<description>
+			<p>At 1st level, the Dragon lets you choose from an expanded list of spells when you learn a warlock spell. All damage done by spells in the Dragon Expanded Spells table below will correspond to the damage of your patron’s dragon kind. The Dragon Kind table shows what damage type corresponds to the kind of dragon that is your patron.</p>
+			<h5 class="caption">Dragon Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>Command, Feather Fall</em></td></tr>
+				<tr><td>2nd</td><td><em>Flaming Sphere, Alter Self</em></td></tr>
+				<tr><td>3rd</td><td><em>Fear, Fly</em></td></tr>
+				<tr><td>4th</td><td><em>Fire Shield, Hallucinatory Terrain</em></td></tr>
+				<tr><td>5th</td><td><em>Cloudkill, Cone of Cold</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_COMMAND</extend>
+			<extend>ID_PHB_SPELL_FEATHER_FALL</extend>
+			<extend>ID_PHB_SPELL_FLAMING_SPHERE</extend>
+			<extend>ID_PHB_SPELL_ALTER_SELF</extend>
+			<extend>ID_PHB_SPELL_FEAR</extend>
+			<extend>ID_PHB_SPELL_FLY</extend>
+			<extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+			<extend>ID_WOTC_TCOE_SPELL_HALLUCINATORY_TERRAIN</extend>
+			<extend>ID_PHB_SPELL_CLOUDKILL</extend>
+			<extend>ID_PHB_SPELL_CONE_OF_COLD</extend>
+		</spellcasting>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+
+	<element name="Draconic Form" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM">
+		<description>
+			<p>Starting at 1st level, your draconic patron bestows upon you a sliver of its draconic essence that you can call forth with your pact magic.</p>
+			<p class="indent">As a bonus action, you can expend one spell slot to enter your draconic form. In your draconic form, your body twists to outwardly reveal your draconic magic and you gain access to your draconic gifts.</p>
+			<p class="indent">Your draconic form lasts for a number of rounds equal to 1 + the level of the spell slot used to call forth your draconic form, after which you can no longer use your draconic gifts until you spend a spell slot to call forth your draconic form again.</p>
+			<p class="indent">Choose one of the following draconic gifts:</p>
+			<ul>
+				<li><strong><em>Draconic Wings:</em></strong> Dragon-like wings sprout from your back. You have a flying speed equal to your walking speed.</li>
+				<li><strong><em>Draconic Hide:</em></strong> Scales cover your skin. Your AC is increased by an amount equal to your proficiency bonus.</li>
+				<li><strong><em>Draconic Heart:</em></strong> Your vitality increases to match that of a dragon. You gain temporary HP equal to 1d10 plus your warlock level.</li>
+				<li><strong><em>Draconic Claws:</em></strong> Your fingers sprout sharp claws. You are proficient with your unarmed strikes, they count as magical for the purposes of overcoming resistances, and on a hit you deal slashing damage equal to 1d6 plus your Charisma modifier.</li>
+				<li><strong><em>Draconic Invocation:</em></strong> Your pact magic strengthens while in your draconic form. Choose an Eldritch Invocation you have not yet chosen (you must meet its requirements). You gain the benefits of said Eldritch Invocation while in your draconic form.</li>
+				<li><strong><em>Draconic Eye:</em></strong> You gain blindsight to a distance of 60 feet.</li>
+				<li><strong><em>Frightful Presence:</em></strong> You exude an aura of fear. Each hostile creature that starts their turn within 60 feet of you must succeed on a Wisdom saving throw against your spellcasting DC or be frightened of you. A creature repeats their saving throw at the end of their turn. A creature that succeeds on this saving throw is immune to your Frightful Presence for 24 hours.</li>
+			</ul>
+			<p class="indent">You can choose an additional draconic gift at levels 5, 11, and 17.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend one spell slot to enter your draconic form. In your draconic form, you gain access to your draconic gifts. &#13;
+			Your draconic form lasts {{draconic form:rounds}} rounds, after which you can no longer use your draconic gifts until you spend a spell slot to call forth your draconic form again.</description>
+		</sheet>
+		<rules>
+			<stat name="draconic form:rounds" value="1" bonus="base" />
+			<stat name="draconic form:rounds" value="warlock:spellcasting:slot" bonus="base" />
+			<select type="Archetype Feature" name="Draconic Gift (Level 1)" supports="Pointy Hat The Dragon Draconic Gift" level="1" />
+			<select type="Archetype Feature" name="Draconic Gift (Level 5)" supports="Pointy Hat The Dragon Draconic Gift" level="5" />
+			<select type="Archetype Feature" name="Draconic Gift (Level 11)" supports="Pointy Hat The Dragon Draconic Gift" level="11" />
+			<select type="Archetype Feature" name="Draconic Gift (Level 17)" supports="Pointy Hat The Dragon Draconic Gift" level="17" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Draconic Wings" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM_DRACONIC_WINGS">
+		<compendium display="false"/>
+		<supports>Pointy Hat The Dragon Draconic Gift</supports>
+		<description>
+			<p>Dragon-like wings sprout from your back. You have a flying speed equal to your walking speed.</p>
+		</description>
+		<sheet usage="Draconic Form">
+			<description>You have a flying speed equal to {{innate speed}} ft.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Draconic Hide" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM_DRACONIC_HIDE">
+		<compendium display="false"/>
+		<supports>Pointy Hat The Dragon Draconic Gift</supports>
+		<description>
+			<p>Scales cover your skin. Your AC is increased by an amount equal to your proficiency bonus.</p>
+		</description>
+		<sheet usage="Draconic Form">
+			<description>Your AC is increased by {{proficiency}}.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Draconic Heart" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM_DRACONIC_HEART">
+		<compendium display="false"/>
+		<supports>Pointy Hat The Dragon Draconic Gift</supports>
+		<description>
+			<p>Your vitality increases to match that of a dragon. You gain temporary HP equal to 1d10 plus your warlock level.</p>
+		</description>
+		<sheet usage="Draconic Form">
+			<description>You gain temporary HP equal to 1d10 plus {{level}}.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Draconic Claws" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM_DRACONIC_CLAWS">
+		<compendium display="false"/>
+		<supports>Pointy Hat The Dragon Draconic Gift</supports>
+		<description>
+			<p>Your fingers sprout sharp claws. You are proficient with your unarmed strikes, they count as magical for the purposes of overcoming resistances, and on a hit you deal slashing damage equal to 1d6 plus your Charisma modifier.</p>
+		</description>
+		<sheet usage="Draconic Form">
+			<description>You are proficient with your unarmed strikes, they count as magical for the purposes of overcoming resistances, and on a hit you deal 1d6 + {{charisma:modifier}} slashing damage.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Draconic Invocation" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM_DRACONIC_INVOCATION">
+		<compendium display="false"/>
+		<supports>Pointy Hat The Dragon Draconic Gift</supports>
+		<description>
+			<p>Your pact magic strengthens while in your draconic form. Choose an Eldritch Invocation you have not yet chosen (you must meet its requirements). You gain the benefits of said Eldritch Invocation while in your draconic form.</p>
+		</description>
+		<sheet usage="Draconic Form">
+			<description>You gain the benefits of the Eldritch Invocation chosen from this trait while in your draconic form.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Eldritch Invocation (Draconic Invocation)" supports="Eldritch Invocation" level="1" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Draconic Eye" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM_DRACONIC_EYE">
+		<compendium display="false"/>
+		<supports>Pointy Hat The Dragon Draconic Gift</supports>
+		<description>
+			<p>You gain blindsight to a distance of 60 ft.</p>
+		</description>
+		<sheet usage="Draconic Form">
+			<description>You gain blindsight to a distance of 60 feet.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Frightful Presence" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM_FRIGHTFUL_PRESENCE">
+		<compendium display="false"/>
+		<supports>Pointy Hat The Dragon Draconic Gift</supports>
+		<description>
+			<p>You exude an aura of fear. Each hostile creature that starts their turn within 60 feet of you must succeed on a Wisdom saving throw against your spellcasting DC or be frightened of you. A creature repeats their saving throw at the end of their turn. A creature that succeeds on this saving throw is immune to your Frightful Presence for 24 hours.</p>
+		</description>
+		<sheet usage="Draconic Form">
+			<description>Each hostile creature that starts their turn within 60 ft of you must succeed on a Wisdom saving throw against your spellcasting DC or be frightened of you. A creature repeats their saving throw at the end of their turn. A creature that succeeds on this saving throw is immune to your Frightful Presence for 24 hours.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+
+	<element name="Eldritch Breath" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_ELDRITCH_BREATH">
+		<description>
+			<p>Also at 1st level, you gain an action you can only use while in your draconic form.</p>
+			<p class="indent">As an action, you exhale a 10 foot cone of the damage type associated with your dragon patron. Each creature in that area must make a Dexterity saving throw against your spellcasting DC, taking an amount of damage equal to 1d10 + your Charisma modifier + the spell slot level you used to enter your draconic form, or half as much on a successful save.</p>
+		</description>
+		<sheet action="Action">
+			<description>You exhale a 10 ft cone of {{dragon kind:damage}} damage. Each creature in that area must make a Dexterity saving throw against your spellcasting DC, taking 1d10 + {{eldritch breath:damage}} {{dragon kind:damage}} damage, or half as much on a successful save.</description>
+		</sheet>
+		<rules>
+			<stat name="eldritch breath:damage" value="charisma:modifier" bonus="base" />
+			<stat name="eldritch breath:damage" value="warlock:spellcasting:slot" bonus="base" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	
+	<element name="Draconic Presence" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_PRESENCE">
+		<description>
+			<p>At 6th level, your pact with the dragon has given your body a draconic flair.</p>
+			<p class="indent">You are immune to the frightened condition, you can speak Draconic, and you have resistance against the damage type associated with your dragon patron.</p>
+		</description>
+		<sheet>
+			<description>You are immune to the frightened condition.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_RED" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_GOLD" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_BRASS" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_BLUE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_BRONZE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" requirements="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_COPPER" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" requirements="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_GREEN" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_WHITE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_SILVER" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" requirements="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRAGON_KIND_WARDEN" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+
+	<element name="Draconic Protector" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_PROTECTOR">
+		<description>
+			<p>At 10th level, your pact is strong enough for you to call forth the dragon’s endurance as a last resort.</p>
+			<p class="indent">If you fail a saving throw, you can choose to succeed it instead. Once you’ve used this ability, you cannot use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>If you fail a saving throw, you can choose to succeed it instead.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+
+	<element name="Draconic Essence" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_ESSENCE">
+		<description>
+			<p>At 14th level, your essence has been irrevocably changed by the influence your patron has over you.</p>
+			<p class="indent">Select one of the draconic gifts you possess through your Draconic Form feature. You now enjoy that draconic gift both in and out of your draconic form.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Draconic Gift (Draconic Essence)" supports="Pointy Hat The Dragon Draconic Essence" level="14" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Draconic Wings" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_ESSENCE_DRACONIC_WINGS">
+		<compendium display="false"/>
+		<requirements>ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM_DRACONIC_WINGS</requirements>
+		<supports>Pointy Hat The Dragon Draconic Essence</supports>
+		<description />
+		<sheet alt="Draconic Essence">
+			<description>You can use the Draconic Wings draconic gift outside of your draconic form.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="innate speed" bonus="base" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Draconic Wings" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_ESSENCE_DRACONIC_WINGS">
+		<compendium display="false"/>
+		<requirements>ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM_DRACONIC_WINGS</requirements>
+		<supports>Pointy Hat The Dragon Draconic Essence</supports>
+		<description />
+		<sheet alt="Draconic Essence">
+			<description>You can use the Draconic Wings draconic gift outside of your draconic form.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="innate speed" bonus="base" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Draconic Hide" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_ESSENCE_DRACONIC_HIDE">
+		<compendium display="false"/>
+		<requirements>ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM_DRACONIC_HIDE</requirements>
+		<supports>Pointy Hat The Dragon Draconic Essence</supports>
+		<description />
+		<sheet alt="Draconic Essence">
+			<description>You can use the Draconic Hide draconic gift outside of your draconic form.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="proficiency" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Draconic Claws" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_ESSENCE_DRACONIC_CLAWS">
+		<compendium display="false"/>
+		<requirements>ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM_DRACONIC_CLAWS</requirements>
+		<supports>Pointy Hat The Dragon Draconic Essence</supports>
+		<description />
+		<sheet alt="Draconic Essence">
+			<description>You can use the Draconic Claws draconic gift outside of your draconic form.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Draconic Invocation" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_ESSENCE_DRACONIC_INVOCATION">
+		<compendium display="false"/>
+		<requirements>ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM_DRACONIC_INVOCATION</requirements>
+		<supports>Pointy Hat The Dragon Draconic Essence</supports>
+		<description />
+		<sheet alt="Draconic Essence">
+			<description>You can use your selected Eldritch Invocation from the Draconic Invocation draconic gift outside of your draconic form.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Draconic Eye" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_ESSENCE_DRACONIC_EYE">
+		<compendium display="false"/>
+		<requirements>ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM_DRACONIC_EYE</requirements>
+		<supports>Pointy Hat The Dragon Draconic Essence</supports>
+		<description />
+		<sheet alt="Draconic Essence">
+			<description>You can use the Draconic Eye draconic gift outside of your draconic form.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+	<element name="Frightful Presence" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_ESSENCE_FRIGHTFUL_PRESENCE">
+		<compendium display="false"/>
+		<requirements>ID_POINTY_HAT_ARCHETYPE_FEATURE_THE_DRAGON_DRACONIC_FORM_FRIGHTFUL_PRESENCE</requirements>
+		<supports>Pointy Hat The Dragon Draconic Essence</supports>
+		<description />
+		<sheet alt="Draconic Essence">
+			<description>You can use the Frightful Presence draconic gift outside of your draconic form.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
+		</setters>
+	</element>
+
+</elements>
