@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Shardmind from Monster of the Week</name>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="race-shardmind.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/race-shardmind.xml" />
 		</update>
 	</info>
@@ -39,7 +39,7 @@
 			<set name="sourceUrl">https://youtu.be/fyC_09jUb88</set>
 		</setters>
 		<rules>
-			<stat name="intellegence" value="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="intellegence" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<select type="Ability Score Improvement" name="Ability Score Improvement +1 (Shardmind)" supports="ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Shardmind)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Shardmind)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
