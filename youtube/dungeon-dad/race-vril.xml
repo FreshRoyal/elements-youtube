@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Vril from Monster of the Week</name>
+		<update version="0.0.1">
+			<file name="race-vril.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/race-vril.xml" />
+		</update>
+	</info>
+	<element name="Vril" type="Race" source="Monster of the Week" id="ID_MOTW_RACE_VRIL">
+		<description>
+			<p>Vril are a race of goblins that were originally raised by a group of Drow sorcerers determined to “improve” upon the goblin species. The results were a breed of goblinoid creatures that lost some of the nimble speed, but gained a slew of new abilities and a hearty disposition.</p>
+			<p class="indent">While still relatively small, vril tend to be slightly taller than typical goblins and are built with a sturdy frame. Their arms are long, reaching past the ankle, and end in clawed hands. Most Vril have skin that ranges from violet hues to deep purples, often adorned in black stripes and other natural markings.</p>
+			<h4>VRIL TRAITS</h4>
+			<p style="margin-top:15px"><strong><em>Creature Type:</em></strong> Humanoid (Goblinoid)</p>
+			<p><strong><em>Size:</em></strong> Small: (3-4 feet tall)</p>
+			<p><strong><em>Speed:</em></strong> 30 feet</p>
+			<p>As a Vril, you have these special traits. </p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by two, and either your Strength or Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>Language.</em></strong> You can speak read and write Common, Elvish, Goblin, and Undercommon.</p>
+			<p class="indent"><strong><em>Blindsight.</em></strong> You have blindsight with a range of 15 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 120 feet.</p>
+			<p class="indent"><strong><em>Climber.</em></strong> You have a climb speed equal to your move speed.</p>
+			<p class="indent"><strong><em>Toxin Prone.</em></strong> You have vulnerability to poison damage.</p>
+			<p class="indent"><strong><em>Sound Processing.</em></strong> You have resistance to thunder damage and can not be deafened.</p>
+			<p class="indent"><strong><em>Keen Hearing.</em></strong> You have advantage on Perception checks that rely on hearing.</p>
+			<p class="indent"><strong><em>Shriek.</em></strong> When you take the Attack action on your turn, you can replace one of your attacks with an ear splitting shriek that emanates from you in either a 15 foot radius centred on you, or a 30 foot cone. Each non-vril creature in that area must make a Constitution Saving Throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d8 thunder damage and is deafened for 1 minute. On a successful save, a creature takes half as much damage and is not deafened. This damage increases by 1d8 when you reach character levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>
+			<p class="indent">You can use your shriek a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Skinshift.</em></strong> As a bonus action, you can alter the consistency of your skin, giving you resistance to bludgeoning, piercing, or slashing damage until you use this ability again or finish a Long Rest. When you reach level 5 you may choose to gain resistance to fire, lightning, acid, or cold damage. When you reach level 11 you may choose to gain resistance to necrotic, or radiant damage. When you reach level 17 you may choose to gain resistance to any damage type other than psychic. </p>
+			<p class="indent">You can use skinshift a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://youtu.be/kyFPmnJUcLc</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1 (Vril)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Vril)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Vril)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="120" bonus="base" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID_GOBLINOID" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_ELVISH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_GOBLIN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_UNDERCOMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="4" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_VRIL_BLINDSIGHT" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_VRIL_CLIMBER" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_VRIL_TOXIN_PRONE" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_VRIL_SOUND_PROCESSING" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_VRIL_KEEN_HEARING" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_VRIL_SHRIEK" />
+			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_VRIL_SKINSHIFT" />
+		</rules>
+	</element>
+
+	<element name="Blindsight" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_VRIL_BLINDSIGHT">
+		<description>
+			<p>You have blindsight with a range of 15 feet.</p>
+		</description>
+		<sheet>
+			<description>You have blindsight with a range of 15 ft.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/kyFPmnJUcLc</set>
+		</setters>
+	</element>
+
+	<element name="Climber" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_VRIL_CLIMBER">
+		<description>
+			<p>You have a climb speed equal to your move speed.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed:climb" value="innate speed" bonus="base" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/kyFPmnJUcLc</set>
+		</setters>
+	</element>
+
+	<element name="Toxin Prone" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_VRIL_TOXIN_PRONE">
+		<description>
+			<p>You have vulnerability to poison damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_POISON" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/kyFPmnJUcLc</set>
+		</setters>
+	</element>
+
+	<element name="Sound Processing" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_VRIL_SOUND_PROCESSING">
+		<description>
+			<p>You have resistance to thunder damage and can not be deafened.</p>
+		</description>
+		<sheet>
+			<description>You cannot be deafened.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/kyFPmnJUcLc</set>
+		</setters>
+	</element>
+
+	<element name="Keen Hearing" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_VRIL_KEEN_HEARING">
+		<description>
+			<p>You have advantage on Perception checks that rely on hearing.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Perception checks that rely on hearing.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/kyFPmnJUcLc</set>
+		</setters>
+	</element>
+
+	<element name="Shriek" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_VRIL_SHRIEK">
+		<description>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with an ear splitting shriek that emanates from you in either a 15 foot radius centred on you, or a 30 foot cone. Each non-vril creature in that area must make a Constitution Saving Throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d8 thunder damage and is deafened for 1 minute. On a successful save, a creature takes half as much damage and is not deafened. This damage increases by 1d8 when you reach character levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>
+			<p class="indent">You can use your shriek a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You can replace one of your attacks with an ear splitting shriek that emanates from you in either a 15 foot radius centred on you, or a 30 foot cone. Each non-vril creature in that area must make a Constitution saving throw against a DC{{shriek:dc}}. On a failed save, the creature takes {{shriek:dice count}}d8 thunder damage and is deafened, or half as much damage and is not deafened on a successful one.</description>
+		</sheet>
+		<rules>
+			<stat name="shriek:dc" value="8" />
+			<stat name="shriek:dc" value="constitution:modifier" />
+			<stat name="shriek:dc" value="proficiency" />
+			<stat name="shriek:dice count" value="1" level="1" bonus="base" />
+			<stat name="shriek:dice count" value="2" level="5" bonus="base" />
+			<stat name="shriek:dice count" value="3" level="11" bonus="base" />
+			<stat name="shriek:dice count" value="4" level="17" bonus="base" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/kyFPmnJUcLc</set>
+		</setters>
+	</element>
+
+	<element name="Skinshift" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_VRIL_SKINSHIFT">
+		<description>
+			<p>As a bonus action, you can alter the consistency of your skin, giving you resistance to bludgeoning, piercing, or slashing damage until you use this ability again or finish a Long Rest. When you reach level 5 you may choose to gain resistance to fire, lightning, acid, or cold damage. When you reach level 11 you may choose to gain resistance to necrotic, or radiant damage. When you reach level 17 you may choose to gain resistance to any damage type other than psychic. </p>
+			<p class="indent">You can use skinshift a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You can alter the consistency of your skin, giving you resistance to bludgeoning, piercing, or slashing damage until you use this ability again or finish a long rest.</description>
+			<description level="5">You can alter the consistency of your skin, giving you resistance to bludgeoning, piercing, slashing, fire, lightning, acid, or cold damage until you use this ability again or finish a long rest.</description>
+			<description level="11">You can alter the consistency of your skin, giving you resistance to bludgeoning, piercing, slashing, fire, lightning, acid, cold, necrotic, or radiant damage until you use this ability again or finish a long rest.</description>
+			<description level="17">You can alter the consistency of your skin, giving you resistance to any damage type other than psychic damage until you use this ability again or finish a long rest.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/kyFPmnJUcLc</set>
+		</setters>
+	</element>
+
+</elements>
