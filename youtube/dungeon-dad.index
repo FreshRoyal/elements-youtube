@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Dungeon Dad YouTube Content</name>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="dungeon-dad.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad.index" />
 		</update>
 	</info>
