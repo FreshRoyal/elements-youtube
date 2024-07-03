@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>School of Witchcraft Subclass from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="wizard-witchcraft.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/wizard-witchcraft.xml" />
+		</update>
+	</info>
+	<element name="School of Witchcraft" type="Archetype" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_WIZARD_SCHOOL_OF_WITCHCRAFT">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>A wizard learns through dusty old tomes and rigorous study. A witch learns through secret whispers and strict mentorship. A wizard witch melds these two ways of teaching into the School of Witchcraft, a school that takes both the unbending studying practices of wizardry with the oral tradition practices of witchery to make a school that seeks and sees knowledge in places that both wizards and witches can’t possibly imagine.</p>
+			<p class="indent">Wizard witches are characterized by their thirst for knowledge, but also for their unorthodox ways to obtain it. To a wizard witch, a skill or a spell can be learned by the words written in a book, the words of their mentor, or the words spoken by the spirits from the beyond, including those spirits that they have just slain.</p>
+			<h4>WITCHMARK</h4>
+			<p>Wizards of the School of Witchcraft traditionally have witchmarks related to words. Some of them have the last words of a spirit they have slain that they used to acquire more knowledge. Some witchmarks take the shape of words that the wizard found particularly insightful, or moving. Some have the names of their mentors as witchmarks. Another common theme for a wizard witch’s witchmark is eyes, to symbolize their constant quest for knowledge.</p>
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_WITCHCRAFT_TEACHERS_FROM_THE_BEYOND" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_WITCHCRAFT_ORAL_TRADITION" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_WITCHCRAFT_SPECTRAL_LEARNING" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_WITCHCRAFT_SPIRITUAL_SAVANT" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_WITCHCRAFT_PRODIGY_OF_THE_ARCANE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_WITCHCRAFT_TEACHERS_FROM_THE_BEYOND" level="2" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_WITCHCRAFT_ORAL_TRADITION" level="2" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_WITCHCRAFT_SPECTRAL_LEARNING" level="6" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_WITCHCRAFT_SPIRITUAL_SAVANT" level="10" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_WITCHCRAFT_PRODIGY_OF_THE_ARCANE" level="14" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/e5ePwuzG4gE</set>
+		</setters>
+	</element>
+	
+	<element name="Teachers from the Beyond" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_WITCHCRAFT_TEACHERS_FROM_THE_BEYOND">
+		<description>
+			<p>You confer with spirits of gifted spellcasters, like famed sorcerers and pious clerics, so they can teach you their magical secrets. After a long rest, you can take 10 minutes to learn a cantrip of the sorcerer, warlock, druid, cleric, bard, or wizard spell list. For you, this counts as a wizard cantrip. This cantrip does not count towards the number of cantrips you know and is not written on your spellbook, but you can cast it as many times as you want. You can use this cantrip until you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>After a long rest, you can take 10 minutes to learn a cantrip of the sorcerer, warlock, druid, cleric, bard, or wizard spell list. For you, this counts as a wizard cantrip. This cantrip does not count towards the number of cantrips you know and is not written on your spellbook, but you can cast it as many times as you want. You can use this cantrip until you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip, Teachers from the Beyond" supports="Sorcerer&amp;&amp;0||Warlock&amp;&amp;0||Druid&amp;&amp;0||Cleric&amp;&amp;0||Bard&amp;&amp;0||Wizard&amp;&amp;0" spellcasting="Wizard" level="2" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/e5ePwuzG4gE</set>
+		</setters>
+	</element>
+
+	<element name="Oral Tradition" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_WITCHCRAFT_ORAL_TRADITION">
+		<description>
+			<p>The ways of witchcraft are taught through conversation and training between a pupil and a mentor. You are able to translate their teachings to the realm of arcane scholastic tradition. When finding a spell that you are able to learn, you may choose to commit it to memory instead of copying it down. Spells that can be learned through oral tradition of witchcraft are under the same limitations of spells you can copy in your spellbook. In order to commit it to memory, you must spend 4 hours per spell level practicing the spell.</p>
+			<p class="indent">Once you’ve spent the appropriate time to commit the spell to memory, you can prepare it just like your other spells. You can commit to memory a spell from a Spell Scroll, in which case you must also succeed the necessary Intelligence (Arcana) check to do so successfully, the Spell Scroll is destroyed just like it would be if you had copied it to your spellbook. You can’t commit to memory cantrips obtained by the use of the Teachers from the Beyond ability.</p>
+		</description>
+		<sheet>
+			<description>When finding a spell that you are able to learn, you may choose to commit it to memory instead of copying it down. Spells that can be learned through oral tradition are under the same limitations of spells you can copy in your spellbook. In order to commit it to memory, you must spend 4 hours per spell level practicing the spell. &#13;
+			Once you’ve spent the appropriate time to commit the spell to memory, you can prepare it just like your other spells. You can commit to memory a spell from a Spell Scroll, in which case you must also succeed the necessary Intelligence (Arcana) check to do so successfully, the Spell Scroll is destroyed just like it would be if you had copied it to your spellbook. You can’t commit to memory cantrips obtained by the use of the Teachers from the Beyond ability.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/e5ePwuzG4gE</set>
+		</setters>
+	</element>
+
+	<element name="Spectral Learning" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_WITCHCRAFT_SPECTRAL_LEARNING">
+		<description>
+			<p>At 6th level, you summon the spirits of slain foes to learn new abilities through them. When a creature you can see is brought down to 0 hit points, roll a d20 and add your proficiency bonus. Your roll must be higher than the creature’s CR. On a success, you are able to momentarily trap the spirit of the slain foe and use its power. One of their abilities, determined by the GM, is now yours to use. If the ability in question is a particular spell, or otherwise consumes a resource, you must consume that resource when using the ability. If the ability relies on the creature’s morphology, like a prehensile tail or a claw, you summon a spectral manifestation of that body part when you use it. The modifier used when using these abilities is Intelligence, even if the ability in question is a melee attack. The spirit is set free and you lose the ability attached to it after a long rest. If the ability you acquire is a spell you do not know, you can add it to your list of spells through your Oral Tradition ability by learning it from the spirit. Once you’ve used this ability, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When a creature you can see is brought down to 0 hit points, roll a d20 and add {{proficiency}}. Your roll must be higher than the creature’s CR. On a success, you are able to momentarily trap the spirit of the slain foe and use its power. One of their abilities, determined by the GM, is now yours to use. If the ability in question is a particular spell, or otherwise consumes a resource, you must consume that resource when using the ability. If the ability relies on the creature’s morphology, you summon a spectral manifestation of that body part when you use it. The modifier used when using these abilities is Intelligence, even if the ability in question is a melee attack. The spirit is set free and you lose the ability attached to it after a long rest. If the ability you acquire is a spell you do not know, you can add it to your list of spells through your Oral Tradition ability by learning it from the spirit.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/e5ePwuzG4gE</set>
+		</setters>
+	</element>
+
+	<element name="Spiritual Savant" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_WITCHCRAFT_SPIRITUAL_SAVANT">
+		<description>
+			<p>At 10th level, you have mastered the art of learning through spirits. When you bring a creature to 0 hit points and learn one of their abilities through your Spectral Learning ability, you can choose to commit that ability to memory as if it was a spell. You can only commit one ability that isn’t a spell to memory using this feature. It takes CR of the creature x 10 minutes to commit the new ability to memory and you must do so before you finish a long rest. You can still hold a different ability through Spectral Learning along with the one you have committed to memory, at the end of a long rest the ability acquired through Spectral Learning will disappear, and the one committed to memory through Spiritual Savant will still be available to you. If you wish to replace the learned ability with a new one, the old one fades from your memory as the connection with the spirit is severed.</p>
+		</description>
+		<sheet>
+			<description>When you bring a creature to 0 hit points and learn one of their abilities through your Spectral Learning ability, you can choose to commit that ability to memory as if it was a spell. You can only commit one ability that isn’t a spell to memory using this feature. It takes CR of the creature x 10 minutes to commit the new ability to memory and you must do so before you finish a long rest. You can still hold a different ability through Spectral Learning along with the one you have committed to memory, at the end of a long rest the ability acquired through Spectral Learning will disappear, and the one committed to memory through Spiritual Savant will still be available to you. If you wish to replace the learned ability with a new one, the old one fades from your memory as the connection with the spirit is severed.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/e5ePwuzG4gE</set>
+		</setters>
+	</element>
+
+	<element name="Prodigy of the Arcane" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_WITCHCRAFT_PRODIGY_OF_THE_ARCANE">
+		<description>
+			<p>Your prodigious mind can summon the spirits of those that have completely mastered the arcane arts to teach you their secrets. After a long rest, you can prepare one spell of your choice from any class’ spell list. The spell must be of a level for which you have spell slots and you follow the normal rules for casting it, including expending a spell slot. If the spell isn’t a wizard spell, it counts as a wizard spell when you cast it. It takes 10 minutes per spell level to prepare it. After you finish a long rest, you’re no longer able to cast this spell unless you prepare it again using this feature. You can’t commit this spell to memory using your Oral Tradition ability.</p>
+		</description>
+		<sheet>
+			<description>After a long rest, you can prepare one spell of your choice from any class’ spell list. The spell must be of a level for which you have spell slots and you follow the normal rules for casting it, including expending a spell slot. If the spell isn’t a wizard spell, it counts as a wizard spell when you cast it. It takes 10 minutes per spell level to prepare it. After you finish a long rest, you’re no longer able to cast this spell unless you prepare it again using this feature. You can’t commit this spell to memory using your Oral Tradition ability.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Spell, Prodigy of the Arcane" supports="$(spellcasting:slots)" spellcasting="Wizard" prepared="true" level="14" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/e5ePwuzG4gE</set>
+		</setters>
+	</element>
+
+	
+
+</elements>
