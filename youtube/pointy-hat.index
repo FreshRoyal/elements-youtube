@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Pointy Hat YouTube Content</name>
-		<update version="1.1.2">
+		<update version="1.1.3">
 			<file name="pointy-hat.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat.index" />
 		</update>
 	</info>
@@ -32,6 +32,7 @@
 		<file name="ranger-cowboy.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/ranger-cowboy.xml" />
 		<file name="rogue-bloodthief.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/rogue-bloodthief.xml" />
 		<file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/warlock-dragon.xml" />
+		<file name="wizard-witchcraft.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/wizard-witchcraft.xml" />
 
 		<!--Other-->
 		<file name="magic-items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/magic-items.xml" />
