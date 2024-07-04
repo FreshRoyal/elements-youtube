@@ -5,7 +5,7 @@ This repo contains content created by the following creators and channels:
 
 * [DnD Shorts](https://www.youtube.com/@DnDShorts)
 * [Dungeon Dad](https://www.youtube.com/@DungeonDad)
-* [Ginny Di]([https://www.youtube.com/@GinnyDi)
+* [Ginny Di](https://www.youtube.com/@GinnyDi)
 * [Pointy Hat](https://www.youtube.com/@pointyhatstudios)
 * [You Might Be A DND](https://www.youtube.com/@youmightbeadnd)
 
