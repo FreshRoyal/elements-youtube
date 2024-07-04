@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Verdant Orc from Pointy Hat's YouTube</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-verdantorc.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-verdantorc.xml" />
 		</update>
 	</info>
@@ -30,7 +30,7 @@
 			<set name="sourceUrl">https://youtu.be/Ve7lFJT2UoM</set>
 		</setters>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Jinx)" supports="Custom Ability Score Improvement Option" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Verdant Orc)" supports="Custom Ability Score Improvement Option" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
 
