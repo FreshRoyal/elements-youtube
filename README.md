@@ -5,7 +5,9 @@ This repo contains content created by the following creators and channels:
 
 * [DnD Shorts](https://www.youtube.com/@DnDShorts)
 * [Dungeon Dad](https://www.youtube.com/@DungeonDad)
+* [Ginny Di]([https://www.youtube.com/@GinnyDi)
 * [Pointy Hat](https://www.youtube.com/@pointyhatstudios)
+* [You Might Be A DND](https://www.youtube.com/@youmightbeadnd)
 
 Please note that this repo only includes content released for free. Content from a published book or Patreon document is not included. Basically, if you have to spend any amount of money to get it, it is not included.
 
