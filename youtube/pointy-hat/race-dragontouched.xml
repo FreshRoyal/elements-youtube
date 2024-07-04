@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Dragontouched from Pointy Hat's YouTube</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-dragontouched.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-dragontouched.xml" />
 		</update>
 	</info>
@@ -208,7 +208,7 @@
 			<description level="3">You can cast the flaming sphere spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
 			Your spellcasting ability for these spells is Charisma.</description>
 			<description level="5">You can cast the flaming sphere and scorching ray spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. &#13;
-			Your spellcasting ability for these spells is CHarisma.</description>
+			Your spellcasting ability for these spells is Charisma.</description>
 		</sheet>
 		<setters>
 			<set name="sourceUrl">https://youtu.be/VnrEhEEJcKE</set>
