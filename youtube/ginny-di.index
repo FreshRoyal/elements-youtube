@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Ginny Di YouTube Content</name>
+		<update version="1.0.0">
+			<file name="ginny-di.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/ginny-di.index" />
+		</update>
+	</info>
+	<files>
+		<file name="race-merfolk.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/ginny-di/race-merfolk.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/ginny-di/source.xml" />
+	</files>
+</index>
