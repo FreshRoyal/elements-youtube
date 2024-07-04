@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Ginny Di YouTube Source</name>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/ginny-di/source.xml" />
+		</update>
+	</info>
+	<element name="Ginny Di" type="Source" source="Core" id="ID_HOMEBREW_SOURCE_GINNY_DI">
+		<description>
+			<p>Player character options created by Ginny Di.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">GDYT</set>
+			<set name="image">https://yt3.googleusercontent.com/BtSiYtw353dUD0AfMaWxGrzPUwo5ERf1jy8U9dP4rfonTDJQWjF8lwS1HaNQ3ulUjkYOC_UM=s160-c-k-c0x00ffffff-no-rj</set>
+			<set name="url">https://www.youtube.com/@GinnyDi</set>
+			<set name="author" abbreviation="GNDI" url="https://www.youtube.com/@GinnyDi">Ginny Di</set>
+			<set name="release">20080611</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>

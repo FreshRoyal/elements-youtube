@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Merfolk from Ginny Di's YouTube</name>
+		<update version="0.0.1">
+			<file name="race-merfolk.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/ginny-di/race-merfolk.xml" />
+		</update>
+	</info>
+	<element name="Merfolk" type="Race" source="Ginny Di" id="ID_GINNY_DI_RACE_MERFOLK">
+		<description>
+			<p>In the depths of the ocean, amidst the gentle sway of seaweed forests, the merfolk make their home. From the rocky shores where they sun themselves to the shadowy depths where the sunlight cannot reach, merfolk occupy all the extremes of the sea the same way that land-dwellers traverse each mountain and valley. Whether they are guiding sailors through treacherous seas, summoning storms to toss the ocean, or defending their underwater realms from invaders, merfolk are deeply connected to the world both above and below the waves.</p>
+			<h4>Hues of the Sea</h4>
+			<p>Merfolk are as diverse as the oceans they inhabit. Most have heads and torsos that could be mistaken for human if not for the kelp-like hues of their hair or the glittering traces of scales on their skin, combined with the tail of a fish or the powerful limbs of an octopus. But some merfolk resemble aquatic beasts more strongly, with furred seal-like faces or broad shark-like heads.</p>
+			<p class="indent">The merfolk body commonly features colors that blend with their surroundings, such as blues, greens, and neutral shades, for both protection and predation. However, vibrant colors are not unusual in tropical environments, and merfolk who live in the darkest depths may sport bioluminescent markings. They may also have webbed fingers, gills, and ventral or dorsal fins in addition to tail fins.</p>
+			<h4>Kingdoms Beneath the Waves</h4>
+			<p>Merfolk can be found in diverse aquatic environments, from shallow coastal waters to the deepest parts of the ocean. But they are not confined to saltwater, and many thrive in freshwater environments like rivers and lakes. Like land-dwellers, some merfolk live in small settlements, while others build intricate cities, from sunlit coral palaces to sprawling, deep-sea metropolises. Merfolk societies are equally varied. Some interact regularly with terrans, engaging in trade and diplomacy, while others live so far from land that interactions with non-aquatic beings are rare.</p>
+
+			<h4>Merfolk Traits:</h4>
+			<p class="indent" style="margin-top:15px"><strong><em>Ability Score Increase.</em></strong> When determining your character’s ability scores, increase one score by 2 and increase a different score by 1, or increase three different scores by 1. Follow this rule regardless of the method you use to determine the scores, such as rolling or point buy. You can’t raise any of your scores above 20.</p>
+			<p class="indent"><strong><em>Life Span.</em></strong> Merfolk reach adulthood in their late teens and live less than a century.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Small or Medium (your choice).</p>
+			<p class="indent"><strong><em>Speed.</em></strong> You have a walking speed of 30 feet when in humanoid form. When in merfolk form, you have a swimming speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character.</p>
+			<p class="indent"><strong><em>Merfolk's Breath.</em></strong> You can cast the <i>water breathing</i> spell once with this trait and regain the ability to do so when you finish a long rest. Additionally, when you cast this spell on a creature, it gains a swimming speed equal to its walking speed for the duration of the spell.</p>
+			<p class="indent"><strong><em>Amphibious.</em></strong> You can breathe air and water.</p>
+			<p class="indent"><strong><em>Sea Legs.</em></strong> As a bonus action, you can transform between your merfolk and humanoid forms. When in merfolk form, you have a swimming speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Aquatic Affinity.</em></strong> If you spend 4 hours submerged in water during your long rest, you add 10 feet to your swim speed until your next long rest.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> Several different subraces of merfolk populate the world’s waters: coastal, deepwater, and tidal merfolk. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Merfolk)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<select type="Racial Trait" name="Size (Merfolk)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Merfolk)" supports="Standard||Exotic" />
+			
+			<grant type="Racial Trait" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_MERFOLKS_BREATH" />
+			<grant type="Racial Trait" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_AMPHIBIOUS" />
+			<grant type="Racial Trait" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_SEA_LEGS" requirements= "!ID_GINNY_DI_RACIAL_TRAIT_REPLACEMENT_MERFOLK_SEA_LEGS" />
+			<grant type="Racial Trait" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_AQUATIC_AFFINITY" />
+			<grant type="Racial Trait" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_SUBRACE" />
+		</rules>
+	</element>
+	
+	<element name="Merfolk's Breath" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_MERFOLKS_BREATH">
+		<description>
+			<p>You can cast the <i>water breathing</i> spell once with this trait and regain the ability to do so when you finish a long rest. Additionally, when you cast this spell on a creature, it gains a swimming speed equal to its walking speed for the duration of the spell.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast the <i>water breathing</i> spell. Additionally, when you cast this spell on a creature, it gains a swimming speed equal to its walking speed for the duration of the spell.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+	</element>
+
+	<element name="Amphibious" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_AMPHIBIOUS">
+		<description>
+			<p>You can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description>You can breathe air and water.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+	</element>
+
+	<element name="Sea Legs" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_SEA_LEGS">
+		<description>
+			<p>As a bonus action, you can transform between your merfolk and humanoid forms. When in merfolk form, you have a swimming speed equal to your walking speed.</p>
+		</description>
+		<sheet>
+			<description>You can transform between your merfolk and humanoid forms. When in merfolk form, you have a swimming speed equal to {{innate speed}}.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+	</element>
+
+	<element name="Aquatic Affinity" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_AQUATIC_AFFINITY">
+		<description>
+			<p>If you spend 4 hours submerged in water during your long rest, you add 10 feet to your swim speed until your next long rest.</p>
+		</description>
+		<sheet>
+			<description>If you spend 4 hours submerged in water during your long rest, you add 10 feet to your swim speed until your next long rest.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+	</element>
+
+	<element name="Subrace" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_SUBRACE">
+		<description>
+			<p>Several different subraces of merfolk populate the world’s waters: coastal, deepwater, and tidal merfolk. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Subrace" supports="Ginny Di Merfolk" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+	</element>
+
+	<element name="Coastal" type="Sub Race" source="Ginny Di" id="ID_GINNY_DI_SUB_RACE_MERFOLK_COASTAL">
+		<supports>Ginny Di Merfolk</supports>
+		<description>
+			<p>Coastal merfolk embody the classic image of their kind: Humanoids with glittering fish tails, known to have beguiling voices capable of capturing the imagination and attention of even the most stoic seafarer. Their cities are masterpieces of underwater architecture, featuring beautiful castles and elaborate structures adorned with shells, pearls, and sea glass, surrounded by vivid gardens of coral and anemones.</p>
+			<p class="indent">Living in the shallows near land, coastal merfolk are deeply involved in the terran world. Land-dwellers who live near coastal merfolk settlements commonly encounter them sunning on rocks, conversing with the captains of passing ships, and visiting beaches or docks to trade and socialize. Coastal merfolk engage with cities on the surface like any other neighboring kingdom would, fostering relationships that range from friendly trade to political conflicts.</p>
+			<p class="indent"><strong><em>Voice of the Siren (Siren's Call?).</em></strong> You can use your famously enchanting merfolk voice to influence those around you with speech or music.</p>
+			<p class="indent">If you speak or sing to a humanoid that isn’t hostile toward you for at least 1 minute, it is inclined to perceive you favorably. You have advantage on all Charisma checks against this creature for one hour. The target has no hint that you tried to influence it.</p>
+			<p class="indent">Once you have used the Voice of the Siren on a creature, it is immune to the effect for the next 24 hours.</p>
+			<p class="indent"><strong><em>Tide Tongue.</em></strong> The power of the coastal merfolk’s voice transcends language barriers. You can speak to any creature that has a language, and it will understand you even if you do not share a common language. This trait does not grant you the ability to understand the creature's response.</p>
+		</description>
+		<sheet display="false" alt="Coastal Merfolk" />
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_COASTAL_VOICE_OF_THE_SIREN" />
+			<grant type="Racial Trait" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_COASTAL_TIDE_TONGUE" />
+		</rules>
+	</element>
+
+	<element name="Voice of the Siren" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_COASTAL_VOICE_OF_THE_SIREN">
+		<description>
+			<p>You can use your famously enchanting merfolk voice to influence those around you with speech or music.</p>
+			<p class="indent">If you speak or sing to a humanoid that isn’t hostile toward you for at least 1 minute, it is inclined to perceive you favorably. You have advantage on all Charisma checks against this creature for one hour. The target has no hint that you tried to influence it.</p>
+			<p class="indent">Once you have used the Voice of the Siren on a creature, it is immune to the effect for the next 24 hours.</p>
+		</description>
+		<sheet>
+			<description>If you speak or sing to a humanoid that isn’t hostile toward you for at least 1 minute, you have advantage on all Charisma checks against this creature for one hour. The target has no hint that you tried to influence it.&#13;
+			Once you have used the Voice of the Siren on a creature, it is immune to the effect for the next 24 hours.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+	</element>
+
+	<element name="Tide Tongue" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_COASTAL_TIDE_TONGUE">
+		<description>
+			<p>The power of the coastal merfolk’s voice transcends language barriers. You can speak to any creature that has a language, and it will understand you even if you do not share a common language. This trait does not grant you the ability to understand the creature's response.</p>
+		</description>
+		<sheet>
+			<description>You can speak to any creature that has a language, and it will understand you even if you do not share a common language. This trait does not grant you the ability to understand the creature's response.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+	</element>
+
+	<element name="Deepwater" type="Sub Race" source="Ginny Di" id="ID_GINNY_DI_SUB_RACE_MERFOLK_DEEPWATER">
+		<supports>Ginny Di Merfolk</supports>
+		<description>
+			<p>Deepwater merfolk’s humanoid torsos are joined with the lower halves of cephalopods, such as octopus or squid. Tales of merfolk summoning storms or calming turbulent seas are generally inspired by the deepwater merfolk, who possess innate spellcasting abilities with an affinity for water and weather magic. These abilities position deepwater merfolk as powerful forces in the maritime world: Either valuable guardians and guides who can ensure safe passage across the ocean, or deadly threats capable of unleashing the fury of the sea on helpless seafarers.</p>
+			<p class="indent">Deepwater merfolk typically reside in sprawling cities built on the deep seafloor. Bioluminescent markings are a common trait amongst these creatures — a natural adaptation to the sunless depths where they dwell. Most deepwater merfolk spend their entire lives in the open ocean, far from the sight of any shore, only encountering land-dwellers when they traverse the sea by boat.</p>
+			<p class="indent"><strong><em>Deepwater Magic.</em></strong> You know the <i>shape water</i> cantrip.</p>
+			<p class="indent">Starting at 3rd level, you can cast the <i>fog cloud</i> spell with this trait. Starting at 5th level, you can also cast the <i>tidal wave</i> spell with this trait. Once you cast <i>fog cloud</i> or <i>tidal wave</i> with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+			<p class="indent"><strong><em>Tentacular Casting.</em></strong> You can use your tentacles with as much precision and control as your hands. If a spell requires a somatic component, you can perform these gestures using your tentacles, even if your hands are restrained or otherwise unavailable.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+		</description>
+		<sheet display="false" alt="Deepwater Merfolk" />
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+		<rules>
+			<grant type="Racial Trait" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_DEEPWATER_DEEPWATER_MAGIC" />
+			<grant type="Racial Trait" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_DEEPWATER_TENTACULAR_CASTING" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+
+	<element name="Deepwater Magic" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_DEEPWATER_DEEPWATER_MAGIC">
+		<description>
+			<p>You know the <i>shape water</i> cantrip.</p>
+			<p class="indent">Starting at 3rd level, you can cast the <i>fog cloud</i> spell with this trait. Starting at 5th level, you can also cast the <i>tidal wave</i> spell with this trait. Once you cast <i>fog cloud</i> or <i>tidal wave</i> with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" />
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="3" />
+			<grant type="Spell" id="ID_XGTE_SPELL_TIDAL_WAVE" level="5" />
+			<select type="Racial Trait" name="Spellcasting Ability (Deepwater Magic)" supports="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_DEEPWATER_DEEPWATER_MAGIC_INTELLIGENCE|ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_DEEPWATER_DEEPWATER_MAGIC_WISDOM|ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_DEEPWATER_DEEPWATER_MAGIC_CHARISMA" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_DEEPWATER_DEEPWATER_MAGIC_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Intelligence.</p>
+		</description>
+		<sheet alt="Deepwater Magic">
+			<description>You know the shape water cantrip. &#13;
+			Your spellcasting ability for this spell is Intelligence.</description>
+			<description level="3">You know the shape water cantrip. &#13;
+			You can cast the fog cloud spell with this trait once per long rest. You can also cast these spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Intelligence.</description>
+			<description level="5">You know the shape water cantrip. &#13;
+			You can cast the fog cloud spell and the tidal wave spell with this trait once each per long rest. You can also cast these spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Intelligence.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_DEEPWATER_DEEPWATER_MAGIC_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Wisdom.</p>
+		</description>
+		<sheet alt="Deepwater Magic">
+			<description>You know the shape water cantrip. &#13;
+			Your spellcasting ability for this spell is Wisdom.</description>
+			<description level="3">You know the shape water cantrip. &#13;
+			You can cast the fog cloud spell with this trait once per long rest. You can also cast these spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Wisdom.</description>
+			<description level="5">You know the shape water cantrip. &#13;
+			You can cast the fog cloud spell and the tidal wave spell with this trait once each per long rest. You can also cast these spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Wisdom.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_DEEPWATER_DEEPWATER_MAGIC_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Charisma.</p>
+		</description>
+		<sheet alt="Deepwater Magic">
+			<description>You know the shape water cantrip. &#13;
+			Your spellcasting ability for this spell is Charisma.</description>
+			<description level="3">You know the shape water cantrip. &#13;
+			You can cast the fog cloud spell with this trait once per long rest. You can also cast these spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Charisma.</description>
+			<description level="5">You know the shape water cantrip. &#13;
+			You can cast the fog cloud spell and the tidal wave spell with this trait once each per long rest. You can also cast these spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Charisma.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+	</element>
+
+	<element name="Tentacular Casting" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_DEEPWATER_TENTACULAR_CASTING">
+		<description>
+			<p>You can use your tentacles with as much precision and control as your hands. If a spell requires a somatic component, you can perform these gestures using your tentacles, even if your hands are restrained or otherwise unavailable.</p>
+		</description>
+		<sheet>
+			<description>If a spell requires a somatic component, you can perform these gestures using your tentacles, even if your hands are restrained or otherwise unavailable.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+	</element>
+
+	<element name="Tidal" type="Sub Race" source="Ginny Di" id="ID_GINNY_DI_SUB_RACE_MERFOLK_TIDAL">
+		<supports>Ginny Di Merfolk</supports>
+		<description>
+			<p>Tidal merfolk are unique amongst their kin due to their fixed two-legged form. Each shares features with one of their bestial aquatic kin: Shark-like merfolk may have a dorsal fin and rows of sharp teeth, while seal-like merfolk may have sleek fur coats and large, expressive eyes.</p>
+			<p class="indent">Like the tide, these merfolk can come and go from the land as they please, without the need for transformation. This adaptability makes them the primary bridge between merfolk and land-dwellers, often serving as ambassadors and vital lines of communication. While there are communities populated mainly with tidal merfolk, they also commonly live alongside surface-dwellers in oceanfront cities or with coastal merfolk in the shallows. Due to their proximity to the shore, they are also the first line of defense standing between their underwater brethren and any external threats from the land.</p>
+			<p class="indent"><strong><em>Tidal Wanderer.</em></strong> You have both a walking speed and a swimming speed equal to your walking speed at all times. When your Aquatic Affinity feature is applied, it also adds 10 feet to your walking speed.</p>
+			<p class="indent"><strong><em>Tidal Defender.</em></strong> When you select this subrace, choose claws, teeth, or limbs for your unarmed strikes. Also, choose a damage type: piercing, slashing, or bludgeoning. Additionally, decide whether to use your Strength or Dexterity modifier for attack and damage rolls with these strikes. Your unarmed strikes deal 1d6 + your chosen ability modifier in damage.</p>
+			<p class="indent">When a creature within 5 feet of you makes an attack against you, you can use your reaction to make an unarmed strike attack against the attacking creature. Once you use this feature a number of times equal to your proficiency modifier, you can’t use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet display="false" alt="Tidal Merfolk" />
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_GINNY_DI_RACIAL_TRAIT_REPLACEMENT_MERFOLK_SEA_LEGS" />
+			<stat name="innate speed:swim" value="innate speed" bonus="base" />
+			<grant type="Racial Trait" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_TIDAL_TIDAL_WANDERER" />
+			<grant type="Racial Trait" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_TIDAL_TIDAL_DEFENDER" />
+		</rules>
+	</element>
+
+	<element name="Tidal Wanderer" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_TIDAL_TIDAL_WANDERER">
+		<description>
+			<p>You have both a walking speed and a swimming speed equal to your walking speed at all times. When your Aquatic Affinity feature is applied, it also adds 10 feet to your walking speed.</p>
+		</description>
+		<sheet>
+			<description>When your Aquatic Affinity feature is applied, it also adds 10 feet to your walking speed.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+	</element>
+
+	<element name="Tidal Defender" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_TIDAL_TIDAL_DEFENDER">
+		<description>
+			<p>When you select this subrace, choose claws, teeth, or limbs for your unarmed strikes. Also, choose a damage type: piercing, slashing, or bludgeoning. Additionally, decide whether to use your Strength or Dexterity modifier for attack and damage rolls with these strikes. Your unarmed strikes deal 1d6 + your chosen ability modifier in damage.</p>
+			<p class="indent">When a creature within 5 feet of you makes an attack against you, you can use your reaction to make an unarmed strike attack against the attacking creature. Once you use this feature a number of times equal to your proficiency modifier, you can’t use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You can use {{tidal defender:weapon}} for unarmed strikes. When you hit with them, the strike deals 1d6 + {{tidal defender:modifier}} {{tidal defender:damage}} damage.&#13;
+			When a creature within 5 ft of you makes an attack against you, you can use your reaction to make an unarmed strike attack against the attacking creature. Once you use this feature {{proficiency}} times, you can’t use it again until you finish a short rest.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Tidal Defender Weapon" supports="GD Tidal Defender Weapon" />
+			<select type="Racial Trait" name="Tidal Defender Damage Type" supports="GD Tidal Defender Damage Type" />
+			<select type="Racial Trait" name="Tidal Defender Modifier" supports="GD Tidal Defender Modifier" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
+		</setters>
+	</element>
+	<element name="Claws" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_TIDAL_TIDAL_DEFENDER_CLAWS">
+		<supports>GD Tidal Defender Weapon</supports>
+		<compendium display="false" />
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="tidal defender:weapon" value="claws"/>
+		</rules>
+	</element>
+	<element name="Teeth" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_TIDAL_TIDAL_DEFENDER_TEETH">
+		<supports>GD Tidal Defender Weapon</supports>
+		<compendium display="false" />
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="tidal defender:weapon" value="teeth"/>
+		</rules>
+	</element>
+	<element name="Limbs" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_TIDAL_TIDAL_DEFENDER_LIMBS">
+		<supports>GD Tidal Defender Weapon</supports>
+		<compendium display="false" />
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="tidal defender:weapon" value="limbs"/>
+		</rules>
+	</element>
+	<element name="Piercing" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_TIDAL_TIDAL_DEFENDER_PIERCING">
+		<supports>GD Tidal Defender Damage Type</supports>
+		<compendium display="false" />
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="tidal defender:damage" value="piercing"/>
+		</rules>
+	</element>
+	<element name="Slashing" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_TIDAL_TIDAL_DEFENDER_SLASHING">
+		<supports>GD Tidal Defender Damage Type</supports>
+		<compendium display="false" />
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="tidal defender:damage" value="slashing"/>
+		</rules>
+	</element>
+	<element name="Bludgeoning" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_TIDAL_TIDAL_DEFENDER_BLUDGEONING">
+		<supports>GD Tidal Defender Damage Type</supports>
+		<compendium display="false" />
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="tidal defender:damage" value="bludgeoning"/>
+		</rules>
+	</element>
+	<element name="Strength" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_TIDAL_TIDAL_DEFENDER_STRENGTH">
+		<supports>GD Tidal Defender Modifier</supports>
+		<compendium display="false" />
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat name="tidal defender:modifier" value="strength:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Racial Trait" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_MERFOLK_TIDAL_TIDAL_DEFENDER_DEXTERITY">
+		<supports>GD Tidal Defender Modifier</supports>
+		<compendium display="false" />
+		<description />
+		<sheet display="false" />
+		<rules>
+			<stat name="tidal defender:modifier" value="dexterity:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<!--Replacement Grant-->
+	<element name="Sea Legs Replacement" type="Grants" source="Ginny Di" id="ID_GINNY_DI_RACIAL_TRAIT_REPLACEMENT_MERFOLK_SEA_LEGS" />
+	
+</elements>
