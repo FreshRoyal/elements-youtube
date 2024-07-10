@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>YMBADND YouTube Content</name>
+		<update version="1.0.0">
+			<file name="you-might-be-a-dnd.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/you-might-be-a-dnd.index" />
+		</update>
+	</info>
+	<files>
+		<file name="fighter-bullseye.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/you-might-be-a-dnd/fighter-bullseye.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/you-might-be-a-dnd/source.xml" />
+	</files>
+</index>

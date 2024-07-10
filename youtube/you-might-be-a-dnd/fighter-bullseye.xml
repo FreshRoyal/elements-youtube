@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Bullseye Subclass from YMBADND's YouTube</name>
+		<update version="0.0.1">
+			<file name="fighter-bullseye.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/you-might-be-a-dnd/fighter-bullseye.xml" />
+		</update>
+	</info>
+	<element name="Bullseye" type="Archetype" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FIGHTER_BULLSEYE">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>Fighter Subclass by: YMBADnD</p>
+			<p>Not all warriors favor the frontline, instead preferring the comfort of having a few feet between them and their opponents. For a Bullseye it makes much more sense to avoid close quarters combat when it’s just as easy to huck their weapon into the enemy's face and call it a day. Though there lies the problem of how to get it back…</p>
+			<div element="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_BONDED_BANDOLIER" />
+			<div element="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_DEAD_CENTER" />
+			<div element="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_TRICK_SHOTS" />
+			<div element="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_STAY_SHARP" />
+			<div element="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_BACK_IN_A_FLASH" />
+			<div element="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_EVEN_MORE_IN_THE_CENTER" />
+			<div element="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_BONDED_BARRAGE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_BONDED_BANDOLIER" level="3" />
+			<grant type="Archetype Feature" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_DEAD_CENTER" level="3" />
+			<grant type="Archetype Feature" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_TRICK_SHOTS" level="3" />
+			<grant type="Archetype Feature" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_STAY_SHARP" level="7" />
+			<grant type="Archetype Feature" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_BACK_IN_A_FLASH" level="10" />
+			<grant type="Archetype Feature" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_EVEN_MORE_IN_THE_CENTER" level="15" />
+			<grant type="Archetype Feature" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_BONDED_BARRAGE" level="18" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+	</element>
+	
+	<element name="Bonded Bandolier" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_BONDED_BANDOLIER">
+		<description>
+			<p>At 3rd level, you develop a 1 hour ritual which can be done over a short rest, and creates an arcane bond between your weapons and a wearable set of straps. At this time you can bond two weapons to the bandolier as long as each weapon has the thrown property, and once thrown, the bonded weapon will immediately return to the bandolier after hitting its target.</p>
+			<p class="indent">Your training with these specialized weapons allows you to draw from the bandolier as a part of the attack action, as well as make an additional thrown weapon attack as a bonus action as long as that weapon has the light property. Weapons with the thrown weapon property also count as ranged weapons for you, and your range with them increases by 20 ft.</p>
+		</description>
+		<sheet>
+			<description>You develop a 1 hour ritual which can be done over a short rest, and creates an arcane bond between your weapons and a wearable set of straps. At this time, you can bond {{bonded bandolier:weapons}} weapons to the bandolier as long as each weapon has the thrown property, and once thrown, the bonded weapon will immediately return to the bandolier after hitting its target. &#13;
+			Your training with these specialized weapons allows you to draw from the bandolier as a part of the attack action, as well as make an additional thrown weapon attack as a bonus action as long as that weapon has the light property. Weapons with the thrown weapon property also count as ranged weapons for you, and your range with them increases by {{bonded bandolier:range}} ft.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<rules>
+			<stat name="bonded bandolier:weapons" value="2" bonus="base" />
+			<stat name="bonded bandolier:range" value="20" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Dead Center" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_DEAD_CENTER">
+		<description>
+			<p>At 3rd level, your skill in hitting your enemies with deadly accuracy has let you focus on delivering the heaviest hits possible. Whenever you hit a creature with a thrown weapon attack, you can deal an extra 1d6 of the weapon’s damage type to your target, which takes this damage only once per turn.</p>
+		</description>
+		<sheet>
+			<description>Whenever you hit a creature with a thrown weapon attack, you can deal an extra {{dead center:dice}}d6 of the weapon’s damage type to your target, which takes this damage only once per turn.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<rules>
+			<stat name="dead center:dice" value="1" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Trick Shots" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_TRICK_SHOTS">
+		<description>
+			<p>Your ability to manipulate the trajectory of your thrown weapons has allowed you to learn three trick shots of your choice. A trick shot can be used once per thrown weapon attack and must be called before the roll is made. You also learn an additional trick shot at levels 7, 10, and 15. Each time you learn a new trick shot you may also replace a trick shot with a different option.</p>
+			<p class="indent">Each trick shot costs a trick shot point to use, and many get an additional effect at level 15 which costs 2 trick shot points. You have an amount of trick shot points equal to twice your proficiency bonus and recover all uses when you finish a short or long rest.</p>
+			<p class="indent"><strong>Trick Shot save DC</strong> = 8 + your proficiency bonus + your Strength or Dexterity modifier</p>
+		</description>
+		<sheet>
+			<description>A trick shot can be used once per thrown weapon attack and must be called before the roll is made. Each trick shot costs a trick shot point to use, and many get an additional effect at level 15 which costs 2 trick shot points. You have {{trick shots:points}} and recover all uses when you finish a short rest. Your Trick Shot save DC is {{trick shots:dc}}.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<rules>
+			<select type="Archetype Feature" name="Trick Shot" supports="Bullseye Trick Shot YMBDND" level="3" number="3" />
+			<select type="Archetype Feature" name="Trick Shot" supports="Bullseye Trick Shot YMBDND" level="7" />
+			<select type="Archetype Feature" name="Trick Shot" supports="Bullseye Trick Shot YMBDND" level="10" />
+			<select type="Archetype Feature" name="Trick Shot" supports="Bullseye Trick Shot YMBDND" level="15" />
+			<stat name="trick shots:points" value="proficiency" />
+			<stat name="trick shots:points" value="proficiency" />
+			<stat name="trick shots:dc" value="8" />
+			<stat name="trick shots:dc" value="proficiency" />
+			<stat name="trick shots:dc" value="strength:modifier" bonus="bonus" />
+			<stat name="trick shots:dc" value="dexterity:modifier" bonus="bonus" />
+		</rules>
+	</element>
+	
+	<element name="Stay Sharp" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_STAY_SHARP">
+		<description>
+			<p>By 7th level you've honed your accuracy with thrown weapons to the point you can knock other projectiles out of the air. By spending your reaction you can throw a weapon with the thrown property to intercept an incoming ranged weapon attack against you or any creature you can see within 30 feet of you, potentially canceling out the incoming attack. When you use this reaction the damage from the attack is reduced by 2d6 + your Wisdom modifier + your fighter level. You can use this ability a number of times equal to your Wisdom modifier (minimum of 1) with all uses returning on a short or long rest.</p>
+			<p class="indent">In addition, your range with thrown weapons increases by an additional 10 ft and ranged attacks you make within 5ft of an opposed creature no longer have disadvantage. You also gain proficiency in the Perception skill, or if you already have this proficiency you gain another one of your choice, and you have advantage on Perception checks that rely on sight.</p>
+		</description>
+		<sheet>
+			<description>As a reaction, you can throw a weapon with the thrown property to intercept an incoming ranged weapon attack against you or any creature you can see within 30 ft of you, potentially canceling out the incoming attack. When you use this reaction the damage from the attack is reduced by 2d6+{{stay sharp:damage}}. You can use this ability {{stay sharp:usage}} times per short rest. &#13;
+			In addition, ranged attacks you make within 5 ft of an opposed creature no longer have disadvantage. You also have advantage on Perception checks that rely on sight.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Stay Sharp" supports="Skill" default="ID_PROFICIENCY_SKILL_PERCEPTION" default-behaviour="force" />
+			<stat name="stay sharp:damage" value="level" />
+			<stat name="stay sharp:damage" value="wisdom:modifier" />
+			<stat name="stay sharp:usage" value="wisdom:modifier" bonus="bonus" />
+			<stat name="stay sharp:usage" value="1" bonus="bonus" />
+			<stat name="bonded bandolier:range" value="10" />
+		</rules>
+	</element>
+	
+	<element name="Back in a Flash" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_BACK_IN_A_FLASH">
+		<description>
+			<p>At 10th level your skill in utilizing your Bonded Bandolier has developed to the point you can manipulate its arcane properties. Now as a bonus action, when you’ve made an attack with a thrown weapon, you can choose to teleport to the weapon instead of the weapon returning to you. If this would put you into the same square as an enemy, you will instead teleport into the nearest unoccupied space within 5ft. The amount of times you can do this is equal to your proficiency bonus, gaining all uses back on a short or long rest.</p>
+			<p class="indent">Moreover, the amount of weapons you can have at one time increases from two to four.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Short Rest">
+			<description>When you’ve made an attack with a thrown weapon, you can choose to teleport to the weapon instead of the weapon returning to you. If this would put you into the same square as an enemy, you will instead teleport into the nearest unoccupied space within 5 ft.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<rules>
+			<stat name="bonded bandolier:weapons" value="4" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Even More in the Center" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_EVEN_MORE_IN_THE_CENTER">
+		<description>
+			<p>The extra damage from your Dead Center ability increases to 2d6, and if you roll initiative with 0 trick shot points you can recover an amount equal to your Wisdom modifier.</p>
+		</description>
+		<sheet>
+			<description>If you roll initiative with 0 trick shot points you can recover an amount equal to {{wisdom:modifier}}.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<rules>
+			<stat name="dead center:dice" value="2" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Bonded Barrage" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_BONDED_BARRAGE">
+		<description>
+			<p>At 18th level, no fighter is your equal when it comes to flinging projectiles. This allows you to cast the spell <i>Conjure Volley</i>, with the material component being one of your bonded weapons. When you cast this spell using your action, you can spend your bonus action to teleport to any spot within the radius of the spell. Once you cast the spell with this feature, you can’t do so again until you finish a long rest, unless you spend three Trick Shot Points to do it again.</p>
+			<p class="indent">The amount of weapons bonded to you at one time increases again to 6.</p>
+		</description>
+		<sheet>
+			<description>You can cast the conjure volley spell, with the material component being one of your bonded weapons. When you cast this spell using your action, you can spend your bonus action to teleport to any spot within the radius of the spell. Once you cast the spell with this feature, you can’t do so again until you finish a long rest, unless you spend three Trick Shot Points to do it again.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<rules>
+			<stat name="bonded bandolier:weapons" value="6" bonus="base" />
+		</rules>
+	</element>
+
+	<!--Trick Shots-->
+	<element name="Didn't See It Coming" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_TRICK_SHOTS_DIDNT_SEE_IT_COMING">
+		<supports>Bullseye Trick Shot YMBDND</supports>
+		<description>
+			<p>You send a projectile into the eyes of a creature causing them to take an additional 1d6 of damage on a hit and forcing them to make a Wisdom saving throw to try to predict the angle. On a fail the target is blinded for 1 minute. Creatures that do not rely on sight are immune from this effect.</p>
+			<p class="indent"><strong>At 15th level:</strong> The additional damage increases to 1d8 and the target will have disadvantage on perception checks that require sight for an hour regardless of if they make the save.</p>
+		</description>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<sheet action="Trick Shot">
+			<description>You send a projectile into the eyes of a creature causing them to take an additional 1d6 damage on a hit and forcing them to make a Wisdom save to try to predict the angle. On a fail the target is blinded for 1 minute. Creatures that do not rely on sight are immune from this effect.</description>
+			<description level="15">You send a projectile into the eyes of a creature causing them to take an additional 1d6 damage on a hit and forcing them to make a Wisdom save to try to predict the angle. On a fail the target is blinded for 1 minute. Creatures that do not rely on sight are immune from this effect. &#13;
+			15th level: The additional damage increases to 1d8 and the target will have disadvantage on perception checks that require sight for an hour regardless of if they make the save.</description>
+		</sheet>
+	</element>
+
+	<element name="Watch Your Step" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_TRICK_SHOTS_WATCH_YOUR_STEP">
+		<supports>Bullseye Trick Shot YMBDND</supports>
+		<description>
+			<p>When you make a thrown weapon attack against a Large or smaller creature you can intentionally try to make them trip. On a hit you force the creature to make a Dexterity saving throw or be knocked prone on a failure.</p>
+			<p class="indent"><strong>At 15th level:</strong> You can now attempt to trip creatures Huge or smaller, with medium or smaller creatures having disadvantage on the saving throw.</p>
+		</description>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<sheet action="Trick Shot">
+			<description>When you make a thrown weapon attack against a Large or smaller creature you can try to make them trip. On a hit, you force the creature to make a Dexterity save or be knocked prone on a failure.</description>
+			<description level="15">When you make a thrown weapon attack against a Large or smaller creature you can try to make them trip. On a hit, you force the creature to make a Dexterity save or be knocked prone on a failure. &#13;
+			15th level: You can now attempt to trip creatures Huge or smaller, with medium or smaller creatures having disadvantage on the saving throw.</description>
+		</sheet>
+	</element>
+
+	<element name="Hold On Tight" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_TRICK_SHOTS_HOLD_ON_TIGHT">
+		<supports>Bullseye Trick Shot YMBDND</supports>
+		<description>
+			<p>You target an object held by a creature in an attempt to disarm them, dealing an extra 1d6 of damage on a hit and forcing them to make a Strength saving throw, dropping the object in their hand on a failure. The object then falls to the creature's feet.</p>
+			<p class="indent"><strong>At 15th level:</strong> The damage from this trick shot is increased to 1d8, and If you successfully disarm the targeted creature, your bonded weapon returns with the disarmed object, dropping it at your feet.</p>
+		</description>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<sheet action="Trick Shot">
+			<description>You target an object held by a creature in an attempt to disarm them, dealing an extra 1d6 of damage on a hit and forcing them to make a Strength save, dropping the object in their hand on a failure. The object then falls to the creature's feet.</description>
+			<description level="15">You target an object held by a creature in an attempt to disarm them, dealing an extra 1d6 of damage on a hit and forcing them to make a Strength save, dropping the object in their hand on a failure. The object then falls to the creature's feet. &#13;
+			15th level: The damage from this trick shot is increased to 1d8, and If you successfully disarm the targeted creature, your bonded weapon returns with the disarmed object, dropping it at your feet.</description>
+		</sheet>
+	</element>
+
+	<element name="Seeing Stars" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_TRICK_SHOTS_SEEING_STARS">
+		<supports>Bullseye Trick Shot YMBDND</supports>
+		<description>
+			<p>You aim for a weak spot on the target that you know will send them reeling. On a hit, the target is forced to make a Constitution saving throw or be stunned until the end of your next turn.</p>
+			<p class="indent"><strong>At 15th level:</strong> Any creature stunned by this ability takes an extra 4d8 damage when they come out of the stun.</p>
+		</description>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<sheet action="Trick Shot">
+			<description>You aim for a weak spot on the target that you know will send them reeling. On a hit, the target is forced to make a Constitution save or be stunned until the end of your next turn.</description>
+			<description level="15">You aim for a weak spot on the target that you know will send them reeling. On a hit, the target is forced to make a Constitution save or be stunned until the end of your next turn. &#13;
+			15th level: Any creature stunned by this ability takes an extra 4d8 damage when they come out of the stun.</description>
+		</sheet>
+	</element>
+
+	<element name="Dizzy Spell" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_TRICK_SHOTS_DIZZY_SPELL">
+		<supports>Bullseye Trick Shot YMBDND</supports>
+		<description>
+			<p>Targeting the brain of a creature you deal an extra 1d6 of damage on a hit and the creature is forced to make an Intelligence saving throw. On a failure the creature cannot use reactions and will have disadvantage on all attacks and saves for 1 round. Constructs are immune to this effect.</p>
+			<p class="indent"><strong>At 15th level:</strong> The damage from this trick shot is increased to 1d8 and failing the save forces them to have disadvantage on attacks and saves for 1 minute.</p>
+		</description>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<sheet action="Trick Shot">
+			<description>Targeting the brain of a creature you deal an extra 1d6 of damage on a hit and the creature is forced to make an Intelligence save. On a failure the creature cannot use reactions and will have disadvantage on all attacks and saves for 1 round. Constructs are immune to this effect.</description>
+			<description level="15">Targeting the brain of a creature you deal an extra 1d6 of damage on a hit and the creature is forced to make an Intelligence save. On a failure the creature cannot use reactions and will have disadvantage on all attacks and saves for 1 round. Constructs are immune to this effect. &#13;
+			15th level: The damage from this trick shot is increased to 1d8 and failing the save forces them to have disadvantage on attacks and saves for 1 minute.</description>
+		</sheet>
+	</element>
+
+	<element name="Bounce Around" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_TRICK_SHOTS_BOUNCE_AROUND">
+		<supports>Bullseye Trick Shot YMBDND</supports>
+		<description>
+			<p>When you make a thrown weapon attack against a creature, you can bounce the attack off the first creature to hit a second within 10 feet, as long as their AC is below the number rolled for the original attack. You will roll damage normally for each strike.</p>
+			<p class="indent"><strong>At 15th level:</strong> The distance between targets is increased to 20 feet, and you can choose a third creature within 20ft of the 2nd as long as their AC is also below the initial number rolled for the original attack.</p>
+		</description>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<sheet action="Trick Shot">
+			<description>When you make a thrown weapon attack against a creature, you can bounce the attack off the first creature to hit a second within 10 ft, as long as their AC is below the number rolled for the original attack. You will roll damage normally for each strike.</description>
+			<description level="15">When you make a thrown weapon attack against a creature, you can bounce the attack off the first creature to hit a second within 10 ft, as long as their AC is below the number rolled for the original attack. You will roll damage normally for each strike. &#13;
+			15th level: The distance between targets is increased to 20 ft, and you can choose a third creature within 20 ft of the 2nd as long as their AC is also below the initial number rolled for the original attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Off the Wall" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_TRICK_SHOTS_OFF_THE_WALL">
+		<supports>Bullseye Trick Shot YMBDND</supports>
+		<description>
+			<p>When you make a thrown weapon attack you can ricochet your weapon off a nearby object to ignore all cover and deal an extra 1d6 of damage.</p>
+			<p class="indent"><strong>At 15th level:</strong> The damage of this trick shot increases to 1d8 and a ricocheted weapons range increases by an extra 20 ft.</p>
+		</description>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<sheet action="Trick Shot">
+			<description>When you make a thrown weapon attack you can ricochet your weapon off a nearby object to ignore all cover and deal an extra 1d6 of damage.</description>
+			<description level="15">When you make a thrown weapon attack you can ricochet your weapon off a nearby object to ignore all cover and deal an extra 1d6 of damage. &#13;
+			15th level: The damage of this trick shot increases to 1d8 and a ricocheted weapons range increases by an extra 20 ft.</description>
+		</sheet>
+	</element>
+
+	<element name="Power Curve" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_TRICK_SHOTS_POWER_CURVE">
+		<supports>Bullseye Trick Shot YMBDND</supports>
+		<description>
+			<p>When you make a thrown weapon attack you can spin the weapon to cause it to react unpredictably, giving you advantage on the attack.</p>
+			<p class="indent"><strong>At 15th level:</strong> You can apply this trick shot to any other trick shot on the trick shot list, as long as you spend the trick shot points for both.</p>
+		</description>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<sheet action="Trick Shot">
+			<description>When you make a thrown weapon attack you can spin the weapon to cause it to react unpredictably, giving you advantage on the attack.</description>
+			<description level="15">When you make a thrown weapon attack you can spin the weapon to cause it to react unpredictably, giving you advantage on the attack. &#13;
+			15th level: You can apply this trick shot to any other trick shot on the trick shot list, as long as you spend the trick shot points for both.</description>
+		</sheet>
+	</element>
+
+	<element name="Big Fish" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_TRICK_SHOTS_BIG_FISH">
+		<supports>Bullseye Trick Shot YMBDND</supports>
+		<requirements>[level:10]</requirements>
+		<description>
+			<p>In order to call this trick shot you must spend as many trick shot points as you have attacks in your attack action. When you take the attack action with a thrown weapon attack you can spend your trick shot to forgo the rest of your attacks in your attack action to instead focus on a single deadly throw. If this attack lands, you can calculate damage as if every attack in your attack action landed, including adding your strength or dex modifiers separately for each. A bonus action attack cannot be included.</p>
+		</description>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<sheet action="Trick Shot">
+			<description>In order to call this trick shot you must spend as many trick shot points as you have attacks in your attack action. When you take the attack action with a thrown weapon attack, you can spend your trick shot to forgo the rest of your attacks in your attack action to instead focus on a single deadly throw. If this attack lands, you can calculate damage as if every attack in your attack action landed, including adding your strength or dex modifiers separately for each. A bonus action attack cannot be included.</description>
+		</sheet>
+	</element>
+
+	<element name="Run 'em Down" type="Archetype Feature" source="You Might Be A DND" id="ID_YMBA_YMBDND_ARCHETYPE_FEATURE_BULLSEYE_TRICK_SHOTS_RUN_EM_DOWN">
+		<supports>Bullseye Trick Shot YMBDND</supports>
+		<requirements>[level:10]</requirements>
+		<description>
+			<p>In order to call this trick shot you must spend as many trick shot points as you have attacks in your attack action. When you take the attack action you can choose one creature to focus all of your attacks on at once. Once this trick shot is called, no other creature can be targeted by your attacks during your attack action. The first attack of this trick shot will deal an extra 2d8 on top of the weapon's normal damage, with each consecutive attack dealing an extra 1d8 per attack which stacks to 3d8 on the 2nd attack, 4d8 on the 3rd, and so on. However each attack in this trick shot will be subject to a -2 penalty to the attack roll which also stacks to -4 on the 2nd attack, -6 on the 3rd, and so on with each subsequent attack roll. You may continue this streak with the action surge ability for no additional trick shot points by continuing the damage increase and attack roll penalties. On a miss the trick shot ends, even if there are more attacks in your attack action.</p>
+		</description>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/P8qIjjEvBN8</set>
+		</setters>
+		<sheet action="Trick Shot">
+			<description>In order to call this trick shot you must spend as many trick shot points as you have attacks in your attack action. When you take the attack action you can choose one creature to focus all of your attacks on at once. Once this trick shot is called, no other creature can be targeted by your attacks during your attack action. The first attack of this trick shot will deal an extra 2d8 on top of the weapon's normal damage, with each consecutive attack dealing an extra 1d8 per attack which stacks to 3d8 on the 2nd attack, 4d8 on the 3rd, and so on. However each attack in this trick shot will be subject to a -2 penalty to the attack roll which also stacks to -4 on the 2nd attack, -6 on the 3rd, and so on with each subsequent attack roll. You may continue this streak with the action surge ability for no additional trick shot points by continuing the damage increase and attack roll penalties. On a miss the trick shot ends, even if there are more attacks in your attack action.</description>
+		</sheet>
+	</element>
+	
+</elements>

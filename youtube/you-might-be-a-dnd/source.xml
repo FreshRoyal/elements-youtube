@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>You Might Be A DND YouTube Source</name>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/you-might-be-a-dnd/source.xml" />
+		</update>
+	</info>
+	<element name="You Might Be A DND" type="Source" source="Core" id="ID_HOMEBREW_SOURCE_YOU_MIGHT_BE_A_DND">
+		<description>
+			<p>Player character options featured on You Might Be A DND's YouTube channel.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">YMBDND</set>
+			<set name="image">https://yt3.googleusercontent.com/0FZ81Q3V36wD352yOXMXHDf3ox3Kr90xq_uGoX9xy82q55KDPj5ny37lqhyfc0yf2Zi7S4DkYvY=s160-c-k-c0x00ffffff-no-rj</set>
+			<set name="url">https://www.youtube.com/@youmightbeadnd</set>
+			<set name="author" abbreviation="YMBA" url="https://www.youtube.com/@youmightbeadnd">You Might Be a DND</set>
+			<set name="release">20230224</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>
