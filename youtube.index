@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>YouTube Content</name>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="youtube.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube.index" />
 		</update>
 	</info>
@@ -11,5 +11,6 @@
 		<file name="pointy-hat.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat.index" />
 		<file name="dnd-shorts.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dnd-shorts.index" />
 		<file name="ginny-di.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/ginny-di.index" />
+		<file name="you-might-be-a-dnd.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/you-might-be-a-dnd.index" />
 	</files>
 </index>
