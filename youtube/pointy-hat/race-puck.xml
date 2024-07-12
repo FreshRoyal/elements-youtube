@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Puck from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="race-puck.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-puck.xml" />
+		</update>
+	</info>
+	<element name="Puck" type="Race" source="Pointy Hat" id="ID_POINTY_HAT_RACE_PUCK">
+		<description>
+			<p>Something happened to pucks at the beginning of time. Some say that the god of kobolds hunted the pucks nearly to extinction, and the few of them that remained fled to the Plane of Faerie to escape him. Others said that it was the gnome god who abandoned the pucks in Faerie after the pucks greatly offended him, somehow managing to wipe the god’s perpetual smile off of his face and turning it into a scowl of anger.</p>
+			<p class="indent">Whatever the actual reason is, it was lost to time and erased from all memory so that it can never be repeated, but it forever changed puckish culture. While all gnomes are skittish, pucks take this to a new extreme. They hide away underground in the dark wilds below Faerie, away from most creatures that roam the plane, but even this is not enough. Pucks hide their faces from all by wearing masks that they never take off, even around those closest to them.</p>
+			<p class="indent">Despite not even knowing what they are hiding from, hiding has become part of their culture, and they take great pride in their masks, seeing them as an extension of themselves. They animate them, using their tinkering abilities to reflect their emotions upon their masks, making them frown and smile along with their face. Pucks only take their masks off when they feel an incredibly deep connection with someone, or upon their death.</p>
+			<p class="indent">Beings from the Plane of Faerie often feel emotions in a deeper, stronger way than beings from the Prime Material. Pucks’ fears were amplified by the Plane of Faerie, but so was their innate gnomish curiosity. Pucks call it their muse. They believe each and every one of them is born with one: an object of fascination that they simply must study and learn more from. A puck crafts their mask when they’ve found their muse, making it in the muse’s image, and they dedicate their life to pursuing that muse.</p>
+			<p class="indent">Pucks with a useful muse ascend ranks quickly in both puckish society, fey courts in general, and even the Material Plane, for those who cross into it. There are stories of pucks whose muse was the art of combat, and became impossibly great heroes, whereas others found their muse in medicine, or musical mastery. However, not all pucks are quite as lucky. Some muses are not seen as valuable by as many, or by any, and this is a great source of angst among pucks. Puck parents discourage children from taking on any hobbies that they feel won’t lead to a good muse, and yet it still sometimes happens that a puck finds their muse in something their culture doesn’t value. This is often a reason for pucks to become adventurers, joining others whose muse requires them to travel to study it in more detail.</p>
+			<p class="indent">There are even pucks who can’t seem to ever find a muse, and go through life without donning a mask, though their peers shun them for it. These often leave too, in search of their muse elsewhere in the feywild or beyond so that they may finally make a mask for themselves.</p>
+			<p class="indent">Whatever the reason is for a puck to leave the nest, and  whether they do it led by the invisible hand of their muse or by the lack thereof, they leave an indelible mark on anyone who meets their path.</p>
+
+			<h4>Puck Features:</h4>
+			<p>
+			<span class="feature">Ability Score Increase:</span> When determining your character’s ability scores, increase one score by 2 and increase a different score by 1, or increase three different scores by 1. You can't raise any of your scores above 20.<br/>
+			<span class="feature">Creature Type:</span> You are a Humanoid. You are also considered a gnome for any prerequisite or effect that requires you to be a gnome.<br/>
+			<span class="feature">Size:</span> Your size is Small.<br/>
+			<span class="feature">Speed:</span> Your walking speed is 30 feet.<br/>
+			<span class="feature">Darkvision:</span> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+			<span class="feature">Fey Ancestry:</span> You have advantage on saving throws you make to avoid or end the charmed condition on yourself.<br/>
+			<span class="feature">Gnomish Magic Resistance:</span> You have advantage on Intelligence, Wisdom, and Charisma saving throws against spells.<br/>
+			<span class="feature">Muse:</span> When you select this race, choose one skill in which you have proficiency. You gain expertise with this skill, which means your proficiency bonus is doubled for any ability check you make with it, and whenever you make an ability check with this skill, you can treat a d20 roll of 9 or lower as a 10. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus.<br/>
+			</p>
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/ND3OIFj2ey8</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Puck)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Puck)" supports="Standard||Exotic" />
+			
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_PUCK_FEY_ANCESTRY" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_PUCK_GNOMISH_MAGIC_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_PUCK_MUSE" />
+		</rules>
+	</element>
+	
+	<element name="Fey Ancestry" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_PUCK_FEY_ANCESTRY">
+		<description>
+			<p>You have advantage on saving throws you make to avoid or end the charmed condition on yourself.</p>
+		</description>
+		<sheet >
+			<description>You have advantage on saving throws you make to avoid or end the charmed condition on yourself.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/ND3OIFj2ey8</set>
+		</setters>
+	</element>
+
+	<element name="Gnomish Magic Resistance" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_PUCK_GNOMISH_MAGIC_RESISTANCE">
+		<description>
+			<p>You have advantage on Intelligence, Wisdom, and Charisma saving throws against spells.</p>
+		</description>
+		<sheet >
+			<description>You have advantage on Intelligence, Wisdom, and Charisma saving throws against spells.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/ND3OIFj2ey8</set>
+		</setters>
+	</element>
+	
+	<element name="Muse" type="Racial Trait" source="Pointy Hat" id="ID_POINTY_HAT_RACIAL_TRAIT_PUCK_MUSE">
+		<description>
+			<p>When you select this race, choose one skill in which you have proficiency. You gain expertise with this skill, which means your proficiency bonus is doubled for any ability check you make with it, and whenever you make an ability check with this skill, you can treat a d20 roll of 9 or lower as a 10. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus.</p>
+		</description>
+		<sheet >
+			<description>You have experise in your chosen skill. Whenever you make an ability check with this skill, you can treat a d20 roll of 9 or lower as a 10.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/ND3OIFj2ey8</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Expertise (Puck)" supports="ID_EXPERTISE_SKILL_ACROBATICS|ID_EXPERTISE_SKILL_NIMAL_HANDLING|ID_EXPERTISE_SKILL_ARCANA|ID_EXPERTISE_SKILL_ATHLETICS|ID_EXPERTISE_SKILL_DECEPTION|ID_EXPERTISE_SKILL_HISTORY|ID_EXPERTISE_SKILL_INSIGHT|ID_EXPERTISE_SKILL_INTIMIDATION|ID_EXPERTISE_SKILL_INVESTIGATION|ID_EXPERTISE_SKILL_MEDICINE|ID_EXPERTISE_SKILL_NATURE|ID_EXPERTISE_SKILL_PERCEPTION|ID_EXPERTISE_SKILL_PERFORMANCE|ID_EXPERTISE_SKILL_PERSUASION|ID_EXPERTISE_SKILL_RELIGION|ID_EXPERTISE_SKILL_SLEIGHTOFHAND|ID_EXPERTISE_SKILL_STEALTH|ID_EXPERTISE_SKILL_SURVIVAL"/>
+		</rules>
+	</element>
+	
+</elements>
