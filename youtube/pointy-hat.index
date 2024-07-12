@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Pointy Hat YouTube Content</name>
-		<update version="1.1.3">
+		<update version="1.1.4">
 			<file name="pointy-hat.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat.index" />
 		</update>
 	</info>
@@ -16,6 +16,7 @@
 		<file name="race-felis.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-felis.xml" />
 		<file name="race-jinx.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-jinx.xml" />
 		<file name="race-phantasm.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-phantasm.xml" />
+		<file name="race-puck.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-puck.xml" />
 		<file name="race-verdantorc.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-verdantorc.xml" />
 		<file name="race-vigil.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-vigil.xml" />
 		<file name="subrace-aetherelf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/subrace-aetherelf.xml" />
