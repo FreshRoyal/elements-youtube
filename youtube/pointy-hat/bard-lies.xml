@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>College of Lies from Pointy Hat's YouTube</name>
+		<update version="0.0.1">
+			<file name="bard-lies.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/bard-lies.xml" />
+		</update>
+	</info>
+	<element name="College of Lies" type="Archetype" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_COLLEGE_OF_LIES">
+		<supports>Bard College</supports>
+		<description>
+			<p>The Bardic College of Lies is a subclass that seeks to revisit an existing subclass and offer an alternative for it. It’s roleplay-heavy, but attempts not to let combat abilities fall by the wayside, concentrating on abilities that are useful both in and out of combat. The theme of the subclass is lies, subterfuge, illusions, and charms. It’s the sort of subclass that shines in high-stakes social interactions, but that can be useful in other scenarios. It seeks to bring more utility, in line with the bard class’ identity, and slot in nicely with both the 2014 bard and the new 2024 version of the bard class.</p>
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_BARD_LIES_RAZOR_TONGUE" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_BARD_LIES_HONEYED_WORDS" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_BARD_LIES_ARCHBEWITCHER" />
+			<div element="ID_POINTY_HAT_ARCHETYPE_FEATURE_BARD_LIES_LIARBARD" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BARD_LIES_RAZOR_TONGUE" level="3" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BARD_LIES_HONEYED_WORDS" level="3" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BARD_LIES_ARCHBEWITCHER" level="6" />
+			<grant type="Archetype Feature" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BARD_LIES_LIARBARD" level="14" />
+		</rules>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/0fl0X7GeBJ8</set>
+		</setters>
+	</element>
+
+	<element name="Razor Tongue" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BARD_LIES_RAZOR_TONGUE">
+		<description>
+			<p>When you join the College of Lies at 3rd level, you become adept at obfuscating the truth through your words and presence.</p>
+			<p class="indent">Wisdom (Insight) checks to ascertain whether you’re lying are done at disadvantage.</p>
+			<p class="indent">Additionally, whenever a creature you can see uses a Wisdom (Insight) check to see through a lie, an Intelligence (Investigation) check to see through an illusion, or rolls a Wisdom saving throw to end an effect you have inflicted on a creature, you can use your reaction to roll your Bardic Inspiration die and subtract the result from their roll. This does not consume a use of your Bardic Inspiration.</p>
+			<p class="indent">You can use this feature a number of times equal to 1 + your Charisma modifier (minimum of 1), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{razor tongue:usage}}/Long Rest">
+			<description>Wisdom (Insight) checks to ascertain whether you’re lying are done at disadvantage. &#13;
+			Additionally, whenever a creature you can see uses a Wisdom (Insight) check to see through a lie, an Intelligence (Investigation) check to see through an illusion, or rolls a Wisdom saving throw to end an effect you have inflicted on a creature, you can use your reaction to roll your Bardic Inspiration die and subtract the result from their roll. This does not consume a use of your Bardic Inspiration.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/0fl0X7GeBJ8</set>
+		</setters>
+		<rules>
+			<stat name="razor tongue:usage" value="charisma:modifier" bonus="bonus" />
+			<stat name="razor tongue:usage" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="Honeyed Words" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BARD_LIES_HONEYED_WORDS">
+		<description>
+			<p>At 3rd level, you can use lies to momentarily weaken the mind of your opponents, leaving them open for a devastating attack. As a bonus action, select a creature you can see and roll your Bardic Inspiration die. Until the beginning of your next turn, that creature’s AC is lowered by the amount rolled on your Bardic Inspiration die when targeted by spell attacks.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Select a creature you can see and roll your Bardic Inspiration die. Until the beginning of your next turn, that creature’s AC is lowered by the amount rolled on your Bardic Inspiration die when targeted by spell attacks.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/0fl0X7GeBJ8</set>
+		</setters>
+	</element>
+
+	<element name="Archbewitcher" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BARD_LIES_ARCHBEWITCHER">
+		<description>
+			<p>At 3rd level, you can use lies to momentarily weaken the mind of your opponents, leaving them open for a devastating attack. As a bonus action, select a creature you can see and roll your Bardic Inspiration die. Until the beginning of your next turn, that creature’s AC is lowered by the amount rolled on your Bardic Inspiration die when targeted by spell attacks.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Select a creature you can see and roll your Bardic Inspiration die. Until the beginning of your next turn, that creature’s AC is lowered by the amount rolled on your Bardic Inspiration die when targeted by spell attacks.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/0fl0X7GeBJ8</set>
+		</setters>
+	</element>
+
+	<element name="Liarbard" type="Archetype Feature" source="Pointy Hat" id="ID_POINTY_HAT_ARCHETYPE_FEATURE_BARD_LIES_LIARBARD">
+		<description>
+			<p>At 14th level, your masterful control of lies and deceit allow you to trick your foes into believing they are under the effect of a spell they are not truly experiencing.</p>
+			<p class="indent">As an action, select a spell that inflicts damage and has a secondary effect, like the spell <i>Heat Metal</i>, and a creature that could be affected by the stipulations outlined in the chosen spell. The creature must make an Wisdom (Insight) check, contested against a Charisma (Deception) check of your own. This insight check is not made at disadvantage as per your “Razor Tongue” ability. On a failure, the creature believes itself to be afflicted by the secondary effect of that spell and suffers its effect. The creature takes no damage, but believes itself to have taken or be currently taking damage.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. You can also use this ability by expending a spell slot of the appropriate level to the spell chosen.</p>
+		</description>
+		<sheet action="Action" usage="{{proficiency}}/Long Rest">
+			<description>Select a spell that inflicts damage and has a secondary effect, and a creature that could be affected by the stipulations outlined in the chosen spell. The creature must make an Wisdom (Insight) check, contested against a Charisma (Deception) check of your own. This insight check is not made at disadvantage as per your “Razor Tongue” ability. On a failure, the creature believes itself to be afflicted by the secondary effect of that spell and suffers its effect. The creature takes no damage, but believes itself to have taken or be currently taking damage. &#13;
+			You can also use this ability by expending a spell slot of the appropriate level to the spell chosen.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://youtu.be/0fl0X7GeBJ8</set>
+		</setters>
+	</element>
+
+</elements>
