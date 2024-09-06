@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Pointy Hat YouTube Content</name>
-		<update version="1.1.4">
+		<update version="1.1.5">
 			<file name="pointy-hat.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat.index" />
 		</update>
 	</info>
@@ -25,6 +25,7 @@
 		<!--Subclasses-->
 		<file name="barbarian-spirits.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/barbarian-spirits.xml" />
 		<file name="bard-dance.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/bard-dance.xml" />
+		<file name="bard-lies.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/bard-lies.xml" />
 		<file name="cleric-creation.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/cleric-creation.xml" />
 		<file name="druid-city.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/druid-city.xml" />
 		<file name="fighter-scion.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/fighter-scion.xml" />
