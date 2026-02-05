@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Merfolk from Ginny Di's YouTube</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-merfolk.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/ginny-di/race-merfolk.xml" />
 		</update>
 	</info>
@@ -33,7 +33,7 @@
 			<set name="sourceUrl">https://youtu.be/HnkWNvrZcZY</set>
 		</setters>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Merfolk)" supports="Custom Ability Score Improvement Option" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Merfolk)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<stat name="innate speed" value="30" bonus="base" />
 
 			<select type="Racial Trait" name="Size (Merfolk)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />

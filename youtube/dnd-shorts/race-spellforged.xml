@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Spellforged from DnD Shorts YouTube channel</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-spellforged.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dnd-shorts/race-spellforged.xml" />
 		</update>
 	</info>
@@ -34,11 +34,11 @@
 			<set name="sourceUrl">https://youtu.be/bm6BVGJyz54</set>
 		</setters>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Spellforged)" supports="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_2|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<stat name="constitution" value="1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Spellforged)" supports="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_2|ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<stat name="constitution" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
 			
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Spellforged)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Spellforged)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Spellforged)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Spellforged)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<stat name="innate speed" value="30" bonus="base"/>
 			
 			<grant type="Racial Trait" id="ID_DND_SHORTS_RACIAL_TRAIT_SPELLFORGED_MAGICAL_FORM"/>

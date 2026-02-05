@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Jinx from Pointy Hat's YouTube</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-jinx.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-jinx.xml" />
 		</update>
 	</info>
@@ -89,7 +89,7 @@
 			<set name="sourceUrl">https://youtu.be/QoWZwJsh_s8</set>
 		</setters>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Jinx)" supports="Custom Ability Score Improvement Option" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Jinx)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<stat name="innate speed" value="25" bonus="base"/>
 
 			<grant type="Size" id="ID_SIZE_SMALL" />

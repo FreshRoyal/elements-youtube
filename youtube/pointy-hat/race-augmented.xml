@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Augmented from Pointy Hat's YouTube</name>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="race-augmented.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-augmented.xml" />
 		</update>
 	</info>
@@ -30,7 +30,7 @@
 			<set name="sourceUrl">https://youtu.be/qSjh6-mA638</set>
 		</setters>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Augmented)" supports="Custom Ability Score Improvement Option" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Augmented)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<stat name="innate speed" value="30" bonus="base"/>
 
 			<select type="Racial Trait" name="Size (Augmented)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />

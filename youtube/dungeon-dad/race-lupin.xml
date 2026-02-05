@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Lupin from Monster of the Week</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="race-lupin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/race-lupin.xml" />
 		</update>
 	</info>
@@ -27,7 +27,7 @@
 			<set name="sourceUrl">https://youtu.be/vbsoN8SJLaw</set>
 		</setters>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Lupin)" supports="Custom Ability Score Improvement Option" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Lupin)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
@@ -45,10 +45,10 @@
 	<element name="Creature Type" type="Racial Trait" source="Monster of the Week" id="ID_MOTW_RACIAL_TRAIT_LUPIN_CREATURE_TYPE">
 		<compendium display="false" />
 		<description>
-			<p>You are a Beast and a Humanoid. </p>
+			<p>You are a Beast and a Humanoid.</p>
 		</description>
 		<sheet>
-			<description>You are a Beast and a Humanoid.</description>
+			<description>Beast and Humanoid.</description>
 		</sheet>
 	</element>
 

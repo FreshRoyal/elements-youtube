@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Hagspawn from Monster of the Week</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-hagspawn.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/dungeon-dad/race-hagspawn.xml" />
 		</update>
 	</info>
@@ -33,8 +33,8 @@
 			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
 		</setters>
 		<rules>
-			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Hagspawn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)"/>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Hagspawn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
@@ -104,8 +104,8 @@
 			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
 		</setters>
 		<rules>
-			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Annis Hagspawn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="strength" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Annis Hagspawn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_ANNIS_HAGSPAWN_CLAWS" />
 			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_ANNIS_HAGSPAWN_IRON_TOKEN" />
 			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_ANNIS_HAGSPAWN_CRUSHING_GRIP" />
@@ -168,8 +168,8 @@
 			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
 		</setters>
 		<rules>
-			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Bheur Hagspawn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Bheur Hagspawn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_BHEUR_HAGSPAWN_COLD_RESISTANCE" />
 			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_BHEUR_HAGSPAWN_FRIGID_BLOOD" />
 		</rules>
@@ -222,8 +222,8 @@
 			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
 		</setters>
 		<rules>
-			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Green Hagspawn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="wisdom" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Green Hagspawn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_GREEN_HAGSPAWN_MIMICRY" />
 			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_GREEN_HAGSPAWN_HATEFUL_BLOOD" />
 		</rules>
@@ -275,8 +275,8 @@
 			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
 		</setters>
 		<rules>
-			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Night Hagspawn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="intelligence" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Night Hagspawn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_NIGHT_HAGSPAWN_FIRE_RESISTANCE" />
 			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_NIGHT_HAGSPAWN_INFERNAL_LEGACY" />
 			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_NIGHT_HAGSPAWN_TWILIGHT_BLOOD" />
@@ -349,8 +349,8 @@
 			<set name="sourceUrl">https://youtu.be/iCLIDgLt7N0</set>
 		</setters>
 		<rules>
-			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Sea Hagspawn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="dexterity" value="2" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Sea Hagspawn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<stat name="charisma" value="-2" />
 			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_SEA_HAGSPAWN_AMPHIBIOUS" />
 			<grant type="Racial Trait" id="ID_MOTW_RACIAL_TRAIT_SEA_HAGSPAWN_HORRIFIC_VISAGE" />

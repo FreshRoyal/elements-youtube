@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Phantasm from Pointy Hat's YouTube</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-phantasm.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-phantasm.xml" />
 		</update>
 	</info>
@@ -38,7 +38,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Phantasm)" supports="Custom Ability Score Improvement Option" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Phantasm)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<select type="Racial Trait" name="Size (Phantasm)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
 			<stat name="innate speed" value="30" bonus="base" />
 

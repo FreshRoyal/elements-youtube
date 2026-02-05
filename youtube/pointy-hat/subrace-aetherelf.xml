@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Aether Elf from Pointy Hat's YouTube</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="subrace-aetherelf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/subrace-aetherelf.xml" />
 		</update>
 	</info>
@@ -26,8 +26,8 @@
 			<set name="sourceUrl">https://youtu.be/nt0R5oMdj3M</set>
 		</setters>
 		<rules>
-			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Aether Elf)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="wisdom" value="1" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Aether Elf)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_AETHER_ELF_AETHERIC_SUSTENANCE" />
 			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_AETHER_ELF_AETHERIC_STEP" />
 			<grant type="Racial Trait" id="ID_POINTY_HAT_RACIAL_TRAIT_AETHER_ELF_AETHERIC_FORM" />

@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Vigil from Pointy Hat's YouTube</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="race-vigil.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/race-vigil.xml" />
 		</update>
 	</info>
@@ -43,7 +43,7 @@
 			<set name="sourceUrl">https://youtu.be/hyvajvK7tMg</set>
 		</setters>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Vigil)" supports="Custom Ability Score Improvement Option" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Vigil)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<stat name="innate speed" value="30" bonus="base"/>
 
 			<select type="Racial Trait" name="Size (Vigil)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
