@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Dragon Otherworldly Patron Subclass from Pointy Hat's YouTube</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-youtube/master/youtube/pointy-hat/warlock-dragon.xml" />
 		</update>
 	</info>
@@ -207,6 +207,17 @@
 			<extend>ID_WOTC_TCOE_SPELL_HALLUCINATORY_TERRAIN</extend>
 			<extend>ID_PHB_SPELL_CLOUDKILL</extend>
 			<extend>ID_PHB_SPELL_CONE_OF_COLD</extend>
+
+			<extend>ID_WOTC_PHB24_SPELL_COMMAND</extend>
+			<extend>ID_WOTC_PHB24_SPELL_FEATHER_FALL</extend>
+			<extend>ID_WOTC_PHB24_SPELL_FLAMING_SPHERE</extend>
+			<extend>ID_WOTC_PHB24_SPELL_ALTER_SELF</extend>
+			<extend>ID_WOTC_PHB24_SPELL_FEAR</extend>
+			<extend>ID_WOTC_PHB24_SPELL_FLY</extend>
+			<extend>ID_WOTC_PHB24_SPELL_FIRE_SHIELD</extend>
+			<extend>ID_WOTC_PHB24_SPELL_HALLUCINATORY_TERRAIN</extend>
+			<extend>ID_WOTC_PHB24_SPELL_CLOUDKILL</extend>
+			<extend>ID_WOTC_PHB24_SPELL_CONE_OF_COLD</extend>
 		</spellcasting>
 		<setters>
 			<set name="sourceUrl">https://youtu.be/VMC_kcUKdhw</set>
